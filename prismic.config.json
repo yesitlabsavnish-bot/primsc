@@ -1,0 +1,12 @@
+{
+  "repositoryName": "93h54af2",
+  "libraries": [
+    "./src/slices"
+  ],
+  "routes": [
+    {
+      "type": "homepage",
+      "path": "/"
+    }
+  ]
+}
