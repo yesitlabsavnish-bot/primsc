@@ -46,6 +46,13 @@
 					"config": {
 						"label": "Logo"
 					}
+				},
+				"button_text": {
+					"type": "Text",
+					"config": {
+						"label": "Button Text",
+						"placeholder": "Enter button text"
+					}
 				}
 			},
 			"items": {}

@@ -1,0 +1,25 @@
+{
+  "id": "my_page",
+  "label": "My Page",
+  "repeatable": false,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Enter page title"
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": "Enter description"
+        }
+      }
+    }
+  },
+  "status": true,
+  "format": "page"
+}

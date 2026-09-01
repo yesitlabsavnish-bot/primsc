@@ -52,6 +52,15 @@ export default function Hero(props: HeroProps) {
 						<PrismicRichText field={slice.primary.description} />
 					</div>
 				)}
+
+				{isFilled.keyText(slice.primary.button_text) && (
+					<Link
+						href="/about"
+						className="mt-8 inline-flex rounded-full bg-black px-8 py-4 text-white"
+					>
+						{slice.primary.button_text}
+					</Link>
+				)}
 			</div>
 
 			<div className="absolute bottom-0 left-1/2 z-10 w-[calc(100%-32px)] max-w-[1003px] -translate-x-1/2 overflow-hidden rounded-t-[0.5em] shadow-[0_24.889px_23.2px_8px_rgba(0,0,0,0.10)] lg:bottom-auto lg:top-[477px] lg:aspect-[1002.664/546.863]">
