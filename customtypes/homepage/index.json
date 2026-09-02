@@ -1,12 +1,9 @@
 {
+  "format": "page",
   "id": "homepage",
-  "label": "Homepage",
-  "repeatable": false,
   "json": {
     "Main": {
       "slices": {
-        "type": "Slices",
-        "fieldset": "Slice Zone",
         "config": {
           "choices": {
             "hero": {
@@ -19,47 +16,48 @@
               "type": "SharedSlice"
             }
           }
-        }
+        },
+        "fieldset": "Slice Zone",
+        "type": "Slices"
       }
     },
     "SEO & Metadata": {
       "meta_title": {
-        "type": "Text",
         "config": {
           "label": "Meta Title",
           "placeholder": "A title of the page used for social media and search engines"
-        }
+        },
+        "type": "Text"
       },
       "meta_description": {
-        "type": "Text",
         "config": {
           "label": "Meta Description",
           "placeholder": "A brief summary of the page"
-        }
+        },
+        "type": "Text"
       }
     },
     "Footer": {
       "footer_copyright_text": {
-        "type": "Text",
         "config": {
           "label": "Copyright Text"
-        }
+        },
+        "type": "Text"
       },
       "footer_cookies_link": {
-        "type": "Link",
         "config": {
-          "label": "Cookies Link",
-          "select": "web",
-          "allowTargetBlank": true,
-          "allowText": true
-        }
-      },
-      "footer_social_links": {
-        "type": "Link",
-        "config": {
-          "label": "Social Links",
           "allowTargetBlank": true,
           "allowText": true,
+          "label": "Cookies Link",
+          "select": "web"
+        },
+        "type": "Link"
+      },
+      "footer_social_links": {
+        "config": {
+          "allowTargetBlank": true,
+          "allowText": true,
+          "label": "Social Links",
           "repeat": true,
           "variants": [
             "X",
@@ -67,10 +65,12 @@
             "GitHub",
             "LinkedIn"
           ]
-        }
+        },
+        "type": "Link"
       }
     }
   },
-  "status": true,
-  "format": "page"
+  "label": "Homepage",
+  "repeatable": false,
+  "status": true
 }

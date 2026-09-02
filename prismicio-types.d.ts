@@ -126,7 +126,58 @@ interface HomepageDocumentData {
  */
 export type HomepageDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<Simplify<HomepageDocumentData>, "homepage", Lang>;
 
-export type AllDocumentTypes = HomepageDocument;
+type MyPageDocumentDataSlicesSlice = HeroSlice
+
+/**
+ * Content for My Page documents
+ */
+interface MyPageDocumentData {
+	/**
+	 * Title field in *My Page*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: my_page.title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	title: prismic.KeyTextField;
+	
+	/**
+	 * Description field in *My Page*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: my_page.description
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	description: prismic.KeyTextField;
+	
+	/**
+	 * `slices` field in *My Page*
+	 *
+	 * - **Field Type**: Slice Zone
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: my_page.slices[]
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/slices
+	 */
+	slices: prismic.SliceZone<MyPageDocumentDataSlicesSlice>;
+}
+
+/**
+ * My Page document from Prismic
+ *
+ * - **API ID**: `my_page`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/content-modeling
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type MyPageDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<Simplify<MyPageDocumentData>, "my_page", Lang>;
+
+export type AllDocumentTypes = HomepageDocument | MyPageDocument;
 
 /**
  * Item in *Card Grid → Default → Primary → Cards*
@@ -390,6 +441,9 @@ declare module "@prismicio/client" {
 			HomepageDocument,
 			HomepageDocumentData,
 			HomepageDocumentDataSlicesSlice,
+			MyPageDocument,
+			MyPageDocumentData,
+			MyPageDocumentDataSlicesSlice,
 			AllDocumentTypes,
 			CardGridSlice,
 			CardGridSliceDefaultPrimaryCardsItem,
