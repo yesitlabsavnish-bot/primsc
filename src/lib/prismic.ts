@@ -3,7 +3,7 @@ import {
 	type ClientConfig,
 } from "@prismicio/client"
 import { enableAutoPreviews } from "@prismicio/next"
-import prismicConfig from "../prismic.config.json"
+import prismicConfig from "../../prismic.config.json"
 
 type PrismicConfig = typeof prismicConfig &
 	Pick<ClientConfig, "documentAPIEndpoint">

@@ -1,0 +1,219 @@
+{
+  "format": "custom",
+  "id": "fiber_sizing",
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "hero_title": {
+        "config": {
+          "label": "Hero Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_subtitle": {
+        "config": {
+          "label": "Hero Subtitle",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_description_1": {
+        "config": {
+          "label": "Hero Description 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_description_2": {
+        "config": {
+          "label": "Hero Description 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_button_1": {
+        "config": {
+          "label": "Hero Button 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_button_2": {
+        "config": {
+          "label": "Hero Button 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "about_title": {
+        "config": {
+          "label": "About Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "about_description": {
+        "config": {
+          "label": "About Description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "about_cards": {
+        "config": {
+          "fields": {
+            "number": {
+              "config": {
+                "label": "number",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "title": {
+              "config": {
+                "label": "title",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "description": {
+              "config": {
+                "label": "description",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "about_cards",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "products": {
+        "config": {
+          "fields": {
+            "product_name": {
+              "config": {
+                "label": "product_name",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "chemistry": {
+              "config": {
+                "label": "chemistry",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "properties": {
+              "config": {
+                "label": "properties",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "products",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "find_fit_title": {
+        "config": {
+          "label": "find_fit_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "find_fit_description": {
+        "config": {
+          "label": "find_fit_description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "find_fit_button": {
+        "config": {
+          "label": "find_fit_button",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "cta_title": {
+        "config": {
+          "label": "cta_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "cta_description": {
+        "config": {
+          "label": "cta_description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "cta_button": {
+        "config": {
+          "label": "cta_button",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "faqs": {
+        "config": {
+          "fields": {
+            "question": {
+              "config": {
+                "label": "question",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "answer": {
+              "config": {
+                "label": "answer",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "faqs",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "contact_title": {
+        "config": {
+          "label": "contact_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "contact_description": {
+        "config": {
+          "label": "contact_description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "contact_button": {
+        "config": {
+          "label": "contact_button",
+          "placeholder": ""
+        },
+        "type": "Text"
+      }
+    }
+  },
+  "label": "Fiber Sizing",
+  "repeatable": true,
+  "status": true
+}

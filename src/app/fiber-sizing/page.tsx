@@ -1,5 +1,5 @@
 import "./fiber-sizing.css";
-import { createClient } from "@/prismicio";
+import { createClient } from "@/lib/prismic";
 // import { PrismicText } from "@prismicio/react";
 
 export default async function FiberSizingPage() {
@@ -26,7 +26,7 @@ export default async function FiberSizingPage() {
   return (
     <div className="fiber-page">
       {/* Header */}
-      <header className="fiber-header">
+      {/* <header className="fiber-header">
         <div className="fiber-wrap fiber-nav-row">
           <div className="fiber-logo">
             <span className="fiber-logo-mark" />
@@ -70,7 +70,7 @@ export default async function FiberSizingPage() {
             </a>
           </div>
         </div>
-      </header>
+      </header> */}
 
       {/* Hero */}
       <section className="fiber-hero">
@@ -277,7 +277,7 @@ export default async function FiberSizingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="fiber-footer">
+      {/* <footer className="fiber-footer">
         <div className="fiber-wrap fiber-footer-top">
           <div className="fiber-footer-brand">
             <div className="fiber-logo">
@@ -378,7 +378,7 @@ export default async function FiberSizingPage() {
             <a href="#">Sitemap</a>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }

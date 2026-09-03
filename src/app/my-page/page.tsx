@@ -1,4 +1,4 @@
-import { createClient } from "@/prismicio";
+import { createClient } from "@/lib/prismic";
 import Hero from "@/slices/Hero";
 
 export default async function MyPage() {
