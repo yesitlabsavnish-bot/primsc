@@ -4,9 +4,17 @@ import Header from "@/components/Header/Header"
 
 import { repositoryName, createClient } from "@/lib/prismic"
 import { PrismicPreview } from "@prismicio/next"
+import { Metadata } from "next"
 import { Inter } from "next/font/google"
+import Script from "next/script"
 
-
+export const metadata: Metadata = {
+	title: "Phlex Carbon | Chopped Carbon Fiber",
+	description: "Phlex Carbon Fiber offers precision-cut, short-length chopped carbon fiber in two fiber grades: PhlexCarbon Chopped HSC and PhlexCarbon Chopped IMC.",
+	icons: {
+		icon: "/images/logo.png",
+	}
+};
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -25,18 +33,18 @@ export default async function RootLayout({
 		<html lang="en" className={inter.variable}>
 
 			<head>
-
-				  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-                 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
-				<link rel="stylesheet" href="css/style.css"></link>
-				<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-				<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-				<script src="js/main.js"></script>
-
+				<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+				<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+				<link rel="stylesheet" href="/css/style.css"></link>
 			</head>
 			<body className="font-sans bg-white text-[#0d0d0d] antialiased selection:bg-black selection:text-white">
+
+				<Script src="https://code.jquery.com/jquery-3.6.0.min.js" strategy="afterInteractive" />
+				<Script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" strategy="afterInteractive" />
+				<Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
+				<Script src="/js/main.js" strategy="lazyOnload" />
+
 				<Header />
 
 				<main className="min-h-screen">

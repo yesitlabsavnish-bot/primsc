@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://use.typekit.net/your-kit-id.css');
 
 * {
   padding: 0;
@@ -8,7 +8,7 @@
 
 body {
   background: #ffffff;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "din-next-w1g", "DIN Next W1G", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 a {
@@ -68,7 +68,7 @@ a {
   color: #031F55;
 }
 
-/* Custom Dropdown Styling */
+
 .custom-dropdown {
   position: relative;
 }
@@ -161,7 +161,7 @@ a {
     display: block !important;
   }
 
-  /* Default Hidden State on Mobile */
+  
   .nav-links {
     position: absolute;
     top: 70px;
@@ -227,7 +227,7 @@ a {
   gap: 60px;
 }
 
-/* Brand Section */
+
 .footer-brand {
   max-width: 480px;
 }
@@ -236,7 +236,7 @@ a {
   max-height: 45px;
   width: auto;
   margin-bottom: 30px;
-  /* Filter fallback agar black logo use kar rahe ho white banane ke liye */
+
   filter: brightness(0) invert(1); 
 }
 
@@ -355,7 +355,7 @@ a {
 
 @media (max-width: 576px) {
   .footer-links-list {
-    grid-template-columns: 1fr; /* Single column on small mobile */
+    grid-template-columns: 1fr; 
   }
   
   .legal-links {
@@ -641,7 +641,7 @@ a {
   }
 }
 
-/* Mobile Screens (<= 576px) */
+
 @media (max-width: 576px) {
   .blog-content-section {
     padding: 30px 0;
@@ -686,7 +686,7 @@ a {
   padding: 0 40px;
 }
 
-/* Header & Navigation Arrows */
+
 .related-header {
   display: flex;
   align-items: center;
@@ -741,11 +741,30 @@ a {
   margin: 0 -12px;
 }
 
+/* Prevent FOUC before slick initializes */
+.related-blog-slider:not(.slick-initialized) {
+  display: flex;
+  overflow: hidden;
+}
+.related-blog-slider:not(.slick-initialized) .blog-card-item {
+  flex: 0 0 33.333%;
+}
+@media (max-width: 992px) {
+  .related-blog-slider:not(.slick-initialized) .blog-card-item {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 576px) {
+  .related-blog-slider:not(.slick-initialized) .blog-card-item {
+    flex: 0 0 100%;
+  }
+}
+
 .blog-card-item {
   padding: 0 12px;
 }
 
-/* Card Container */
+
 .blog-card {
   background: #ffffff;
       padding-bottom: 20px;
@@ -766,7 +785,7 @@ a {
   object-fit: cover;
 }
 
-/* Meta Details */
+
 .author-meta {
       display: flex;
     align-items: center;
@@ -815,7 +834,7 @@ a {
     margin: 0;
 }
 
-/* Responsive Media Queries */
+
 @media (max-width: 992px) {
   .related-container {
     padding: 0 20px;
@@ -868,7 +887,7 @@ a {
     margin-bottom: 32px;
 }
 
-/* 3 Column Grid Layout */
+
 .bl-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -876,7 +895,7 @@ a {
   margin-bottom: 50px;
 }
 
-/* Card Styling */
+
 .bl-card {
   display: flex;
   flex-direction: column;
@@ -896,7 +915,7 @@ a {
   object-fit: cover;
 }
 
-/* Metadata (Avatar, Name, Date) */
+
 .bl-author-meta {
       display: flex;
     align-items: center;
@@ -927,7 +946,7 @@ a {
   color: #4a5568;
 }*/
 
-/* Headings & Descriptions */
+
 .bl-title {
       font-size: 24px;
     font-weight: 400;
@@ -949,7 +968,7 @@ a {
     margin: 0;
 }
 
-/* Bottom Pagination */
+
 .bl-pagination {
   display: flex;
   align-items: center;
@@ -1072,7 +1091,7 @@ a.bl-page-nav:hover{
     margin-bottom: auto;
 }
 
-/* Main Title */
+
 .phlex-hero-title {
       font-size: 70px;
     font-weight: 500;
@@ -1083,7 +1102,7 @@ a.bl-page-nav:hover{
     line-height: 1.1;
 }
 
-/* Subtitle */
+
 .phlex-hero-subtitle {
      font-size: 40px;
     font-weight: 500;
@@ -1092,7 +1111,7 @@ a.bl-page-nav:hover{
     margin-bottom: 28px;
 }
 
-/* Description Text */
+
 .phlex-hero-desc {
       font-size: 18px;
     line-height: 1.6;
@@ -1105,7 +1124,7 @@ a.bl-page-nav:hover{
   margin-bottom: 0;
 }
 
-/* Scroll Indicator */
+
 .phlex-hero-scroll {
   display: flex;
   flex-direction: column;
@@ -1130,7 +1149,7 @@ a.bl-page-nav:hover{
   animation: phlexHeroBounce 2s infinite;
 }
 
-/* Scroll Arrow Bounce Animation */
+
 @keyframes phlexHeroBounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -1161,7 +1180,7 @@ a.bl-page-nav:hover{
     padding: 100px 0 50px;
   }
   .phlex-hero-overlay {
-    background: rgba(0, 0, 0, 0.85); /* Darker overlay for mobile */
+    background: rgba(0, 0, 0, 0.85); 
   }
   .phlex-hero-content {
     max-width: 100%;
@@ -1191,112 +1210,1220 @@ a.bl-page-nav:hover{
   }
 }
 
+.phlex-hero-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+
+
+.phlex-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  box-sizing: border-box;
+  letter-spacing: 0.2px;
+}
+.phlex-hero-btn.phlex-hero-btn-white img {
+    height: 30px;
+}
+
+.phlex-hero-btn-white {
+     background-color: #ffffff;
+    color: #031F55;
+    border: 1px solid #ffffff;
+}
+
+.phlex-hero-btn-white:hover {
+  background-color: #f1f5f9;
+  color: #0d1b2a;
+  transform: translateY(-1px);
+}
+
+.phlex-hero-btn-white i {
+  font-size: 18px;
+  line-height: 1;
+}
+
+
+.phlex-hero-btn-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.phlex-hero-btn-outline:hover {
+  background-color: #ffffff;
+  color: #0d1b2a;
+  transform: translateY(-1px);
+}
+
+
+@media (max-width: 576px) {
+  .phlex-hero-btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .phlex-hero-btn {
+    width: 100%;
+  }
+}
 /*============================== Phlex Hero Banner Unique CSS END =========================*/
 
 
-/* Section & Container Setup */
-.phlex-hero-section {
+/*=========================== Phlex Options Section Unique CSS Strat=============================*/
+.phlex-options-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background: #000000 url('images/hero-bg.jpg') no-repeat center right / cover;
-  color: #ffffff;
-  padding: 100px 0 40px;
+  padding: 80px 0;
+  background-color: #ffffff;
+  overflow: hidden;
   box-sizing: border-box;
 }
 
-.phlex-hero-overlay {
+
+.phlex-options-watermark {
+      position: absolute;
+    top: 65px;
+    left: -33px;
+    width: 220px;
+    height: auto;
+    /* opacity: 0.12; */
+    pointer-events: none;
+    z-index: 1;
+}
+
+.phlex-options-container {
+  position: relative;
+  z-index: 2;
+  /*max-width: 1320px;*/
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+
+.phlex-options-header {
+  text-align: center;
+  max-width: 1220px;
+  margin: 0 auto 50px auto;
+}
+
+.phlex-options-main-title {
+      font-size: 48px;
+    font-weight: 500;
+    color: #010101;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.phlex-options-subtitle {
+      font-size: 18px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #7D7D7D;
+    margin-bottom: 16px;
+}
+
+.phlex-options-subtitle-sub {
+      font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #7D7D7D;
+    margin: 0;
+}
+
+
+.phlex-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+
+.phlex-options-card {
+  position: relative;
+  min-height: 480px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-strat;
+  padding: 48px;
+  box-sizing: border-box;
+}
+
+
+.phlex-options-card-img {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg, 
-    rgba(0, 0, 0, 0.95) 0%, 
-    rgba(0, 0, 0, 0.82) 48%, 
-    rgba(0, 0, 0, 0.15) 100%
-  );
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: 1;
 }
 
-.phlex-hero-container {
-  position: relative;
+
+.phlex-options-card-overlay {
+  position: absolute;
+  inset: 0;
   z-index: 2;
+}
+
+.phlex-overlay-grey {
+  background: radial-gradient(
+    59.62% 62.49% at 96.62% 20.47%, 
+    rgba(125, 125, 125, 0) 0%, 
+    rgba(125, 125, 125, 0.54) 29.01%, 
+    rgba(125, 125, 125, 0.76) 60.58%, 
+    #7d7d7d 100%
+  );
+}
+
+.phlex-overlay-blue {
+  background: radial-gradient(86.21% 98.02% at 92.46% 9.05%, rgba(3, 31, 85, 0) 0%, rgba(3, 31, 85, 0.55) 33.81%, rgba(3, 31, 85, 0.81) 57.66%, #031F55 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+}
+
+
+.phlex-options-card-content {
+  position: relative;
+  z-index: 3;
+  color: #ffffff;
+}
+
+.phlex-options-number {
+      display: block;
+    font-size: 48px;
+    font-weight: 500;
+    color: #FEFEFE;
+    margin-bottom: 24px;
+    line-height: 1;
+}
+
+.phlex-options-card-title {
+      font-size: 28px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #FEFEFE;
+    margin-bottom: 20px;
+}
+
+.phlex-options-card-text {
+      font-size: 18px;
+    line-height: 1.6;
+    color: #FEFEFE;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+.phlex-options-card-text:last-of-type {
+  margin-bottom: 0;
+}
+
+/*==================================
+  Responsive Styles
+==================================*/
+@media (max-width: 992px) {
+  .phlex-options-watermark {
+    width: 160px;
+  }
+  .phlex-options-main-title {
+    font-size: 32px;
+  }
+  .phlex-options-grid {
+    grid-template-columns: 1fr;
+  }
+  .phlex-options-card {
+    min-height: 400px;
+    padding: 32px;
+  }
+  .phlex-options-number {
+    font-size: 38px;
+  }
+  .phlex-options-card-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .phlex-options-section {
+    padding: 50px 0;
+  }
+  .phlex-options-watermark {
+    width: 120px;
+  }
+  .phlex-options-container {
+    padding: 0 16px;
+  }
+  .phlex-options-main-title {
+    font-size: 26px;
+  }
+  .phlex-options-subtitle, 
+  .phlex-options-subtitle-sub {
+    font-size: 14px;
+  }
+  .phlex-options-card {
+    padding: 24px;
+    min-height: 360px;
+  }
+  .phlex-options-card-title br {
+    display: none;
+  }
+}
+/*=========================== Phlex Options Section Unique CSS END=============================*/
+
+/*==========================Phlex Process Section Unique CSS Strat==========================*/
+.phlex-process-section {
   width: 100%;
-  max-width: 1320px;
+  background-color: #031f55;
+  padding: 100px 0;
+  color: #fefefe;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.phlex-process-container {
+  /*max-width: 1320px;*/
   margin: 0 auto;
   padding: 0 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: calc(100vh - 140px);
 }
 
-.phlex-hero-content {
-  max-width: 620px;
-  margin-top: auto;
-  margin-bottom: auto;
+
+.phlex-process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
 }
 
-.phlex-hero-title {
-  font-size: 52px;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 18px;
-  line-height: 1.1;
+
+.phlex-process-content {
+  max-width: 580px;
 }
 
-.phlex-hero-subtitle {
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 1.35;
-  color: #ffffff;
+.phlex-process-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fefefe;
   margin-bottom: 24px;
 }
 
-.phlex-hero-desc {
-  font-size: 15px;
+.phlex-process-desc {
+  font-size: 18px;
+  font-weight: 500;
   line-height: 1.6;
-  color: #d1d5db;
-  margin-bottom: 16px;
-  font-weight: 400;
+  color: #fefefe;
+  margin-bottom: 28px;
+  opacity: 0.95;
 }
 
-/* Scroll Animation */
-.phlex-hero-scroll {
+
+.phlex-process-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 24px;
+  margin-bottom: 28px;
+}
+
+.phlex-process-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fefefe;
+}
+
+.phlex-process-item i {
+  font-size: 20px;
+  color: #fefefe;
+}
+
+
+.phlex-process-media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phlex-process-graphic-wrapper {
+  width: 100%;
+  max-width: 620px;
+}
+
+.phlex-process-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/*==================================
+  Responsive Styles
+==================================*/
+@media (max-width: 1199px) {
+  .phlex-process-title {
+    font-size: 40px;
+  }
+  .phlex-process-desc,
+  .phlex-process-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .phlex-process-section {
+    padding: 70px 0;
+  }
+  .phlex-process-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .phlex-process-content {
+    max-width: 100%;
+  }
+  .phlex-process-graphic-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .phlex-process-section {
+    padding: 50px 0;
+  }
+  .phlex-process-container {
+    padding: 0 20px;
+  }
+  .phlex-process-title {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+  .phlex-process-desc {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .phlex-process-list {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .phlex-process-item {
+    font-size: 15px;
+  }
+}
+
+/*==========================Phlex Process Section Unique CSS END==========================*/
+
+
+/*==========================Phlex Flexibility Section Unique CSS Start======================*/
+.phlex-flexibility-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+
+.phlex-flexibility-container {
+
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+
+.phlex-flexibility-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+
+.phlex-flexibility-content {
+  max-width: 580px;
+}
+
+.phlex-flexibility-title {
+      font-size: 48px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #010101;
+    margin-bottom: 28px;
+    letter-spacing: -0.5px;
+}
+
+.phlex-flexibility-desc {
+ font-size: 18px;
+    font-weight: 500;
+    line-height: 1.65;
+    color: #7D7D7D;
+    margin-bottom: 24px;
+}
+
+.phlex-flexibility-desc:last-child {
+  margin-bottom: 0;
+}
+
+
+.phlex-flexibility-media {
+  width: 100%;
+}
+
+.phlex-flexibility-img-box {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.phlex-flexibility-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/*==================================
+  Responsive Styles
+==================================*/
+@media (max-width: 1199px) {
+  .phlex-flexibility-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 991px) {
+  .phlex-flexibility-section {
+    padding: 70px 0;
+  }
+  .phlex-flexibility-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .phlex-flexibility-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .phlex-flexibility-section {
+    padding: 50px 0;
+  }
+  .phlex-flexibility-container {
+    padding: 0 20px;
+  }
+  .phlex-flexibility-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .phlex-flexibility-desc {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+}
+/*==========================Phlex Flexibility Section Unique CSS END======================*/
+
+/*=========================Phlex Typical Properties Table CSS Strat=============================*/
+.phlex-props-section {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.phlex-props-container {
+  /*max-width: 1100px;*/
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.phlex-props-title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #010101;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.phlex-props-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.phlex-props-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 12px 10px; 
+  margin: 0 auto;
+}
+
+
+.phlex-props-table th {
+  background-color: #031f55;
+  color: #fefefe;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 18px 24px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #7d7d7d;
+}
+
+.phlex-props-th-left {
+  width: 35%;
+}
+
+.phlex-props-th-right {
+  width: 65%;
+}
+
+
+.phlex-props-subhead-row td {
+  background-color: #031f55 !important;
+  color: #fefefe !important;
+  font-size: 24px !weight: 500;
+  font-weight: 500;
+  text-align: center !important;
+  border-radius: 8px;
+  border: 1px solid #7d7d7d;
+  padding: 18px 24px;
+}
+
+
+.phlex-props-divider-row td {
+  background-color: #7d7d7d !important;
+  color: #fefefe !important;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #7d7d7d;
+}
+
+
+.phlex-props-table td {
+  padding: 16px 24px;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid #7d7d7d;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+
+.phlex-props-label {
+  color: #031f55;
+  font-weight: 600;
   text-align: center;
 }
 
-.phlex-hero-scroll span {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-bottom: 4px;
+
+.phlex-props-val {
+  color: #010101;
+  text-align: center;
 }
 
-.phlex-hero-scroll i {
-  font-size: 20px;
-  animation: phlexBounce 2s infinite;
-}
-
-@keyframes phlexBounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(6px); }
-  60% { transform: translateY(3px); }
-}
-
-/* Media Queries */
+/*==================================
+  Responsive Styles
+==================================*/
 @media (max-width: 992px) {
-  .phlex-hero-section { min-height: auto; padding: 80px 0 40px; }
-  .phlex-hero-title { font-size: 38px; }
-  .phlex-hero-subtitle { font-size: 22px; }
-  .phlex-hero-content { max-width: 100%; }
+  .phlex-props-title {
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+  .phlex-props-table th,
+  .phlex-props-subhead-row td,
+  .phlex-props-divider-row td {
+    font-size: 20px;
+    padding: 14px 18px;
+  }
+  .phlex-props-table td {
+    font-size: 16px;
+    padding: 14px 18px;
+  }
 }
+
+@media (max-width: 576px) {
+  .phlex-props-section {
+    padding: 50px 0;
+  }
+  .phlex-props-container {
+    padding: 0 16px;
+  }
+  .phlex-props-title {
+    font-size: 30px;
+  }
+  .phlex-props-table {
+    border-spacing: 6px 6px;
+    min-width: 600px; 
+  }
+  .phlex-props-table th,
+  .phlex-props-subhead-row td,
+  .phlex-props-divider-row td {
+    font-size: 16px;
+    padding: 12px 10px;
+  }
+  .phlex-props-table td {
+    font-size: 14px;
+    padding: 12px 10px;
+  }
+}
+
+/*=====================Phlex Typical Properties Table CSS END=============================*/
+
+/*=========================Phlex Available Areal Weights CSS Strat==========================*/
+.phlex-weights-section {
+      position: relative;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding: 90px 0;
+    background-color: #050505;
+    color: #ffffff;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.phlex-weights-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+
+.phlex-weights-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2;
+}
+
+
+.phlex-weights-container {
+  position: relative;
+  z-index: 3;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+
+.phlex-weights-title {
+      font-size: 48px;
+    font-weight: 500;
+        color: #FEFEFE;
+    margin-bottom: 50px;
+    letter-spacing: -0.5px;
+}
+
+
+.phlex-weights-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+
+.phlex-weight-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+
+.phlex-weight-icon-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #7D7D7D;
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phlex-weight-icon-box i {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+
+.phlex-weight-val {
+      font-size: 32px;
+    font-weight: 500;
+    color: #FEFEFE;
+    margin: 0;
+    line-height: 1;
+}
+
+
+.phlex-weight-divider {
+  width: 1px;
+    height: 90px;
+    background-color: #FFFFFF;
+}
+
+
+.phlex-weights-footer-text {
+      font-size: 18px;
+    font-weight: 500;
+    color: #FEFEFE;
+    margin: 0;
+}
+
+/*==================================
+  Responsive Styles
+==================================*/
+@media (max-width: 992px) {
+  .phlex-weights-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  .phlex-weight-val {
+    font-size: 30px;
+  }
+  .phlex-weight-divider {
+    height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .phlex-weights-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+ 
+  .phlex-weight-divider {
+    width: 60%;
+    height: 1px;
+  }
+  .phlex-weights-title {
+    font-size: 30px;
+  }
+  .phlex-weight-val {
+    font-size: 28px;
+  }
+  .phlex-weights-footer-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .phlex-weights-section {
+    padding: 60px 0;
+  }
+  .phlex-weight-icon-box {
+    width: 54px;
+    height: 54px;
+  }
+  .phlex-weight-icon-box i {
+    font-size: 22px;
+  }
+}
+/*=========================Phlex Available Areal Weights CSS END==========================*/
+
+/*========================Phlex CTA Requirement Section CSS Strat===========================*/
+.phlex-cta-section {
+  position: relative;
+  width: 100%;
+  min-height: 580px;
+  background-color: #031f55; 
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.phlex-cta-bg-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+  z-index: 1;
+}
+
+
+.phlex-cta-overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10%; 
+  height: 100%;
+  background: linear-gradient(
+    90deg, 
+    #031F55 0%, 
+    rgba(3, 31, 85, 0) 100%
+  );
+  z-index: 2;
+}
+
+.phlex-cta-container {
+  position: relative;
+  z-index: 3;
+  /*max-width: 1320px;*/
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 32px;
+}
+
+.phlex-cta-content {
+  max-width: 580px;
+}
+
+
+.phlex-cta-title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #fefefe;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+
+.phlex-cta-desc {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #fefefe;
+  margin-bottom: 20px;
+  opacity: 0.95;
+}
+
+.phlex-cta-desc:last-of-type {
+  margin-bottom: 36px;
+}
+
+
+.phlex-cta-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.phlex-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.25s ease-in-out;
+  box-sizing: border-box;
+}
+
+
+.phlex-cta-btn-white {
+  background-color: #ffffff;
+  color: #031f55;
+  border: 1px solid #ffffff;
+  height: 55px;
+}
+
+.phlex-cta-btn-white:hover {
+  background-color: #f1f5f9;
+  color: #031f55;
+  transform: translateY(-2px);
+}
+
+.phlex-cta-btn-white i {
+  font-size: 18px;
+  line-height: 1;
+}
+
+
+.phlex-cta-btn-outline {
+  background-color: transparent;
+  color: #fefefe;
+  border: 1px solid #ffffff;
+}
+
+.phlex-cta-btn-outline:hover {
+  background-color: #ffffff;
+  color: #031f55;
+  transform: translateY(-2px);
+}
+
+/*==================================
+  Responsive Styles
+==================================*/
+@media (max-width: 1199px) {
+  .phlex-cta-title {
+    font-size: 40px;
+  }
+  .phlex-cta-desc {
+    font-size: 16px;
+  }
+  .phlex-cta-bg-img {
+    width: 65%;
+  }
+}
+
+@media (max-width: 991px) {
+  .phlex-cta-section {
+    min-height: auto;
+  }
+  .phlex-cta-bg-img {
+    width: 100%;
+    opacity: 0.25; 
+  }
+  .phlex-cta-overlay {
+    background: linear-gradient(180deg, #031f55 0%, rgba(3, 31, 85, 0.95) 100%);
+  }
+  .phlex-cta-container {
+    padding: 60px 24px;
+  }
+  .phlex-cta-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .phlex-cta-container {
+    padding: 50px 20px;
+  }
+  .phlex-cta-title {
+    font-size: 30px;
+    margin-bottom: 18px;
+  }
+  .phlex-cta-desc {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .phlex-cta-btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .phlex-cta-btn {
+    width: 100%;
+  }
+}
+/*========================Phlex CTA Requirement Section CSS Strat===========================*/
+
+/*==================================Phlex FAQ Section Custom CSS Strat=========================*/
+.phlex-faq-section {
+  width: 100%;
+  padding: 90px 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.phlex-faq-container {
+  /*max-width: 1320px;*/
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+
+.phlex-faq-main-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 50px;
+  letter-spacing: -0.5px;
+}
+
+
+.phlex-faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Custom Accordion Styling */
+.phlex-custom-accordion {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-color: transparent;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.phlex-custom-accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: transparent;
+  border-radius: 0 !important;
+}
+
+.phlex-custom-accordion .accordion-item:first-child {
+  border-top: none;
+}
+
+.phlex-custom-accordion .accordion-button {
+  padding: 24px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+.phlex-custom-accordion .accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: transparent;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+    transform: rotate(0deg) !important  ;
+}
+/* Custom Accordion Chevron Icon */
+.phlex-custom-accordion .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000'%3E%3Cpath d='M12 10.8284L16.95 15.7782L18.364 14.364L12 8L5.63604 14.364L7.05025 15.7782L12 10.8284Z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.25s ease-in-out;
+}
+
+.phlex-custom-accordion .accordion-button.collapsed::after {
+  transform: rotate(180deg);
+}
+
+.phlex-custom-accordion .accordion-body {
+  padding: 0 0 24px 0;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #666666;
+  font-weight: 400;
+}
+
+/* Right Side Contact Card */
+.phlex-faq-card {
+  background-color: #f3f5f8;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.phlex-faq-card-icon {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phlex-faq-card-icon i {
+  font-size: 48px;
+  color: #031f55;
+}
+
+.phlex-faq-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.phlex-faq-card-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666666;
+  margin-bottom: 28px;
+}
+
+.phlex-faq-card-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  /*width: 100%;*/
+  padding: 14px 20px;
+  background-color: #031f55;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.25s ease-in-out;
+}
+
+.phlex-faq-card-btn:hover {
+  background-color: #021740;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.phlex-faq-card-btn i {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/*==================================
+  Responsive Styles
+==================================*/
+@media (max-width: 1199px) {
+  .phlex-faq-grid {
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .phlex-faq-section {
+    padding: 70px 0;
+  }
+  .phlex-faq-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .phlex-faq-card {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .phlex-faq-section {
+    padding: 50px 0;
+  }
+  .phlex-faq-container {
+    padding: 0 20px;
+  }
+  .phlex-faq-main-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .phlex-custom-accordion .accordion-button {
+    font-size: 16px;
+    padding: 18px 0;
+  }
+  .phlex-custom-accordion .accordion-body {
+    font-size: 14px;
+  }
+}
+/*==================================Phlex FAQ Section Custom CSS END=========================*/

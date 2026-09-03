@@ -1,12 +1,14 @@
-import React from 'react'
-import BlogDetail from './BlogDetail'
+import BlogDetail from "./BlogDetail";
 
-const page = () => {
-  return (
-    <div>
-      <BlogDetail />
-    </div>
-  )
+type PageProps = {
+  params: Promise<{
+    uid: any;
+  }>;
+};
+
+export default async function Page({ params }: PageProps) {
+  const { uid } = await params;
+
+  return <BlogDetail uid={uid} />;
+
 }
-
-export default page

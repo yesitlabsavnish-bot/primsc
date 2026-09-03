@@ -6,3 +6,22 @@
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--font-inter: var(--font-inter-family);
 }
+
+/* Prevent FOUC before slick initializes */
+.related-blog-slider:not(.slick-initialized) {
+  display: flex;
+  overflow: hidden;
+}
+.related-blog-slider:not(.slick-initialized) .blog-card-item {
+  flex: 0 0 33.333%;
+}
+@media (max-width: 992px) {
+  .related-blog-slider:not(.slick-initialized) .blog-card-item {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 576px) {
+  .related-blog-slider:not(.slick-initialized) .blog-card-item {
+    flex: 0 0 100%;
+  }
+}

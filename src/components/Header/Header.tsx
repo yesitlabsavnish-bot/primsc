@@ -6,7 +6,7 @@ const Header = () => {
     <>
     <header className="navbar">
     <div className="nav-logo">
-      <Link href="/home"><img src="images/logo.png" alt="PHLEX Carbon Fiber Logo" /></Link>
+      <Link href="/home"><img src="/images/logo.png" alt="PHLEX Carbon Fiber Logo" /></Link>
     </div>
 
     {/* <!-- Mobile Nav Links --> */}
@@ -26,12 +26,12 @@ const Header = () => {
         </ul>
       </li>
 
-      <li><Link href="blog" className="active">Blogs</Link></li>
+      <li><Link href="/blog" className="active">Blogs</Link></li>
     </ul>
 
     <div className="nav-action">
       <a href="#" className="btn-contact">
-        Contact Us <img src="images/right-arrow.svg" alt="arrow" />
+        Contact Us <img src="/images/right-arrow.svg" alt="arrow" />
       </a>
     </div>
 
