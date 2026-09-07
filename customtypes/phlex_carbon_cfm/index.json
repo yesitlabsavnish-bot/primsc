@@ -1,0 +1,386 @@
+{
+  "format": "custom",
+  "id": "phlex_carbon_cfm",
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "hero_title": {
+        "config": {
+          "label": "Hero Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_subtitle": {
+        "config": {
+          "label": "Hero Subtitle",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_description_1": {
+        "config": {
+          "label": "Hero Description 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_description_2": {
+        "config": {
+          "label": "Hero Description 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_description_3": {
+        "config": {
+          "label": "Hero Description 3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_button_1": {
+        "config": {
+          "label": "Hero Button 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_button_2": {
+        "config": {
+          "label": "Hero Button 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "options_title": {
+        "config": {
+          "label": "Options Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "options_description": {
+        "config": {
+          "label": "Options Description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "options_description_2": {
+        "config": {
+          "label": "Options Description 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "option_1_image": {
+        "config": {
+          "constraint": {},
+          "label": "Option 1 Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "option_1_title": {
+        "config": {
+          "label": "Option 1 Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "option_1_text_1": {
+        "config": {
+          "label": "Option 1 Text 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "option_1_text_2": {
+        "config": {
+          "label": "Option 1 Text 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "option_2_image": {
+        "config": {
+          "constraint": {},
+          "label": "Option 2 Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "option_2_title": {
+        "config": {
+          "label": "Option 2 Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "option_2_text_1": {
+        "config": {
+          "label": "Option 2 Text 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "option_2_text_2": {
+        "config": {
+          "label": "Option 2 Text 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "process_title": {
+        "config": {
+          "label": "Process Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "process_description": {
+        "config": {
+          "label": "Process Description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "process_item_1": {
+        "config": {
+          "label": "Process Item 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "process_item_2": {
+        "config": {
+          "label": "Process Item 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "process_item_3": {
+        "config": {
+          "label": "Process Item 3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "process_item_4": {
+        "config": {
+          "label": "Process Item 4",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "process_bottom_description": {
+        "config": {
+          "label": "Process Bottom Description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "process_image": {
+        "config": {
+          "constraint": {},
+          "label": "Process Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "flexibility_title": {
+        "config": {
+          "label": "Flexibility Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "flexibility_description_1": {
+        "config": {
+          "label": "Flexibility Description 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "flexibility_description_2": {
+        "config": {
+          "label": "Flexibility Description 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "flexibility_description_3": {
+        "config": {
+          "label": "Flexibility Description 3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "flexibility_image": {
+        "config": {
+          "constraint": {},
+          "label": "Flexibility Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "typical_properties": {
+        "config": {
+          "fields": {
+            "property": {
+              "config": {
+                "label": "Property",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "phlex_carbon_cfm": {
+              "config": {
+                "label": "PhlexCarbon CFM",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "Typical Properties",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "carbon_fiber_properties": {
+        "config": {
+          "fields": {
+            "property": {
+              "config": {
+                "label": "Property",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "high_strength": {
+              "config": {
+                "label": "High Strength",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "intermediate": {
+              "config": {
+                "label": "Intermediate",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "Carbon Fiber Properties",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "areal_weights": {
+        "config": {
+          "fields": {
+            "weight": {
+              "config": {
+                "label": "weight",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "areal_weights",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "cta_title": {
+        "config": {
+          "label": "CTA Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "cta_description_1": {
+        "config": {
+          "label": "CTA Description 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "cta_description_2": {
+        "config": {
+          "label": "CTA Description 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "cta_button_1": {
+        "config": {
+          "label": "CTA button 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "cta_button_2": {
+        "config": {
+          "label": "CTA button 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "faqs": {
+        "config": {
+          "fields": {
+            "question": {
+              "config": {
+                "label": "question",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "answer": {
+              "config": {
+                "label": "answer",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "faqs",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "contact_title": {
+        "config": {
+          "label": "contact_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "contact_description": {
+        "config": {
+          "label": "contact_description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "contact_button": {
+        "config": {
+          "label": "contact_button",
+          "placeholder": ""
+        },
+        "type": "Text"
+      }
+    }
+  },
+  "label": "PhlexCarbon CFM",
+  "repeatable": true,
+  "status": true
+}

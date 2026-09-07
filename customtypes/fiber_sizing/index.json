@@ -37,6 +37,13 @@
         },
         "type": "Text"
       },
+      "hero_description_3": {
+        "config": {
+          "label": "hero_description_3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
       "hero_button_1": {
         "config": {
           "label": "Hero Button 1",
@@ -65,35 +72,19 @@
         },
         "type": "Text"
       },
-      "about_cards": {
+      "about_description_1": {
         "config": {
-          "fields": {
-            "number": {
-              "config": {
-                "label": "number",
-                "placeholder": ""
-              },
-              "type": "Text"
-            },
-            "title": {
-              "config": {
-                "label": "title",
-                "placeholder": ""
-              },
-              "type": "Text"
-            },
-            "description": {
-              "config": {
-                "label": "description",
-                "placeholder": ""
-              },
-              "type": "Text"
-            }
-          },
-          "label": "about_cards",
-          "repeat": true
+          "label": "About Description 1",
+          "placeholder": ""
         },
-        "type": "Group"
+        "type": "Text"
+      },
+      "about_description_2": {
+        "config": {
+          "label": "About Description 2",
+          "placeholder": ""
+        },
+        "type": "Text"
       },
       "products": {
         "config": {
@@ -139,6 +130,20 @@
         },
         "type": "Text"
       },
+      "find_fit_description_1": {
+        "config": {
+          "label": "find_fit_description_1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "find_fit_description_2": {
+        "config": {
+          "label": "find_fit_description_2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
       "find_fit_button": {
         "config": {
           "label": "find_fit_button",
@@ -160,9 +165,23 @@
         },
         "type": "Text"
       },
+      "cta_description_1": {
+        "config": {
+          "label": "cta_description 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
       "cta_button": {
         "config": {
           "label": "cta_button",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "cta_button_1": {
+        "config": {
+          "label": "cta_button 1",
           "placeholder": ""
         },
         "type": "Text"
