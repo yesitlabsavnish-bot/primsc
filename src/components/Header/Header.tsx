@@ -20,9 +20,11 @@ const Header = () => {
           Products <i className="ri-arrow-down-s-line dropdown-icon"></i>
         </a>
         <ul className="dropdown-menu-custom">
-          <li><Link href="#">Product 1</Link></li>
-          <li><Link href="#">Product 2</Link></li>
-          <li><Link href="#">Product 3</Link></li>
+          <li><Link href="#">Chopped Carbon Fiber</Link></li>
+          <li><Link href="/phlex-carbonn-cftm">Phlex Carbon CFTM</Link></li>
+          <li><Link href="/phlex-carbon-fcm">Phlex Carbon CFM</Link></li>
+          <li><Link href="/phlex-carbon-spcf">Phelx Carbon SPCF 12K Tow</Link></li>
+          <li><Link href="/fiber-sizing-compound">Fiber Sizing Compounds</Link></li>
         </ul>
       </li>
 

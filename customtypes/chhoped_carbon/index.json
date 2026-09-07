@@ -1,0 +1,149 @@
+{
+  "format": "custom",
+  "id": "chhoped_carbon",
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": ""
+        },
+        "type": "UID"
+      },
+      "background_image": {
+        "config": {
+          "constraint": {},
+          "label": "background image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "title": {
+        "config": {
+          "allowTargetBlank": true,
+          "label": "Title",
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "placeholder": ""
+        },
+        "type": "StructuredText"
+      },
+      "sub_title": {
+        "config": {
+          "label": "SubTitle",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "descriprtion1": {
+        "config": {
+          "label": "descriprtion1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "descriprtion2": {
+        "config": {
+          "label": "descriprtion2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "descriprtion3": {
+        "config": {
+          "label": "descriprtion3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "main_title": {
+        "config": {
+          "label": "main_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_options_subtitle": {
+        "config": {
+          "label": "phlex-options-subtitle",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_options_subtitle_sub": {
+        "config": {
+          "label": "phlex-options-subtitle-sub",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_options_card": {
+        "config": {
+          "fields": {
+            "phlex_options_card_img": {
+              "config": {
+                "constraint": {},
+                "label": "phlex-options-card-img",
+                "thumbnails": []
+              },
+              "type": "Image"
+            },
+            "phlex_options_number": {
+              "config": {
+                "label": "phlex-options-number",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "phlex_options_card_title": {
+              "config": {
+                "label": "phlex-options-card-title",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "phlex_options_card_title_str": {
+              "config": {
+                "label": "phlex-options-card-title-str",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "phlex_options_card_text1": {
+              "config": {
+                "label": "phlex-options-card-text1",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "phlex_options_card_text2": {
+              "config": {
+                "label": "phlex-options-card-text2",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "phlex_options_card_overlay": {
+              "config": {
+                "label": "phlex-options-card-overlay",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "phlex_options_card_datasheet": {
+              "config": {
+                "label": "phlex-options-card-datasheet",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "phlex-options-card",
+          "repeat": true
+        },
+        "type": "Group"
+      }
+    }
+  },
+  "label": "chhopedCarbon",
+  "repeatable": false,
+  "status": true
+}

@@ -1,52 +1,60 @@
 import Faq from '@/components/Faq'
 import React from 'react'
 
-const FiberSizingCompound = () => {
+const FiberSizingCompound = (
+  {
+    data
+  }: {
+    data: any
+  }
+) => {
+
+
   return (
     <>
     
           <>
       {/* <!-- Hero Banner Section Start --> */}
-<section className="phlex-hero-banner">
+<section className="phlex-hero-banner-fiber">
   
   {/* Main Background Image (HTML Tag) */}
-  {/* <img src="/images/banner-bg.jpg" alt="Phlex Carbon Fiber Background" className="phlex-hero-bg-img" /> */}
+  {/* <img src="/images/fibersizing.png" alt="Phlex Carbon Fiber Background" className="phlex-hero-bg-img" /> */}
 
   {/* Gradient Overlay */}
-  <div className="phlex-hero-overlay"></div>
+  <div className="phlex-hero-overlay-fiber"></div>
 
   <div className="phlex-hero-container">
     <div className="phlex-hero-content">
       
       {/* Main Heading */}
-      <h1 className="phlex-hero-title">PHLEX sizing compound</h1>
+      <h1 className="phlex-hero-title">{data.hero_title}</h1>
       
       {/* Sub Heading */}
       <h2 className="phlex-hero-subtitle">
-        More Flexibility in a Non-Woven Format
+        {data.hero_subtitle}
       </h2>
       
       {/* Descriptions */}
       <p className="phlex-hero-desc">
-        When your process calls for a non-woven carbon fiber material, having options matters. PhlexCarbon CFM is a wet-laid mat of randomly oriented carbon fibers, available using either high-strength (standard-modulus) or intermediate-modulus fiber.
+        {data.hero_description_1}
       </p>
       
       <p className="phlex-hero-desc">
-        Designed for closed- and open-mold infusion, pre-preg and compression molding, PhlexCarbon CFM is offered in multiple areal weights, with custom weights and stitch bonding available upon request.
+        {data.hero_description_2}
       </p>
 
       <p className="phlex-hero-desc">
-        The material utilizes repurposed carbon fibers and is produced in Lake City, South Carolina.
+        {data.hero_description_3}
       </p>
 
       {/* Action Buttons Container */}
       <div className="phlex-hero-btn-group">
         <a href="#" className="phlex-hero-btn phlex-hero-btn-white">
-          <span>Request a Sample/Quote</span>
+          <span>{data.hero_button_1} </span>
           <img src="/images/top-right-up.svg"/>
         </a>
         <a href="#" className="phlex-hero-btn phlex-hero-btn-outline">
-          <span>Contact Our Team</span>
+          <span>{data.hero_button_2}</span>
         </a>
       </div>
 
@@ -72,216 +80,81 @@ const FiberSizingCompound = () => {
     
 
     <div className="phlex-options-header">
-      <h2 className="phlex-options-main-title">One Non-Woven Format, Two Fiber Options</h2>
+      <h2 className="phlex-options-main-title">{data.about_title}</h2>
       <p className="phlex-options-subtitle">
-        Different material requirements call for different carbon fiber properties. PhlexCarbon CFM gives you the choice between high-strength (standard-modulus) and intermediate-modulus carbon fiber within the same wet-laid, randomly oriented format.
+        {data.about_description}
+      </p>
+      <p className="phlex-options-subtitle">
+        {data.about_description_1}
       </p>
       <p className="phlex-options-subtitle-sub">
-        Both options are available in multiple areal weights, making it easier to explore the configuration that fits your process and requirements.
+        {data.about_description_2}
       </p>
     </div>
-
-    {/* <!-- Cards Grid --> */}
-    {/* <div className="phlex-options-grid">
-      
-      
-      <div className="phlex-options-card">
-        <img src="/images/high-stren.svg" alt="High-Strength Carbon Fiber" className="phlex-options-card-img" />
-        <div className="phlex-options-card-overlay phlex-overlay-grey"></div>
-        <div className="phlex-options-card-content">
-          <span className="phlex-options-number">01.</span>
-          <h3 className="phlex-options-card-title">High-Strength (Standard-Modulus)<br/>Carbon Fiber</h3>
-          <p className="phlex-options-card-text">
-            The high-strength option uses carbon fiber with a 7-micron filament diameter.
-          </p>
-          <p className="phlex-options-card-text">
-            The fiber has a tensile strength of 4,413 MPa, tensile modulus of 231 GPa and elongation at break of 1.7%.
-          </p>
-        </div>
-      </div>
-
-
-      <div className="phlex-options-card">
-        <img src="/images/high-stren-2.svg" alt="Intermediate-Modulus Carbon Fiber" className="phlex-options-card-img" />
-        <div className="phlex-options-card-overlay phlex-overlay-blue"></div>
-        <div className="phlex-options-card-content">
-          <span className="phlex-options-number">02.</span>
-          <h3 className="phlex-options-card-title">Intermediate-Modulus<br/>Carbon Fiber</h3>
-          <p className="phlex-options-card-text">
-            PhlexCarbon CFM is also available using intermediate-modulus carbon fiber with a 5-micron filament diameter.
-          </p>
-          <p className="phlex-options-card-text">
-            The fiber has a tensile strength of 5,480 MPa, tensile modulus of 276 GPa and elongation at break of 1.9%.
-          </p>
-        </div>
-      </div>
-
-    </div> */}
-
+    
   </div>
 </section>
 {/* <!-- One Non-Woven Format Section End --> */}
 
+<section className="phlex-cta-section">
+  
+  <img src="/images/fiber_sizing_1.png" alt="PhlexCarbon Material Requirement" className="phlex-cta-bg-img" />
+  
+  <div className="phlex-cta-overlay"></div>
 
-{/* <!-- Made for More Than One Process Start --> */}
-<section className="phlex-process-section">
-  <div className="phlex-process-container">
-    <div className="phlex-process-grid">
+  <div className="phlex-cta-container">
+    <div className="phlex-cta-content">
       
-      <div className="phlex-process-content">
-        <h2 className="phlex-process-title">Made for More Than One Process</h2>
-        
-        <p className="phlex-process-desc">
-          Your manufacturing process plays an important role in the material you choose. PhlexCarbon CFM is designed for use across several composite manufacturing methods, including:
-        </p>
+      <h2 className="phlex-cta-title">{data.find_fit_title}</h2>
+      
+      <p className="phlex-cta-desc">
+        {data.find_fit_description}
+      </p>
 
-        <div className="phlex-process-list">
-          <div className="phlex-process-item">
-            <img src="/images/closed-mold-infusion .svg"/>
-            <span>Closed-mold infusion</span>
-          </div>
-          <div className="phlex-process-item">
-             <img src="/images/closed-mold-infusion .svg"/>
-            <span>Open-mold infusion</span>
-          </div>
-          <div className="phlex-process-item">
-             <img src="/images/closed-mold-infusion .svg"/>
-            <span>Pre-preg</span>
-          </div>
-          <div className="phlex-process-item">
-             <img src="/images/closed-mold-infusion .svg"/>
-            <span>Compression molding</span>
-          </div>
-        </div>
+      <p className="phlex-cta-desc">
+        {data.find_fit_description_1}
+      </p>
 
-        <p className="phlex-process-desc">
-          Whichever of these processes you're working with, PhlexCarbon CFM provides a wet-laid mat of randomly oriented carbon fibers in a roll format.
-        </p>
-      </div>
+      <p className="phlex-cta-desc">
+        {data.find_fit_description_2}
+      </p>
 
-      <div className="phlex-process-media">
-        <div className="phlex-process-graphic-wrapper">
-          <img src="/images/process-right-img.svg" alt="PhlexCarbon Manufacturing Processes" className="phlex-process-img" />
-        </div>
+      <div className="phlex-cta-btn-group">
+        <a href="#request-sample" className="phlex-cta-btn phlex-cta-btn-white">
+          {data.find_fit_button} <img src="/images/top-right-up.svg"/>
+        </a>
       </div>
 
     </div>
   </div>
 </section>
-{/* <!-- Made for More Than One Process END --> */}
-
-{/* <!-- More Flexibility Section Start --> */}
-<section className="phlex-flexibility-section">
-  <div className="phlex-flexibility-container">
-    <div className="phlex-flexibility-grid">
-      
-      {/* <!-- Left Content Column --> */}  
-      <div className="phlex-flexibility-content">
-        <h2 className="phlex-flexibility-title">More Flexibility in the Details</h2>
-        
-        <p className="phlex-flexibility-desc">
-          Material requirements don't always stop at fiber grade. PhlexCarbon CFM is available in 100, 200 and 400 g/m² areal weights, giving you multiple standard configurations to consider.
-        </p>
-
-        <p className="phlex-flexibility-desc">
-          Have something different in mind? Other custom weights are available upon request, and stitch bonding can also be added upon request.
-        </p>
-
-        <p className="phlex-flexibility-desc">
-          The material is supplied in roll form with a 1.2 m roll width and nominal 400–500 mm roll diameter.
-        </p>
-      </div>
-
-      {/* <!-- Right Image Column --> */}
-      <div className="phlex-flexibility-media">
-        <div className="phlex-flexibility-img-box">
-          <img src="/images/right-item-img.svg" alt="PhlexCarbon CFM Mat Sample" className="phlex-flexibility-img" />
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-{/* <!-- More Flexibility Section End --> */}
 
 {/* <!-- Typical Properties Strat --> */}
 <section className="phlex-props-section">
   <div className="phlex-props-container">
     
-    <h2 className="phlex-props-title">Typical Properties</h2>
+    <h2 className="phlex-props-title">Explore the Phlexsize Offering</h2>
 
     <div className="phlex-props-table-wrapper">
       <table className="phlex-props-table">
         <thead>
           <tr>
-            <th className="phlex-props-th-left">Property</th>
-            <th className="phlex-props-th-right" colSpan={2}>PhlexCarbon CFM</th>
+            <th className="phlex-props-th-sub">Product</th>
+            <th className="phlex-props-th-sub" >Chemistry</th>
+            <th className="phlex-props-th-sub">Properties</th>
           </tr>
         </thead>
         
         <tbody>
-          <tr>
-            <td className="phlex-props-label">Fiber Length</td>
-            <td className="phlex-props-val" colSpan={2}>13 mm nominal</td>
-          </tr>
-          <tr>
-            <td className="phlex-props-label">Areal Weight Variation</td>
-            <td className="phlex-props-val" colSpan={2} >±6% (coefficient of variation)</td>
-          </tr>
-          <tr>
-            <td className="phlex-props-label">Content</td>
-            <td className="phlex-props-val" colSpan={2}>98% repurposed carbon fiber, 2% binder fiber</td>
-          </tr>
-          <tr>
-            <td className="phlex-props-label">Filament Diameter</td>
-            <td className="phlex-props-val" colSpan={2}>7 microns (high strength); 5 microns (intermediate modulus)</td>
-          </tr>
-          <tr>
-            <td className="phlex-props-label">Sizing Content</td>
-            <td className="phlex-props-val" colSpan={2}>0%</td>
-          </tr>
-          <tr>
-            <td className="phlex-props-label">Form</td>
-            <td className="phlex-props-val" colSpan={2}>Roll</td>
-          </tr>
-          <tr>
-            <td className="phlex-props-label">Roll Width</td>
-            <td className="phlex-props-val" colSpan={2}>1.2m</td>
-          </tr>
-          <tr>
-            <td className="phlex-props-label">Roll Diameter</td>
-            <td className="phlex-props-val" colSpan={2}>400–500 mm nominal</td>
-          </tr>
-          <tr>
-            <td className="phlex-props-label">Stitch Bonding</td>
-            <td className="phlex-props-val" colSpan={2}>Available upon request</td>
-          </tr>
-
-          {/* <tr className="phlex-props-divider-row">
-            <td colSpan={3}>Carbon Fiber Properties</td>
-          </tr>
-
-          <tr className="phlex-props-subhead-row">
-            <td className="phlex-props-th-sub">Property</td>
-            <td className="phlex-props-th-sub">High Strength</td>
-            <td className="phlex-props-th-sub">Intermediate</td>
-          </tr>
-
-          <tr>
-            <td className="phlex-props-label">Tensile Strength</td>
-            <td className="phlex-props-val">4,413 MPa</td>
-            <td className="phlex-props-val">5,480 MPa</td>
-          </tr>
-          <tr>
-            <td className="phlex-props-label">Elongation at Break</td>
-            <td className="phlex-props-val">1.7%</td>
-            <td className="phlex-props-val">1.9%</td>
-          </tr>
-          <tr>
-            <td className="phlex-props-label">Tensile Modulus</td>
-            <td className="phlex-props-val">231 GPa</td>
-            <td className="phlex-props-val">276 GPa</td>
-          </tr> */}
+              {
+                data.products?.map((data, index) => (
+                  <tr key={index}>
+                    <td className="phlex-props-label">{data.product_name}</td>
+                    <td className="phlex-props-val">{data.chemistry}</td>
+                    <td className="phlex-props-val">{data.properties}</td>
+                  </tr>
+                ))
+              }
         </tbody>
       </table>
     </div>
@@ -290,53 +163,7 @@ const FiberSizingCompound = () => {
 </section>
 {/* <!-- Typical Properties END --> */}
 
-{/* <!-- Available Areal Weights Strat --> */}
-{/* <section className="phlex-weights-section">
-  
-  <img src="/images/available-areal.svg" alt="Carbon Fiber Areal Weights" className="phlex-weights-bg-img" />
-  
-  <div className="phlex-weights-overlay"></div>
 
-  <div className="phlex-weights-container">
-    
-    <h2 className="phlex-weights-title">Available Areal Weights</h2>
-
-    <div className="phlex-weights-grid">
-      
-      <div className="phlex-weight-item">
-        <div className="phlex-weight-icon-box">
-          <img src="/images/avilable-icon.svg"/>
-        </div>
-        <h3 className="phlex-weight-val">100 g/m²</h3>
-      </div>
-
-      <div className="phlex-weight-divider"></div>
-
-      <div className="phlex-weight-item">
-        <div className="phlex-weight-icon-box">
-          <img src="/images/avilable-icon.svg"/>
-        </div>
-        <h3 className="phlex-weight-val">200 g/m²</h3>
-      </div>
-
-      <div className="phlex-weight-divider"></div>
-
-      <div className="phlex-weight-item">
-        <div className="phlex-weight-icon-box">
-          <img src="/images/avilable-icon.svg"/>
-        </div>
-        <h3 className="phlex-weight-val">400 g/m²</h3>
-      </div>
-
-    </div>
-
-    <p className="phlex-weights-footer-text">
-      PhlexCarbon CFM is packaged one roll per box, with net weight varying depending on areal weight.
-    </p>
-
-  </div>
-</section> */}
-{/* <!-- Available Areal Weights END --> */}
 
 {/* <!-- Have a Specific Material Requirement?  Strat --> */} 
 <section className="phlex-cta-section">
@@ -348,22 +175,22 @@ const FiberSizingCompound = () => {
   <div className="phlex-cta-container">
     <div className="phlex-cta-content">
       
-      <h2 className="phlex-cta-title">Have a Specific Material Requirement?</h2>
+      <h2 className="phlex-cta-title">{data.cta_title}</h2>
       
       <p className="phlex-cta-desc">
-        Whether you're deciding between high-strength and intermediate-modulus fiber, considering different areal weights or looking for stitch bonding, our team is here to help you explore the available PhlexCarbon CFM configurations.
+        {data.cta_description}
       </p>
 
       <p className="phlex-cta-desc">
-        Tell us what you're looking for, and we'll help you navigate the available options for your process.
+        {data.cta_description_1}
       </p>
 
       <div className="phlex-cta-btn-group">
         <a href="#request-sample" className="phlex-cta-btn phlex-cta-btn-white">
-          Request a Sample <img src="/images/top-right-up.svg"/>
+          {data.cta_button} <img src="/images/top-right-up.svg"/>
         </a>
         <a href="#contact" className="phlex-cta-btn phlex-cta-btn-outline">
-          Talk to Our Team
+          {data.cta_button_1}
         </a>
       </div>
 
@@ -373,7 +200,74 @@ const FiberSizingCompound = () => {
 {/* <!-- Have a Specific Material Requirement?  END --> */}
 
 {/* <!-- Frequently asked questions Strat --> */}
-<Faq/>
+<section className="phlex-faq-section">
+  <div className="phlex-faq-container">
+    
+    <h2 className="phlex-faq-main-title">Frequently asked questions</h2>
+
+    <div className="phlex-faq-grid">
+      
+      <div className="phlex-faq-left">
+        <div className="accordion phlex-custom-accordion" id="phlexFaqAccordion">
+        
+           {data.faqs?.map((faq, index) => (
+            <div className="accordion-item" key={index}>
+              <h3
+                className="accordion-header"
+                id={`faqHeading${index}`}
+              >
+                <button
+                  className={`accordion-button ${
+                    index !== 0 ? "collapsed" : ""
+                  }`}
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target={`#faqCollapse${index}`}
+                  aria-expanded={index === 0 ? "true" : "false"}
+                  aria-controls={`faqCollapse${index}`}
+                >
+                  {faq.question}
+                </button>
+              </h3>
+
+              <div
+                id={`faqCollapse${index}`}
+                className={`accordion-collapse collapse ${
+                  index === 0 ? "show" : ""
+                }`}
+                aria-labelledby={`faqHeading${index}`}
+                data-bs-parent="#phlexFaqAccordion"
+              >
+                <div className="accordion-body">
+                  {faq.answer}
+                </div>
+              </div>
+            </div>
+          ))}
+
+
+        </div>
+      </div>
+   
+      <div className="phlex-faq-right">
+        <div className="phlex-faq-card">
+          <div className="phlex-faq-card-icon">
+            <img src="/images/circum_mail.svg"/>
+          </div>
+          <h4 className="phlex-faq-card-title">{data.contact_title}</h4>
+          <p className="phlex-faq-card-desc">
+            {data.contact_description}
+          </p>
+          <a href="mailto:info@phlexcarbon.com" className="phlex-faq-card-btn">
+           {data.contact_button}<img src="/images/right-arrow.svg" alt="arrow"/>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 {/* <!-- Frequently asked questions END --> */}
     
     </></>

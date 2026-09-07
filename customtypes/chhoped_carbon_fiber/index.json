@@ -1,379 +1,379 @@
 {
-    "format": "custom",
-    "id": "chhoped_carbon_fiber",
-    "json": {
-        "Main": {
-            "uid": {
-                "config": {
-                    "label": ""
-                },
-                "type": "UID"
-            },
-            "background_image": {
-                "config": {
-                    "constraint": {},
-                    "label": "background image",
-                    "thumbnails": []
-                },
-                "type": "Image"
-            },
+  "format": "custom",
+  "id": "chhoped_carbon_fiber",
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": ""
+        },
+        "type": "UID"
+      },
+      "background_image": {
+        "config": {
+          "constraint": {},
+          "label": "background image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "title": {
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "sub_title": {
+        "config": {
+          "label": "SubTitle",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "descriprtion1": {
+        "config": {
+          "label": "descriprtion1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "discription2": {
+        "config": {
+          "label": "discription2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "descriprtion3": {
+        "config": {
+          "label": "descriprtion3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "main_title": {
+        "config": {
+          "label": "main_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "typical_properties": {
+        "config": {
+          "fields": {
             "title": {
-                "config": {
-                    "label": "Title",
-                    "placeholder": ""
-                },
-                "type": "Text"
+              "config": {
+                "allowTargetBlank": true,
+                "label": "Title",
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                "placeholder": ""
+              },
+              "type": "StructuredText"
             },
-            "sub_title": {
-                "config": {
-                    "label": "SubTitle",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "descriprtion1": {
-                "config": {
-                    "label": "descriprtion1",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "discription2": {
-                "config": {
-                    "label": "discription2",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "descriprtion3": {
-                "config": {
-                    "label": "descriprtion3",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "main_title": {
-                "config": {
-                    "label": "main_title",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "typical_properties": {
-                "config": {
-                    "fields": {
-                        "title": {
-                            "config": {
-                                "allowTargetBlank": true,
-                                "label": "Title",
-                                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-                                "placeholder": ""
-                            },
-                            "type": "StructuredText"
-                        },
-                        "product_header": {
-                            "config": {
-                                "label": "product_header",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        }
-                    },
-                    "label": "Typical Properties",
-                    "repeat": true
-                },
-                "type": "Group"
-            },
-            "standard_properties": {
-                "config": {
-                    "fields": {
-                        "proeprties": {
-                            "config": {
-                                "label": "proeprties",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        },
-                        "value": {
-                            "config": {
-                                "label": "value",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        }
-                    },
-                    "label": "standard_properties",
-                    "repeat": true
-                },
-                "type": "Group"
-            },
-            "carbon_fiber_properties": {
-                "config": {
-                    "fields": {
-                        "property_header": {
-                            "config": {
-                                "allowTargetBlank": true,
-                                "label": "property_header",
-                                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-                                "placeholder": ""
-                            },
-                            "type": "StructuredText"
-                        },
-                        "high_strength_header": {
-                            "config": {
-                                "label": "high_strength_header",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        },
-                        "intermediate_header": {
-                            "config": {
-                                "label": "intermediate_header",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        }
-                    },
-                    "label": "carbon_fiber_properties",
-                    "repeat": true
-                },
-                "type": "Group"
-            },
-            "fiber_section_rows": {
-                "config": {
-                    "fields": {
-                        "proeprties": {
-                            "config": {
-                                "label": "proeprties",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        },
-                        "high_strength": {
-                            "config": {
-                                "label": "high_strength",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        },
-                        "intermediate": {
-                            "config": {
-                                "label": "intermediate",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        }
-                    },
-                    "label": "fiber_section_rows",
-                    "repeat": true
-                },
-                "type": "Group"
-            },
-            "phlex_weights_section": {
-                "config": {
-                    "fields": {
-                        "weight": {
-                            "config": {
-                                "label": "weight",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        }
-                    },
-                    "label": "phlex-weights-section",
-                    "repeat": true
-                },
-                "type": "Group"
-            },
-            "phlex_weights_footer_text": {
-                "config": {
-                    "label": "phlex-weights-footer-text",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "phlex_cta_section": {
-                "config": {
-                    "label": "phlex-cta-section",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "phlex_cta_bg_img": {
-                "config": {
-                    "constraint": {},
-                    "label": "phlex-cta-bg-img",
-                    "thumbnails": []
-                },
-                "type": "Image"
-            },
-            "phlex_cta_title": {
-                "config": {
-                    "allowTargetBlank": true,
-                    "label": "phlex-cta-title",
-                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-                    "placeholder": ""
-                },
-                "type": "StructuredText"
-            },
-            "phlex_cta_desc1": {
-                "config": {
-                    "label": "phlex-cta-desc1",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "phlex_cta_desc2": {
-                "config": {
-                    "label": "phlex-cta-desc2",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "faq": {
-                "config": {
-                    "fields": {
-                        "question": {
-                            "config": {
-                                "label": "question",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        },
-                        "answer": {
-                            "config": {
-                                "label": "answer",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        }
-                    },
-                    "label": "Faq",
-                    "repeat": true
-                },
-                "type": "Group"
-            },
-            "phlex_options_subtitle": {
-                "config": {
-                    "label": "phlex-options-subtitle",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "phlex_options_subtitle_sub": {
-                "config": {
-                    "label": "phlex-options-subtitle-sub",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "phlex_flexibility_section": {
-                "config": {
-                    "allowTargetBlank": true,
-                    "label": "phlex-flexibility-section",
-                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-                    "placeholder": ""
-                },
-                "type": "StructuredText"
-            },
-            "phlex_flexibility_title": {
-                "config": {
-                    "label": "phlex-flexibility-title",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "phlex_flexibility_img": {
-                "config": {
-                    "constraint": {},
-                    "label": "phlex-flexibility-img",
-                    "thumbnails": []
-                },
-                "type": "Image"
-            },
-            "phlex_flexibility_desc1": {
-                "config": {
-                    "label": "phlex-flexibility-desc1",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "phlex_flexibility_desc2": {
-                "config": {
-                    "label": "phlex-flexibility-desc2",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "phlex_flexibility_desc3": {
-                "config": {
-                    "label": "phlex-flexibility-desc3",
-                    "placeholder": ""
-                },
-                "type": "Text"
-            },
-            "phlex_options_card": {
-                "config": {
-                    "fields": {
-                        "phlex_options_card_img": {
-                            "config": {
-                                "constraint": {},
-                                "label": "phlex-options-card-img",
-                                "thumbnails": []
-                            },
-                            "type": "Image"
-                        },
-                        "phlex_options_number": {
-                            "config": {
-                                "label": "phlex-options-number",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        },
-                        "phlex_options_card_title": {
-                            "config": {
-                                "label": "phlex-options-card-title",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        },
-                        "phlex_options_card_title_str": {
-                            "config": {
-                                "label": "phlex-options-card-title-str",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        },
-                        "phlex_options_card_text1": {
-                            "config": {
-                                "label": "phlex-options-card-text1",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        },
-                        "phlex_options_card_text2": {
-                            "config": {
-                                "label": "phlex-options-card-text2",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        },
-                        "phlex_options_card_overlay": {
-                            "config": {
-                                "label": "phlex-options-card-overlay",
-                                "placeholder": ""
-                            },
-                            "type": "Text"
-                        }
-                    },
-                    "label": "phlex-options-card",
-                    "repeat": true
-                },
-                "type": "Group"
+            "product_header": {
+              "config": {
+                "label": "product_header",
+                "placeholder": ""
+              },
+              "type": "Text"
             }
-        }
-    },
-    "label": "PhlexCarbon fctm",
-    "repeatable": false,
-    "status": true
+          },
+          "label": "Typical Properties",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "standard_properties": {
+        "config": {
+          "fields": {
+            "proeprties": {
+              "config": {
+                "label": "proeprties",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "value": {
+              "config": {
+                "label": "value",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "standard_properties",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "carbon_fiber_properties": {
+        "config": {
+          "fields": {
+            "property_header": {
+              "config": {
+                "allowTargetBlank": true,
+                "label": "property_header",
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                "placeholder": ""
+              },
+              "type": "StructuredText"
+            },
+            "high_strength_header": {
+              "config": {
+                "label": "high_strength_header",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "intermediate_header": {
+              "config": {
+                "label": "intermediate_header",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "carbon_fiber_properties",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "fiber_section_rows": {
+        "config": {
+          "fields": {
+            "proeprties": {
+              "config": {
+                "label": "proeprties",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "high_strength": {
+              "config": {
+                "label": "high_strength",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "intermediate": {
+              "config": {
+                "label": "intermediate",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "fiber_section_rows",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "phlex_weights_section": {
+        "config": {
+          "fields": {
+            "weight": {
+              "config": {
+                "label": "weight",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "phlex-weights-section",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "phlex_weights_footer_text": {
+        "config": {
+          "label": "phlex-weights-footer-text",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_cta_section": {
+        "config": {
+          "label": "phlex-cta-section",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_cta_bg_img": {
+        "config": {
+          "constraint": {},
+          "label": "phlex-cta-bg-img",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "phlex_cta_title": {
+        "config": {
+          "allowTargetBlank": true,
+          "label": "phlex-cta-title",
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "placeholder": ""
+        },
+        "type": "StructuredText"
+      },
+      "phlex_cta_desc1": {
+        "config": {
+          "label": "phlex-cta-desc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_cta_desc2": {
+        "config": {
+          "label": "phlex-cta-desc2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "faq": {
+        "config": {
+          "fields": {
+            "question": {
+              "config": {
+                "label": "question",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "answer": {
+              "config": {
+                "label": "answer",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "Faq",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "phlex_options_subtitle": {
+        "config": {
+          "label": "phlex-options-subtitle",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_options_subtitle_sub": {
+        "config": {
+          "label": "phlex-options-subtitle-sub",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_flexibility_section": {
+        "config": {
+          "allowTargetBlank": true,
+          "label": "phlex-flexibility-section",
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "placeholder": ""
+        },
+        "type": "StructuredText"
+      },
+      "phlex_flexibility_title": {
+        "config": {
+          "label": "phlex-flexibility-title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_flexibility_img": {
+        "config": {
+          "constraint": {},
+          "label": "phlex-flexibility-img",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "phlex_flexibility_desc1": {
+        "config": {
+          "label": "phlex-flexibility-desc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_flexibility_desc2": {
+        "config": {
+          "label": "phlex-flexibility-desc2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_flexibility_desc3": {
+        "config": {
+          "label": "phlex-flexibility-desc3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_options_card": {
+        "config": {
+          "fields": {
+            "phlex_options_card_img": {
+              "config": {
+                "constraint": {},
+                "label": "phlex-options-card-img",
+                "thumbnails": []
+              },
+              "type": "Image"
+            },
+            "phlex_options_number": {
+              "config": {
+                "label": "phlex-options-number",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "phlex_options_card_title": {
+              "config": {
+                "label": "phlex-options-card-title",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "phlex_options_card_title_str": {
+              "config": {
+                "label": "phlex-options-card-title-str",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "phlex_options_card_text1": {
+              "config": {
+                "label": "phlex-options-card-text1",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "phlex_options_card_text2": {
+              "config": {
+                "label": "phlex-options-card-text2",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "phlex_options_card_overlay": {
+              "config": {
+                "label": "phlex-options-card-overlay",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "phlex-options-card",
+          "repeat": true
+        },
+        "type": "Group"
+      }
+    }
+  },
+  "label": "PhlexCarbon fctm",
+  "repeatable": false,
+  "status": true
 }

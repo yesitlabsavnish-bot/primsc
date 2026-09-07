@@ -127,6 +127,159 @@
           "placeholder": ""
         },
         "type": "Text"
+      },
+      "winding_title": {
+        "config": {
+          "label": "winding title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "winding_subtitle": {
+        "config": {
+          "label": "winding subtitle",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "winding_des1": {
+        "config": {
+          "label": "winding des1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "winding_des2": {
+        "config": {
+          "label": "winding des2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "winding_des3": {
+        "config": {
+          "label": "winding des3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "winding_des4": {
+        "config": {
+          "label": "winding des4",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "winding_des5": {
+        "config": {
+          "label": "winding des5",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "typical_properties": {
+        "config": {
+          "fields": {
+            "properties": {
+              "config": {
+                "label": "properties",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "phlex_carbon_spcf": {
+              "config": {
+                "label": "Phlex Carbon SPCF",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "Typical Properties",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "available_options": {
+        "config": {
+          "fields": {
+            "option1": {
+              "config": {
+                "label": "option1",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "option2": {
+              "config": {
+                "label": "option2",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "Available options",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "tell_us_title": {
+        "config": {
+          "label": "Tell us title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "tell_us_subtitle": {
+        "config": {
+          "label": "Tell us subtitle",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "tell_us_des": {
+        "config": {
+          "label": "Tell us des",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "tell_us_button1": {
+        "config": {
+          "label": "Tell us button1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "tell_us_button2": {
+        "config": {
+          "label": "Tell us button2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "faqs": {
+        "config": {
+          "fields": {
+            "question": {
+              "config": {
+                "label": "question",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "answer": {
+              "config": {
+                "label": "answer",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "faqs",
+          "repeat": true
+        },
+        "type": "Group"
       }
     }
   },
