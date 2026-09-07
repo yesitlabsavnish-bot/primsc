@@ -2,10 +2,12 @@
 
 import CardGrid from "./CardGrid";
 import Hero from "./Hero";
+import HeroBanner from "./HeroBanner";
 import ResourceLinks from "./ResourceLinks";
 
 export const components = {
 	card_grid: CardGrid,
 	hero: Hero,
+	hero_banner: HeroBanner,
 	resource_links: ResourceLinks
 };
