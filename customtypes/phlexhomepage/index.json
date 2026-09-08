@@ -1,0 +1,360 @@
+{
+  "format": "custom",
+  "id": "phlexhomepage",
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "hero_title": {
+        "config": {
+          "label": "Hero Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_description_1": {
+        "config": {
+          "label": "Hero Description 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_description_2": {
+        "config": {
+          "label": "Hero Description 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "manf_blue_title": {
+        "config": {
+          "label": "Manf_blue_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "manf_black_title": {
+        "config": {
+          "label": "Manf_black_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "manf_descp_1": {
+        "config": {
+          "label": "manf_descp_1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "manf_descp_2_blue": {
+        "config": {
+          "label": "manf_descp_2_blue",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "manf_descp_2": {
+        "config": {
+          "label": "manf_descp_2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "lake_title": {
+        "config": {
+          "label": "lake title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "lake_desc_1": {
+        "config": {
+          "label": "lake desc 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "lake_desc_2": {
+        "config": {
+          "label": "lake desc 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product1_title": {
+        "config": {
+          "label": "product1_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product1_heading": {
+        "config": {
+          "label": "product1_heading",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product1_desc": {
+        "config": {
+          "label": "product1_desc",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product2_title": {
+        "config": {
+          "label": "product2_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product2_heading": {
+        "config": {
+          "label": "product2_heading",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product2_desc": {
+        "config": {
+          "label": "product2_desc",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product3_title": {
+        "config": {
+          "label": "product3_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product3_heading": {
+        "config": {
+          "label": "product3_heading",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product3_desc": {
+        "config": {
+          "label": "product3_desc",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product4_title": {
+        "config": {
+          "label": "product4_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product4_heading": {
+        "config": {
+          "label": "product4_heading",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product4_desc": {
+        "config": {
+          "label": "product4_desc",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product5_title": {
+        "config": {
+          "label": "product5_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product5_heading": {
+        "config": {
+          "label": "product5_heading",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product5_desc": {
+        "config": {
+          "label": "product5_desc",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product6_title": {
+        "config": {
+          "label": "product6_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product6_heading": {
+        "config": {
+          "label": "product6_heading",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product6_desc": {
+        "config": {
+          "label": "product6_desc",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "demand_head_black": {
+        "config": {
+          "label": "Demand head black",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "demand_head_blue": {
+        "config": {
+          "label": "Demand head blue",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "demand_desc_blue": {
+        "config": {
+          "label": "Demand desc blue",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "demand_desc1": {
+        "config": {
+          "label": "demand desc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "demand_desc2": {
+        "config": {
+          "label": "demand desc2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "dhead1": {
+        "config": {
+          "label": "dhead1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "ddesc1": {
+        "config": {
+          "label": "ddesc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "dhead2": {
+        "config": {
+          "label": "dhead2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "ddesc2": {
+        "config": {
+          "label": "ddesc2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "dhead3": {
+        "config": {
+          "label": "dhead3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "ddesc3": {
+        "config": {
+          "label": "ddesc3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "dhead4": {
+        "config": {
+          "label": "dhead4",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "ddesc4": {
+        "config": {
+          "label": "ddesc4",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "dhead5": {
+        "config": {
+          "label": "dhead5",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "ddesc5": {
+        "config": {
+          "label": "ddesc5",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "flexible_head_blue": {
+        "config": {
+          "label": "Flexible head blue",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "flexible_head": {
+        "config": {
+          "label": "Flexible head",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "flexible_desc1": {
+        "config": {
+          "label": "Flexible desc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "flexible_desc_blue": {
+        "config": {
+          "label": "Flexible desc blue",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "flexible_desc_2": {
+        "config": {
+          "label": "Flexible desc 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      }
+    }
+  },
+  "label": "Phlexhomepage",
+  "repeatable": true,
+  "status": true
+}

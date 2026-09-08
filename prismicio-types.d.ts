@@ -233,6 +233,111 @@ export interface ChhopedCarbonDocumentDataPhlexOptionsCardItem {
 	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	phlex_options_card_datasheet: prismic.KeyTextField;
+	
+	/**
+	 * phlex-options-card-text3 field in *chhopedCarbon → phlex-options-card*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.phlex_options_card[].phlex_options_card_text3
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	phlex_options_card_text3: prismic.KeyTextField;
+}
+
+/**
+ * Item in *chhopedCarbon → Typical Properties*
+ */
+export interface ChhopedCarbonDocumentDataTypicalPropertiesItem {
+	/**
+	 * Title field in *chhopedCarbon → Typical Properties*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.typical_properties[].title
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
+	 */
+	title: prismic.RichTextField;
+	
+	/**
+	 * property_header1 field in *chhopedCarbon → Typical Properties*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.typical_properties[].proeprties
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	proeprties: prismic.KeyTextField;
+	
+	/**
+	 * property_header2 field in *chhopedCarbon → Typical Properties*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.typical_properties[].property_header2
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	property_header2: prismic.KeyTextField;
+}
+
+/**
+ * Item in *chhopedCarbon → standard_properties*
+ */
+export interface ChhopedCarbonDocumentDataStandardPropertiesItem {
+	/**
+	 * proeprties field in *chhopedCarbon → standard_properties*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.standard_properties[].proeprties
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	proeprties: prismic.KeyTextField;
+	
+	/**
+	 * value1 field in *chhopedCarbon → standard_properties*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.standard_properties[].value
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	value: prismic.KeyTextField;
+	
+	/**
+	 * value2 field in *chhopedCarbon → standard_properties*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.standard_properties[].value2
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	value2: prismic.KeyTextField;
+}
+
+/**
+ * Item in *chhopedCarbon → Faq*
+ */
+export interface ChhopedCarbonDocumentDataFaqItem {
+	/**
+	 * question field in *chhopedCarbon → Faq*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.faq[].question
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	question: prismic.KeyTextField;
+	
+	/**
+	 * answer field in *chhopedCarbon → Faq*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.faq[].answer
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	answer: prismic.KeyTextField;
 }
 
 /**
@@ -249,17 +354,6 @@ interface ChhopedCarbonDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	background_image: prismic.ImageField<never>;
-	
-	/**
-	 * Title field in *chhopedCarbon*
-	 *
-	 * - **Field Type**: Rich Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: chhoped_carbon.title
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
-	 */
-	title: prismic.RichTextField;
 	
 	/**
 	 * SubTitle field in *chhopedCarbon*
@@ -348,6 +442,160 @@ interface ChhopedCarbonDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	phlex_options_card: prismic.GroupField<Simplify<ChhopedCarbonDocumentDataPhlexOptionsCardItem>>;
+	
+	/**
+	 * phlex-process-title field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.phlex_process_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	phlex_process_title: prismic.KeyTextField;
+	
+	/**
+	 * phlex-process-desc1 field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.phlex_process_desc1
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	phlex_process_desc1: prismic.KeyTextField;
+	
+	/**
+	 * phlex-process-desc2 field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.phlex_process_desc2
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	phlex_process_desc2: prismic.KeyTextField;
+	
+	/**
+	 * phlex-process-desc3 field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.phlex_process_desc3
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	phlex_process_desc3: prismic.KeyTextField;
+	
+	/**
+	 * phlex-process-img field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.phlex_process_img
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/image
+	 */
+	phlex_process_img: prismic.ImageField<never>;
+	
+	/**
+	 * phlex-flexibility-desc1 field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.phlex_flexibility_desc1
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	phlex_flexibility_desc1: prismic.KeyTextField;
+	
+	/**
+	 * phlex-flexibility-desc2 field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.phlex_flexibility_desc2
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	phlex_flexibility_desc2: prismic.KeyTextField;
+	
+	/**
+	 * phlex-flexibility-desc3 field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.phlex_flexibility_desc3
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	phlex_flexibility_desc3: prismic.KeyTextField;
+	
+	/**
+	 * phlex-flexibility-img field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.phlex_flexibility_img
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/image
+	 */
+	phlex_flexibility_img: prismic.ImageField<never>;
+	
+	/**
+	 * Typical Properties field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Group
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.typical_properties[]
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
+	 */
+	typical_properties: prismic.GroupField<Simplify<ChhopedCarbonDocumentDataTypicalPropertiesItem>>;
+	
+	/**
+	 * standard_properties field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Group
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.standard_properties[]
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
+	 */
+	standard_properties: prismic.GroupField<Simplify<ChhopedCarbonDocumentDataStandardPropertiesItem>>;
+	
+	/**
+	 * Faq field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Group
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.faq[]
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
+	 */
+	faq: prismic.GroupField<Simplify<ChhopedCarbonDocumentDataFaqItem>>;
+	
+	/**
+	 * Title field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	title: prismic.KeyTextField;
+	
+	/**
+	 * phlex-flexibility-title field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.phlex_flexibility_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	phlex_flexibility_title: prismic.KeyTextField;
 }
 
 /**
@@ -2562,6 +2810,561 @@ interface PhlexCarbonFctmDocumentData {
 export type PhlexCarbonFctmDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<Simplify<PhlexCarbonFctmDocumentData>, "phlex_carbon_fctm", Lang>;
 
 /**
+ * Content for Phlexhomepage documents
+ */
+interface PhlexhomepageDocumentData {
+	/**
+	 * Hero Title field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.hero_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	hero_title: prismic.KeyTextField;
+	
+	/**
+	 * Hero Description 1 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.hero_description_1
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	hero_description_1: prismic.KeyTextField;
+	
+	/**
+	 * Hero Description 2 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.hero_description_2
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	hero_description_2: prismic.KeyTextField;
+	
+	/**
+	 * Manf_blue_title field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.manf_blue_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	manf_blue_title: prismic.KeyTextField;
+	
+	/**
+	 * Manf_black_title field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.manf_black_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	manf_black_title: prismic.KeyTextField;
+	
+	/**
+	 * manf_descp_1 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.manf_descp_1
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	manf_descp_1: prismic.KeyTextField;
+	
+	/**
+	 * manf_descp_2_blue field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.manf_descp_2_blue
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	manf_descp_2_blue: prismic.KeyTextField;
+	
+	/**
+	 * manf_descp_2 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.manf_descp_2
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	manf_descp_2: prismic.KeyTextField;
+	
+	/**
+	 * lake title field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.lake_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	lake_title: prismic.KeyTextField;
+	
+	/**
+	 * lake desc 1 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.lake_desc_1
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	lake_desc_1: prismic.KeyTextField;
+	
+	/**
+	 * lake desc 2 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.lake_desc_2
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	lake_desc_2: prismic.KeyTextField;
+	
+	/**
+	 * product1_title field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product1_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product1_title: prismic.KeyTextField;
+	
+	/**
+	 * product1_heading field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product1_heading
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product1_heading: prismic.KeyTextField;
+	
+	/**
+	 * product1_desc field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product1_desc
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product1_desc: prismic.KeyTextField;
+	
+	/**
+	 * product2_title field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product2_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product2_title: prismic.KeyTextField;
+	
+	/**
+	 * product2_heading field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product2_heading
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product2_heading: prismic.KeyTextField;
+	
+	/**
+	 * product2_desc field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product2_desc
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product2_desc: prismic.KeyTextField;
+	
+	/**
+	 * product3_title field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product3_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product3_title: prismic.KeyTextField;
+	
+	/**
+	 * product3_heading field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product3_heading
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product3_heading: prismic.KeyTextField;
+	
+	/**
+	 * product3_desc field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product3_desc
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product3_desc: prismic.KeyTextField;
+	
+	/**
+	 * product4_title field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product4_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product4_title: prismic.KeyTextField;
+	
+	/**
+	 * product4_heading field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product4_heading
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product4_heading: prismic.KeyTextField;
+	
+	/**
+	 * product4_desc field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product4_desc
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product4_desc: prismic.KeyTextField;
+	
+	/**
+	 * product5_title field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product5_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product5_title: prismic.KeyTextField;
+	
+	/**
+	 * product5_heading field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product5_heading
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product5_heading: prismic.KeyTextField;
+	
+	/**
+	 * product5_desc field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product5_desc
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product5_desc: prismic.KeyTextField;
+	
+	/**
+	 * product6_title field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product6_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product6_title: prismic.KeyTextField;
+	
+	/**
+	 * product6_heading field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product6_heading
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product6_heading: prismic.KeyTextField;
+	
+	/**
+	 * product6_desc field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product6_desc
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product6_desc: prismic.KeyTextField;
+	
+	/**
+	 * Demand head black field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.demand_head_black
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	demand_head_black: prismic.KeyTextField;
+	
+	/**
+	 * Demand head blue field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.demand_head_blue
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	demand_head_blue: prismic.KeyTextField;
+	
+	/**
+	 * Demand desc blue field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.demand_desc_blue
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	demand_desc_blue: prismic.KeyTextField;
+	
+	/**
+	 * demand desc1 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.demand_desc1
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	demand_desc1: prismic.KeyTextField;
+	
+	/**
+	 * demand desc2 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.demand_desc2
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	demand_desc2: prismic.KeyTextField;
+	
+	/**
+	 * dhead1 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.dhead1
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	dhead1: prismic.KeyTextField;
+	
+	/**
+	 * ddesc1 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.ddesc1
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	ddesc1: prismic.KeyTextField;
+	
+	/**
+	 * dhead2 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.dhead2
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	dhead2: prismic.KeyTextField;
+	
+	/**
+	 * ddesc2 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.ddesc2
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	ddesc2: prismic.KeyTextField;
+	
+	/**
+	 * dhead3 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.dhead3
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	dhead3: prismic.KeyTextField;
+	
+	/**
+	 * ddesc3 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.ddesc3
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	ddesc3: prismic.KeyTextField;
+	
+	/**
+	 * dhead4 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.dhead4
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	dhead4: prismic.KeyTextField;
+	
+	/**
+	 * ddesc4 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.ddesc4
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	ddesc4: prismic.KeyTextField;
+	
+	/**
+	 * dhead5 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.dhead5
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	dhead5: prismic.KeyTextField;
+	
+	/**
+	 * ddesc5 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.ddesc5
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	ddesc5: prismic.KeyTextField;
+	
+	/**
+	 * Flexible head blue field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.flexible_head_blue
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	flexible_head_blue: prismic.KeyTextField;
+	
+	/**
+	 * Flexible head field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.flexible_head
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	flexible_head: prismic.KeyTextField;
+	
+	/**
+	 * Flexible desc1 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.flexible_desc1
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	flexible_desc1: prismic.KeyTextField;
+	
+	/**
+	 * Flexible desc blue field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.flexible_desc_blue
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	flexible_desc_blue: prismic.KeyTextField;
+	
+	/**
+	 * Flexible desc 2 field in *Phlexhomepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.flexible_desc_2
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	flexible_desc_2: prismic.KeyTextField;
+}
+
+/**
+ * Phlexhomepage document from Prismic
+ *
+ * - **API ID**: `phlexhomepage`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/content-modeling
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type PhlexhomepageDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<Simplify<PhlexhomepageDocumentData>, "phlexhomepage", Lang>;
+
+/**
  * Item in *SPCF 12K Tow → Typical Properties*
  */
 export interface Spcf12KTowDocumentDataTypicalPropertiesItem {
@@ -3004,7 +3807,7 @@ interface Spcf12KTowDocumentData {
  */
 export type Spcf12KTowDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<Simplify<Spcf12KTowDocumentData>, "spcf_12_k_tow", Lang>;
 
-export type AllDocumentTypes = BlogDocument | ChhopedCarbonDocument | ChhopedCarbonFiberDocument | FiberSizingDocument | HomepageDocument | MyPageDocument | PhlexCarbonCfmDocument | PhlexCarbonFctmDocument | Spcf12KTowDocument;
+export type AllDocumentTypes = BlogDocument | ChhopedCarbonDocument | ChhopedCarbonFiberDocument | FiberSizingDocument | HomepageDocument | MyPageDocument | PhlexCarbonCfmDocument | PhlexCarbonFctmDocument | PhlexhomepageDocument | Spcf12KTowDocument;
 
 /**
  * Item in *Card Grid → Default → Primary → Cards*
@@ -3338,6 +4141,9 @@ declare module "@prismicio/client" {
 			ChhopedCarbonDocument,
 			ChhopedCarbonDocumentData,
 			ChhopedCarbonDocumentDataPhlexOptionsCardItem,
+			ChhopedCarbonDocumentDataTypicalPropertiesItem,
+			ChhopedCarbonDocumentDataStandardPropertiesItem,
+			ChhopedCarbonDocumentDataFaqItem,
 			ChhopedCarbonFiberDocument,
 			ChhopedCarbonFiberDocumentData,
 			ChhopedCarbonFiberDocumentDataTypicalPropertiesItem,
@@ -3372,6 +4178,8 @@ declare module "@prismicio/client" {
 			PhlexCarbonFctmDocumentDataPhlexWeightsSectionItem,
 			PhlexCarbonFctmDocumentDataFaqItem,
 			PhlexCarbonFctmDocumentDataPhlexOptionsCardItem,
+			PhlexhomepageDocument,
+			PhlexhomepageDocumentData,
 			Spcf12KTowDocument,
 			Spcf12KTowDocumentData,
 			Spcf12KTowDocumentDataTypicalPropertiesItem,

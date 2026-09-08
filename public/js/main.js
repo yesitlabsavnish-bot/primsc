@@ -1,7 +1,5 @@
 // Slider for BLog Details Page Strat
 
-// Slider for BLog Details Page Strat
-
 function initSlider() {
   if (typeof jQuery === 'undefined') return;
   var $ = jQuery;
@@ -101,6 +99,39 @@ if (document.readyState === 'loading') {
 }
 
 // Navbar Header END
+
+
+/*Home page Img changing According to data Strat*/
+document.addEventListener('DOMContentLoaded', () => {
+    const tabItems = document.querySelectorAll('.phlex-tab-item');
+    const featureImg = document.getElementById('phlexFeatureImg');
+
+    tabItems.forEach(tab => {
+        tab.addEventListener('click', function() {
+            // 1. Remove active class from all tabs
+            tabItems.forEach(item => item.classList.remove('active'));
+
+            // 2. Add active class to clicked tab
+            this.classList.add('active');
+
+            // 3. Smooth Image Transition
+            const newImgSrc = this.getAttribute('data-img');
+            const tabTitle = this.querySelector('.phlex-tab-title').innerText;
+
+            if (featureImg && newImgSrc) {
+                featureImg.style.opacity = '0.3';
+
+                setTimeout(() => {
+                    featureImg.src = newImgSrc;
+                    featureImg.alt = tabTitle;
+                    featureImg.style.opacity = '1';
+                }, 200);
+            }
+        });
+    });
+});
+
+/*Home page Img changing According to data END*/
 
 
 

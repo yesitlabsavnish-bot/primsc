@@ -17,15 +17,6 @@
         },
         "type": "Image"
       },
-      "title": {
-        "config": {
-          "allowTargetBlank": true,
-          "label": "Title",
-          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
-          "placeholder": ""
-        },
-        "type": "StructuredText"
-      },
       "sub_title": {
         "config": {
           "label": "SubTitle",
@@ -134,12 +125,183 @@
                 "placeholder": ""
               },
               "type": "Text"
+            },
+            "phlex_options_card_text3": {
+              "config": {
+                "label": "phlex-options-card-text3",
+                "placeholder": ""
+              },
+              "type": "Text"
             }
           },
           "label": "phlex-options-card",
           "repeat": true
         },
         "type": "Group"
+      },
+      "phlex_process_title": {
+        "config": {
+          "label": "phlex-process-title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_process_desc1": {
+        "config": {
+          "label": "phlex-process-desc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_process_desc2": {
+        "config": {
+          "label": "phlex-process-desc2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_process_desc3": {
+        "config": {
+          "label": "phlex-process-desc3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_process_img": {
+        "config": {
+          "constraint": {},
+          "label": "phlex-process-img",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "phlex_flexibility_desc1": {
+        "config": {
+          "label": "phlex-flexibility-desc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_flexibility_desc2": {
+        "config": {
+          "label": "phlex-flexibility-desc2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_flexibility_desc3": {
+        "config": {
+          "label": "phlex-flexibility-desc3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_flexibility_img": {
+        "config": {
+          "constraint": {},
+          "label": "phlex-flexibility-img",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "typical_properties": {
+        "config": {
+          "fields": {
+            "title": {
+              "config": {
+                "allowTargetBlank": true,
+                "label": "Title",
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                "placeholder": ""
+              },
+              "type": "StructuredText"
+            },
+            "proeprties": {
+              "config": {
+                "label": "property_header1",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "property_header2": {
+              "config": {
+                "label": "property_header2",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "Typical Properties",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "standard_properties": {
+        "config": {
+          "fields": {
+            "proeprties": {
+              "config": {
+                "label": "proeprties",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "value": {
+              "config": {
+                "label": "value1",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "value2": {
+              "config": {
+                "label": "value2",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "standard_properties",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "faq": {
+        "config": {
+          "fields": {
+            "question": {
+              "config": {
+                "label": "question",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "answer": {
+              "config": {
+                "label": "answer",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "Faq",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "title": {
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_flexibility_title": {
+        "config": {
+          "label": "phlex-flexibility-title",
+          "placeholder": ""
+        },
+        "type": "Text"
       }
     }
   },
