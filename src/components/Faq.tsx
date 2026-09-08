@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { PrismicRichText, PrismicText } from '@prismicio/react'
 
-const Faq = ({ data }: { data: any }) => {
+const Faq = ({ data = [] }: { data?: any[] }) => {
   const [activeAccordion, setActiveAccordion] = useState<string | null>('faqCollapse0');
 
   console.log(data, "faq data")

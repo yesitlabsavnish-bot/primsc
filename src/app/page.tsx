@@ -2,7 +2,7 @@ import { type Metadata } from "next"
 
 import { SliceZone } from "@prismicio/react"
 
-import { Footer } from "@/components/Footer"
+import Footer from "@/components/Footer"
 import { createClient } from "@/lib/prismic"
 import { components } from "@/slices"
 

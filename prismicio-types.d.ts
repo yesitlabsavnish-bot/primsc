@@ -151,8 +151,6 @@ interface BlogDocumentData {
 export type BlogDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<Simplify<BlogDocumentData>, "blog", Lang>;
 
 /**
-<<<<<<< HEAD
-=======
  * Item in *chhopedCarbon → phlex-options-card*
  */
 export interface ChhopedCarbonDocumentDataPhlexOptionsCardItem {
@@ -923,7 +921,6 @@ interface ChhopedCarbonFiberDocumentData {
 export type ChhopedCarbonFiberDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<Simplify<ChhopedCarbonFiberDocumentData>, "chhoped_carbon_fiber", Lang>;
 
 /**
->>>>>>> edf7a5c (product pages added)
  * Item in *Fiber Sizing → products*
  */
 export interface FiberSizingDocumentDataProductsItem {
@@ -2565,8 +2562,6 @@ interface PhlexCarbonFctmDocumentData {
 export type PhlexCarbonFctmDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<Simplify<PhlexCarbonFctmDocumentData>, "phlex_carbon_fctm", Lang>;
 
 /**
-<<<<<<< HEAD
-=======
  * Item in *SPCF 12K Tow → Typical Properties*
  */
 export interface Spcf12KTowDocumentDataTypicalPropertiesItem {
@@ -2642,7 +2637,6 @@ export interface Spcf12KTowDocumentDataFaqsItem {
 }
 
 /**
->>>>>>> edf7a5c (product pages added)
  * Content for SPCF 12K Tow documents
  */
 interface Spcf12KTowDocumentData {
@@ -2832,8 +2826,6 @@ interface Spcf12KTowDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	option_2_text_3: prismic.KeyTextField;
-<<<<<<< HEAD
-=======
 	
 	/**
 	 * winding title field in *SPCF 12K Tow*
@@ -2999,7 +2991,6 @@ interface Spcf12KTowDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	faqs: prismic.GroupField<Simplify<Spcf12KTowDocumentDataFaqsItem>>;
->>>>>>> edf7a5c (product pages added)
 }
 
 /**
@@ -3013,11 +3004,7 @@ interface Spcf12KTowDocumentData {
  */
 export type Spcf12KTowDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<Simplify<Spcf12KTowDocumentData>, "spcf_12_k_tow", Lang>;
 
-<<<<<<< HEAD
-export type AllDocumentTypes = BlogDocument | FiberSizingDocument | HomepageDocument | MyPageDocument | PhlexCarbonCfmDocument | PhlexCarbonFctmDocument | Spcf12KTowDocument;
-=======
 export type AllDocumentTypes = BlogDocument | ChhopedCarbonDocument | ChhopedCarbonFiberDocument | FiberSizingDocument | HomepageDocument | MyPageDocument | PhlexCarbonCfmDocument | PhlexCarbonFctmDocument | Spcf12KTowDocument;
->>>>>>> edf7a5c (product pages added)
 
 /**
  * Item in *Card Grid → Default → Primary → Cards*
@@ -3348,8 +3335,6 @@ declare module "@prismicio/client" {
 		export type {
 			BlogDocument,
 			BlogDocumentData,
-<<<<<<< HEAD
-=======
 			ChhopedCarbonDocument,
 			ChhopedCarbonDocumentData,
 			ChhopedCarbonDocumentDataPhlexOptionsCardItem,
@@ -3362,7 +3347,6 @@ declare module "@prismicio/client" {
 			ChhopedCarbonFiberDocumentDataPhlexWeightsSectionItem,
 			ChhopedCarbonFiberDocumentDataFaqItem,
 			ChhopedCarbonFiberDocumentDataPhlexOptionsCardItem,
->>>>>>> edf7a5c (product pages added)
 			FiberSizingDocument,
 			FiberSizingDocumentData,
 			FiberSizingDocumentDataProductsItem,
@@ -3390,12 +3374,9 @@ declare module "@prismicio/client" {
 			PhlexCarbonFctmDocumentDataPhlexOptionsCardItem,
 			Spcf12KTowDocument,
 			Spcf12KTowDocumentData,
-<<<<<<< HEAD
-=======
 			Spcf12KTowDocumentDataTypicalPropertiesItem,
 			Spcf12KTowDocumentDataAvailableOptionsItem,
 			Spcf12KTowDocumentDataFaqsItem,
->>>>>>> edf7a5c (product pages added)
 			AllDocumentTypes,
 			CardGridSlice,
 			CardGridSliceDefaultPrimaryCardsItem,

@@ -147,7 +147,7 @@ const FiberSizingCompound = (
         
         <tbody>
               {
-                data.products?.map((data, index) => (
+                  data.products?.map((data: any, index: number) => (
                   <tr key={index}>
                     <td className="phlex-props-label">{data.product_name}</td>
                     <td className="phlex-props-val">{data.chemistry}</td>
@@ -210,7 +210,7 @@ const FiberSizingCompound = (
       <div className="phlex-faq-left">
         <div className="accordion phlex-custom-accordion" id="phlexFaqAccordion">
         
-           {data.faqs?.map((faq, index) => (
+           {data.faqs?.map((faq: any, index: number) => (
             <div className="accordion-item" key={index}>
               <h3
                 className="accordion-header"

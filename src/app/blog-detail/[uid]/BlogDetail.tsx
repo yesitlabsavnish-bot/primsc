@@ -30,7 +30,7 @@ const BlogDetail = async ({ uid }: BlogDetailProps) => {
 
   // Current blog ko Related Blogs se remove karo
   const relatedBlogs = allBlogs
-    .filter((item) => item.id !== blog.id)
+    .filter((item: any) => item.id !== blog.id)
     .slice(0, 4);
 
   return (

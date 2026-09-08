@@ -174,7 +174,7 @@ const PhlexCarbonSpcf = (
         
         <tbody>
             {
-              data.typical_properties?.map((data, index) => (
+              data.typical_properties?.map((data: any, index: number) => (
                 <tr key={index}>
                   <td className="phlex-props-label">{data.properties}</td>
                   <td className="phlex-props-val" colSpan={2}>{data.phlex_carbon_spcf}</td>
@@ -188,7 +188,7 @@ const PhlexCarbonSpcf = (
           </tr>
 
           {
-            data.available_options?.map((data, index) => (
+            data.typical_properties?.map((data: any, index: number) => (
               <tr key={index}>
                 <td className="phlex-props-label">{data.option1}</td>
                 <td className="phlex-props-val">{data.option2}</td>
