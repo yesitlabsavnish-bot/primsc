@@ -242,7 +242,8 @@ const PhlexCarbonSpcf = (
 
 {/* <!-- Frequently asked questions Strat --> */}
 
-  <Faq />
+      <Faq data={data?.faq} />
+
 {/* <!-- Frequently asked questions END --> */}
     
     </>
