@@ -1,0 +1,45 @@
+{
+  "format": "custom",
+  "id": "contact_submission",
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "first_name": {
+        "config": {
+          "label": "first_name",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "last_name": {
+        "config": {
+          "label": "last_name",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "email": {
+        "config": {
+          "label": "email",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "message": {
+        "config": {
+          "label": "message",
+          "placeholder": ""
+        },
+        "type": "Text"
+      }
+    }
+  },
+  "label": "Contact Submission",
+  "repeatable": true,
+  "status": true
+}

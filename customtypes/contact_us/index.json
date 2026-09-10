@@ -1,0 +1,88 @@
+{
+  "format": "custom",
+  "id": "contact_us",
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": ""
+        },
+        "type": "UID"
+      },
+      "background_image": {
+        "config": {
+          "constraint": {},
+          "label": "background image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "phlex_contact_title": {
+        "config": {
+          "label": "phlex-contact-title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "phlex_hero_desc": {
+        "config": {
+          "label": "phlex-hero-desc",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "email": {
+        "config": {
+          "label": "email",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "number": {
+        "config": {
+          "label": "number",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "available_day": {
+        "config": {
+          "label": "available day",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "available_time": {
+        "config": {
+          "label": "available time",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "map_address": {
+        "config": {
+          "label": "map_address",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "map_latitude": {
+        "config": {
+          "label": "map_latitude",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "map_longitude": {
+        "config": {
+          "label": "map_longitude",
+          "placeholder": ""
+        },
+        "type": "Text"
+      }
+    }
+  },
+  "label": "Contact us",
+  "repeatable": false,
+  "status": true
+}

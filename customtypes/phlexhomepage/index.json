@@ -86,6 +86,14 @@
         },
         "type": "Text"
       },
+      "lake_image": {
+        "config": {
+          "constraint": {},
+          "label": "lake image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
       "product1_title": {
         "config": {
           "label": "product1_title",
@@ -121,9 +129,16 @@
         },
         "type": "Text"
       },
-      "product2_desc": {
+      "product2_desc1": {
         "config": {
-          "label": "product2_desc",
+          "label": "product2_desc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product2_desc2": {
+        "config": {
+          "label": "prproduct2_desc2",
           "placeholder": ""
         },
         "type": "Text"
@@ -145,6 +160,13 @@
       "product3_desc": {
         "config": {
           "label": "product3_desc",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "product3_desc2": {
+        "config": {
+          "label": "product3_desc2",
           "placeholder": ""
         },
         "type": "Text"
@@ -317,6 +339,37 @@
         },
         "type": "Text"
       },
+      "demand_group": {
+        "config": {
+          "fields": {
+            "dhead": {
+              "config": {
+                "label": "dhead",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "ddesc": {
+              "config": {
+                "label": "ddesc",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "dimage": {
+              "config": {
+                "constraint": {},
+                "label": "dimage",
+                "thumbnails": []
+              },
+              "type": "Image"
+            }
+          },
+          "label": "Demand group",
+          "repeat": true
+        },
+        "type": "Group"
+      },
       "flexible_head_blue": {
         "config": {
           "label": "Flexible head blue",
@@ -348,6 +401,87 @@
       "flexible_desc_2": {
         "config": {
           "label": "Flexible desc 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "flexible_image": {
+        "config": {
+          "constraint": {},
+          "label": "Flexible Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "why_title": {
+        "config": {
+          "label": "Why title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "why_description": {
+        "config": {
+          "label": "Why description",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "why_card": {
+        "config": {
+          "fields": {
+            "why_image": {
+              "config": {
+                "constraint": {},
+                "label": "why image",
+                "thumbnails": []
+              },
+              "type": "Image"
+            },
+            "why_title": {
+              "config": {
+                "label": "why title",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "why_heading": {
+              "config": {
+                "label": "why heading",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "why_description": {
+              "config": {
+                "label": "why description",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "Why Card",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "cta_heading": {
+        "config": {
+          "label": "cta heading",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "cta_desc1": {
+        "config": {
+          "label": "cta desc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "cta_desc2": {
+        "config": {
+          "label": "cta desc2",
           "placeholder": ""
         },
         "type": "Text"

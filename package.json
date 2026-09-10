@@ -17,9 +17,11 @@
 		"@prismicio/next": "^2.3.0",
 		"@prismicio/react": "3.4.0",
 		"clsx": "2.1.1",
+		"dotenv": "^17.4.2",
 		"next": "16.2.12",
 		"react": "19.2.8",
-		"react-dom": "19.2.8"
+		"react-dom": "19.2.8",
+		"react-hot-toast": "^2.6.0"
 	},
 	"devDependencies": {
 		"@slicemachine/adapter-next": "^0.3.98",

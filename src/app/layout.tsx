@@ -7,6 +7,7 @@ import { PrismicPreview } from "@prismicio/next"
 import { Metadata } from "next"
 import { Inter } from "next/font/google"
 import Script from "next/script"
+import { Toaster } from "react-hot-toast"
 
 export const metadata: Metadata = {
 	title: "Phlex Carbon | Chopped Carbon Fiber",
@@ -54,6 +55,7 @@ export default async function RootLayout({
 				<Footer />
 
 				<PrismicPreview repositoryName={repositoryName} />
+				<Toaster position="top-right" />
 			</body>
 		</html>
 	)

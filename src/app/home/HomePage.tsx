@@ -89,8 +89,8 @@ const HomePage = (
       {/* Carbon Fiber Processing Section Start */}
       <section className="phlex-cta-section">
         <img
-          src="/images/left-flag-img.svg"
-          alt="PhlexCarbon Material Requirement"
+          src={data.lake_image?.url}
+          alt={data.lake_image?.alt || "FPhlexCarbon Material Requirement"}
           className="phlex-cta-bg-img"
         />
 
@@ -476,8 +476,8 @@ const HomePage = (
 
           <div className="phlex-flex-img-wrapper">
             <img
-              src="/images/raw-material-img.svg"
-              alt="Flexible Carbon Fiber Materials"
+              src={data.flexible_image?.url}
+              alt={data.flexible_image?.alt || "Flexible Carbon Fiber Materials"}
             />
           </div>
 
@@ -500,115 +500,54 @@ const HomePage = (
           <div className="phlex-why-grid">
             <div className="phlex-why-left">
               <h2 className="phlex-why-title">
-                Why Phlex Carbon
-                Fiber?
+                {data.why_title}
               </h2>
 
               <p className="phlex-why-desc">
-                Chopped carbon fiber is available in high-strength and
-                intermediate-modulus grades, with multiple fiber lengths and
-                seeded or unseeded configurations. Carbon fiber tow can be
-                re-wound to customer-specific spool weights. Non-woven
-                materials are offered in multiple areal weights, with custom
-                weights available upon request. Our fiber sizing portfolio
-                provides additional options for compatibility with a range of
-                resin systems.
+                {data.why_description}
               </p>
             </div>
 
             <div className="phlex-why-right">
-              {/* Card 01 */}
-              <div className="phlex-card bg-grey">
-                <div className="phlex-card-num">01</div>
 
-                <div className="phlex-card-content">
-                  <h3 className="phlex-card-title">
-                    Multiple Carbon Fiber Formats
-                  </h3>
 
-                  <p className="phlex-card-desc">
-                    Chopped carbon fiber, continuous tow, non-woven carbon
-                    fiber and fiber sizing solutions.
-                  </p>
-                </div>
+                {data.why_card?.map((card: any, index: number) => (
+                  <div
+                    className={`phlex-card ${
+                      index % 2 === 0 ? "bg-grey" : "bg-blue"
+                    }`}
+                    key={index}
+                  >
+                    <div className="phlex-card-num">
+                      {card.why_title}
+                    </div>
 
-                <div className="phlex-card-img">
-                  <img
-                    src="/images/format-chopped-1.svg"
-                    alt="Multiple Carbon Fiber Formats"
-                  />
-                </div>
-              </div>
+                    <div className="phlex-card-content">
+                      <h3 className="phlex-card-title">
+                        {card.why_heading}
+                      </h3>
 
-              {/* Card 02 */}
-              <div className="phlex-card bg-blue">
-                <div className="phlex-card-num">02</div>
+                      <p className="phlex-card-desc">
+                        {card.why_description}
+                      </p>
+                    </div>
 
-                <div className="phlex-card-content">
-                  <h3 className="phlex-card-title">
-                    High-Strength &amp; Intermediate-Modulus Options
-                  </h3>
+                    <div className="phlex-card-img">
+                      <img
+                        src={card.why_image?.url || ""}
+                        alt={
+                          card.why_image?.alt ||
+                          card.why_title ||
+                          ""
+                        }
+                      />
+                    </div>
+                  </div>
+                ))}
 
-                  <p className="phlex-card-desc">
-                    Carbon fiber grades designed to address different
-                    material and performance requirements.
-                  </p>
-                </div>
 
-                <div className="phlex-card-img">
-                  <img
-                    src="/images/format-chopped-2.svg"
-                    alt="High Strength Carbon Fiber Spool"
-                  />
-                </div>
-              </div>
-
-              {/* Card 03 */}
-              <div className="phlex-card bg-grey">
-                <div className="phlex-card-num">03</div>
-
-                <div className="phlex-card-content">
-                  <h3 className="phlex-card-title">
-                    Customizable Solutions
-                  </h3>
-
-                  <p className="phlex-card-desc">
-                    Options for custom fiber lengths, spool weights,
-                    non-woven areal weights and sizing systems.
-                  </p>
-                </div>
-
-                <div className="phlex-card-img">
-                  <img
-                    src="/images/format-chopped-3.svg"
-                    alt="Customizable Non-woven Solutions"
-                  />
-                </div>
-              </div>
-
-              {/* Card 04 */}
-              <div className="phlex-card bg-blue">
-                <div className="phlex-card-num">04</div>
-
-                <div className="phlex-card-content">
-                  <h3 className="phlex-card-title">
-                    U.S. Based Processing
-                  </h3>
-
-                  <p className="phlex-card-desc">
-                    Carbon fiber processing and production in Lake City,
-                    South Carolina.
-                  </p>
-                </div>
-
-                <div className="phlex-card-img">
-                  <img
-                    src="/images/format-chopped-4.svg"
-                    alt="U.S. Based Processing"
-                  />
-                </div>
-              </div>
             </div>
+            
           </div>
         </div>
       </section>
@@ -620,17 +559,13 @@ const HomePage = (
 
         <div className="pcf-cta-wrapper">
           <h2 className="pcf-cta-main-title">
-            Find the Right Carbon Fiber for Your Application
+            {data.cta_heading}
           </h2>
 
           <p className="pcf-cta-description">
-            Your material should fit your process - not the other way
-            around.
+            {data.cta_desc1}
             <br />
-            Tell us about your application, manufacturing process and
-            material requirements, and our team can help identify the Phlex
-            Carbon Fiber product and configuration that best fits your
-            needs.
+            {data.cta_desc2}
           </p>
 
           <div className="pcf-cta-action-group">

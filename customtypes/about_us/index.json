@@ -1,0 +1,348 @@
+{
+  "format": "custom",
+  "id": "about_us",
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "hero_title": {
+        "config": {
+          "label": "Hero Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_description_1": {
+        "config": {
+          "label": "Hero Description 1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "hero_description_2": {
+        "config": {
+          "label": "Hero Description 2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "material_image": {
+        "config": {
+          "constraint": {},
+          "label": "Material image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "material_head": {
+        "config": {
+          "label": "Material head",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "material_head_b": {
+        "config": {
+          "label": "Material head b",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "material_desc1": {
+        "config": {
+          "label": "Material desc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "material_desc1b": {
+        "config": {
+          "label": "Material desc1b",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "material_desc1a": {
+        "config": {
+          "label": "Material desc1a",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "material_desc2": {
+        "config": {
+          "label": "Material desc2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "material_desc3": {
+        "config": {
+          "label": "Material desc3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "material_desc3_b": {
+        "config": {
+          "label": "Material desc3 b",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "built_heading": {
+        "config": {
+          "label": "Built heading",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "built_subtitle1": {
+        "config": {
+          "label": "Built subtitle1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "built_subtitle2": {
+        "config": {
+          "label": "Built subtitle2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "built_subtitle3": {
+        "config": {
+          "label": "Built subtitle3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "built_subtitle4": {
+        "config": {
+          "label": "Built subtitle4",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "built_card": {
+        "config": {
+          "fields": {
+            "built_card_image": {
+              "config": {
+                "constraint": {},
+                "label": "Built card image",
+                "thumbnails": []
+              },
+              "type": "Image"
+            },
+            "built_card_number": {
+              "config": {
+                "label": "Built card number",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "built_card_title": {
+              "config": {
+                "label": "built card title",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "built_card_desc": {
+              "config": {
+                "label": "built card desc",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "Built card",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "built_desc": {
+        "config": {
+          "label": "built desc",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "path_heading": {
+        "config": {
+          "label": "Path heading",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "path_desc1": {
+        "config": {
+          "label": "path desc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "path_desc2": {
+        "config": {
+          "label": "path desc2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "path_desc3": {
+        "config": {
+          "label": "path desc3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "path_flow": {
+        "config": {
+          "fields": {
+            "path_flow_title": {
+              "config": {
+                "label": "path flow title",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "pathflow_subtitle": {
+              "config": {
+                "label": "pathflow subtitle",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "path_flow_image": {
+              "config": {
+                "constraint": {},
+                "label": "path flow image",
+                "thumbnails": []
+              },
+              "type": "Image"
+            }
+          },
+          "label": "Path Flow",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "expertise_image": {
+        "config": {
+          "constraint": {},
+          "label": "Expertise image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "expertise_heading1": {
+        "config": {
+          "label": "Expertise heading1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "expertise_heading2": {
+        "config": {
+          "label": "Expertise heading2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "expertise_desc1": {
+        "config": {
+          "label": "Expertise desc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "expertise_desc2": {
+        "config": {
+          "label": "Expertise desc2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "expertise_desc3": {
+        "config": {
+          "label": "Expertise desc3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "expertise_desc4": {
+        "config": {
+          "label": "Expertise desc4",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "meet_image": {
+        "config": {
+          "constraint": {},
+          "label": "Meet Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meet_heading": {
+        "config": {
+          "label": "Meet heading",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "meet_desc1": {
+        "config": {
+          "label": "Meet desc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "meet_desc2": {
+        "config": {
+          "label": "Meet desc2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "meet_desc3": {
+        "config": {
+          "label": "Meet desc3",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "talk_heading": {
+        "config": {
+          "label": "Talk heading",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "talk_desc1": {
+        "config": {
+          "label": "Talk desc1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "talk_desc2": {
+        "config": {
+          "label": "Talk desc2",
+          "placeholder": ""
+        },
+        "type": "Text"
+      }
+    }
+  },
+  "label": "About_us",
+  "repeatable": true,
+  "status": true
+}
