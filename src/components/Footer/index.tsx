@@ -1,4 +1,5 @@
 
+import Link from 'next/link'
 import React from 'react'
 
 const index = () => {
@@ -10,9 +11,9 @@ const index = () => {
       {/* <!-- Left Column: Logo & Tagline --> */}
 
             <div className="footer-brand">
-                <a href="/home" className="footer-logo">
+                <Link href="/home" className="footer-logo">
                     <img src="/images/footer-logo.png" alt="PHLEX Carbon Fiber Logo" />
-                </a>
+                </Link>
                 <h2 className="footer-heading">
                     We growing up your business<br />with personal AI manager.
                 </h2>
@@ -25,13 +26,13 @@ const index = () => {
                 <h3 className="footer-links-title">Our Products</h3>
                 <div className="footer-products-grid">
                    <ul className="footer-links-list">
-                        <li><a href="/chhoped-carbon-fiber">Chopped Carbon Fiber</a></li>
-                        <li><a href="/phlex-carbonn-cftm">Phlex Carbon CFTM</a></li>
+                        <li><Link href="/chhoped-carbon-fiber">Chopped Carbon Fiber</Link></li>
+                        <li><Link href="/phlex-carbonn-cftm">Phlex Carbon CFTM</Link></li>
                     </ul> 
                     <ul className="footer-links-list">
-                        <li><a href="/phlex-carbon-fcm">Phlex Carbon CFM</a></li>
-                        <li><a href="/phlex-carbon-spcf">Phelx Carbon SPCF 12K Tow</a></li>
-                        <li><a href="/fiber-sizing-compound">Fiber Sizing Compounds</a></li>
+                        <li><Link href="/phlex-carbon-fcm">Phlex Carbon CFM</Link></li>
+                        <li><Link href="/phlex-carbon-spcf">Phelx Carbon SPCF 12K Tow</Link></li>
+                        <li><Link href="/fiber-sizing-compound">Fiber Sizing Compounds</Link></li>
                     </ul>
                 </div>
             </div>
@@ -39,9 +40,9 @@ const index = () => {
             <div className="footer-nav-group">
                 <h3 className="footer-links-title">Quick Links</h3>
                 <ul className="footer-links-list">
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/blog">Resources</a></li>
-                    <li><a href="/contact-us">Contact</a></li>
+                    <li><Link href="/about">About</Link></li>
+                    <li><Link href="/blog">Resources</Link></li>
+                    <li><Link href="/contact-us">Contact</Link></li>
                 </ul>
             </div>
             </div>
