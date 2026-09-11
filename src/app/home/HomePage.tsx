@@ -5,10 +5,12 @@ import React, { useState } from "react";
 
 
 const HomePage = (
-    {
-    data
+  {
+    data,
+    blogs
   }: {
-    data: any
+    data: any;
+    blogs?: any[];
   }
 ) => {
   const [activeDemand, setActiveDemand] = useState(0);
@@ -716,95 +718,39 @@ const HomePage = (
             </div>
           </div>
 
-          <div className="pcf-res-grid">
-            {/* Resource Card 01 */}
-            <article className="pcf-res-card">
-              <div className="pcf-res-img-wrapper pcf-res-img-tall">
-                <img
-                  src="/images/resource-home-img-1.svg"
-                  alt="Construction Warehouse"
-                />
-              </div>
-
-              <div className="pcf-res-card-content">
-                <span className="pcf-res-date">
-                  Jan 15, 2025
-                </span>
-
-                <h3 className="pcf-res-card-title">
-                  <a href="#">
-                    What to Consider Before Starting a Construction Project
-                  </a>
-                </h3>
-              </div>
-            </article>
-
-            {/* Resource Card 02 */}
-            <article className="pcf-res-card">
-              <div className="pcf-res-img-wrapper pcf-res-img-short">
-                <img
-                  src="/images/resource-home-img-2.svg"
-                  alt="Plastic Pellets"
-                />
-              </div>
-
-              <div className="pcf-res-card-content">
-                <span className="pcf-res-date">
-                  Jan 15, 2025
-                </span>
-
-                <h3 className="pcf-res-card-title">
-                  <a href="#">
-                    How Better Planning Can Prevent Cost Overruns
-                  </a>
-                </h3>
-              </div>
-            </article>
-
-            {/* Resource Card 03 */}
-            <article className="pcf-res-card">
-              <div className="pcf-res-img-wrapper pcf-res-img-tall">
-                <img
-                  src="/images/resource-home-img-3.svg"
-                  alt="Lab Testing"
-                />
-              </div>
-
-              <div className="pcf-res-card-content">
-                <span className="pcf-res-date">
-                  Jan 15, 2025
-                </span>
-
-                <h3 className="pcf-res-card-title">
-                  <a href="#">
-                    What Clients Should Look for in a Construction Partner
-                  </a>
-                </h3>
-              </div>
-            </article>
-
-            {/* Resource Card 04 */}
-            <article className="pcf-res-card">
-              <div className="pcf-res-img-wrapper pcf-res-img-short">
-                <img
-                  src="/images/resource-home-img-4.svg"
-                  alt="Electric Car on Mountain Road"
-                />
-              </div>
-
-              <div className="pcf-res-card-content">
-                <span className="pcf-res-date">
-                  Jan 15, 2025
-                </span>
-
-                <h3 className="pcf-res-card-title">
-                  <a href="#">
-                    How Technology Is Changing Project Visibility
-                  </a>
-                </h3>
-              </div>
-            </article>
+     <div className="pcf-res-grid">
+            {blogs?.map((blog: any, index: number) => (
+              <article className="pcf-res-card" key={blog.id || index}>
+                <div className={`pcf-res-img-wrapper ${index % 2 === 0 ? 'pcf-res-img-tall' : 'pcf-res-img-short'}`}>
+                  {blog.data.featured_image?.url ? (
+                    <img
+                      src={blog.data.featured_image.url}
+                      alt={blog.data.featured_image.alt || blog.data.title || "Blog image"}
+                    />
+                  ) : (
+                    <img
+                      src={`/images/resource-home-img-${(index % 4) + 1}.svg`}
+                      alt="Placeholder"
+                    />
+                  )}
+                </div>
+ 
+                <div className="pcf-res-card-content">
+                  <span className="pcf-res-date">
+                    {blog.data.publication_date || "Jan 15, 2025"}
+                  </span>
+ 
+                  <h3 className="pcf-res-card-title">
+                    <Link href={`/blog-detail/${blog.uid}`}>
+                      {blog.data.title}
+                    </Link>
+                  </h3>
+                </div>
+              </article>
+            ))}
           </div>
+
+
         </div>
       </section>
       {/* Resources Section End */}

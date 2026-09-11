@@ -1,0 +1,33 @@
+{
+  "format": "custom",
+  "id": "blogpage",
+  "json": {
+    "Main": {
+      "background_image": {
+        "config": {
+          "constraint": {},
+          "label": "background image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "blog_title": {
+        "config": {
+          "label": "blog_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "blog_descriptipon": {
+        "config": {
+          "label": "blog_descriptipon",
+          "placeholder": ""
+        },
+        "type": "Text"
+      }
+    }
+  },
+  "label": "blogpage",
+  "repeatable": false,
+  "status": true
+}

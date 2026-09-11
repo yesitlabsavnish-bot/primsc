@@ -745,6 +745,55 @@ interface BlogDocumentData {
 export type BlogDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<Simplify<BlogDocumentData>, "blog", Lang>;
 
 /**
+ * Content for blogpage documents
+ */
+interface BlogpageDocumentData {
+	/**
+	 * background image field in *blogpage*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blogpage.background_image
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/image
+	 */
+	background_image: prismic.ImageField<never>;
+	
+	/**
+	 * blog_title field in *blogpage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blogpage.blog_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	blog_title: prismic.KeyTextField;
+	
+	/**
+	 * blog_descriptipon field in *blogpage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blogpage.blog_descriptipon
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	blog_descriptipon: prismic.KeyTextField;
+}
+
+/**
+ * blogpage document from Prismic
+ *
+ * - **API ID**: `blogpage`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/content-modeling
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type BlogpageDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<Simplify<BlogpageDocumentData>, "blogpage", Lang>;
+
+/**
  * Item in *chhopedCarbon → phlex-options-card*
  */
 export interface ChhopedCarbonDocumentDataPhlexOptionsCardItem {
@@ -4545,7 +4594,7 @@ interface Spcf12KTowDocumentData {
  */
 export type Spcf12KTowDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<Simplify<Spcf12KTowDocumentData>, "spcf_12_k_tow", Lang>;
 
-export type AllDocumentTypes = AboutUsDocument | BlogDocument | ChhopedCarbonDocument | ChhopedCarbonFiberDocument | ContactSubmissionDocument | ContactUsDocument | FiberSizingDocument | HomepageDocument | MyPageDocument | PhlexCarbonCfmDocument | PhlexCarbonFctmDocument | PhlexhomepageDocument | Spcf12KTowDocument;
+export type AllDocumentTypes = AboutUsDocument | BlogDocument | BlogpageDocument | ChhopedCarbonDocument | ChhopedCarbonFiberDocument | ContactSubmissionDocument | ContactUsDocument | FiberSizingDocument | HomepageDocument | MyPageDocument | PhlexCarbonCfmDocument | PhlexCarbonFctmDocument | PhlexhomepageDocument | Spcf12KTowDocument;
 
 /**
  * Item in *Card Grid → Default → Primary → Cards*
@@ -4881,6 +4930,8 @@ declare module "@prismicio/client" {
 			BlogDocument,
 			BlogDocumentData,
 			BlogDocumentDataSidebarLinksListItem,
+			BlogpageDocument,
+			BlogpageDocumentData,
 			ChhopedCarbonDocument,
 			ChhopedCarbonDocumentData,
 			ChhopedCarbonDocumentDataPhlexOptionsCardItem,
