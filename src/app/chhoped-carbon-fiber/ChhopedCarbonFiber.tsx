@@ -31,7 +31,7 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
                     <div className="phlex-hero-content">
 
                         {/* Main Heading */}
-                        <h1 className="phlex-hero-title">{renderText(data?.Title)}</h1>
+                        <h1 className="phlex-hero-title">{renderText(data?.title)}</h1>
 
                         {/* Sub Heading */}
                         <h2 className="phlex-hero-subtitle">
@@ -57,7 +57,7 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
                                 <span>Request a Sample/Quote</span>
                                 <img src="/images/top-right-up.svg" />
                             </a>
-                            <a href="#" className="phlex-hero-btn phlex-hero-btn-outline">
+                            <a href="/contact-us" className="phlex-hero-btn phlex-hero-btn-outline">
                                 <span>Contact Our Team</span>
                             </a>
                         </div>
@@ -116,6 +116,11 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
                   <p className="phlex-options-card-text">
                     {renderText(item?.phlex_options_card_text3)}
                   </p>
+                  <br />
+                    <a href="#" className="phlex-hero-btn phlex-hero-btn-white">
+                        <span>{renderText(item?.phlex_options_card_datasheet)}</span>
+                        <img src="/images/top-right-up.svg" />
+                    </a>
                 </div>
               </div>
             ))}

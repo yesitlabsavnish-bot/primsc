@@ -48,7 +48,7 @@ const PhlexCarbonfcm = ({
           <span>{data.hero_button_1}</span>
           <img src="/images/top-right-up.svg"/>
         </a>
-        <a href="#" className="phlex-hero-btn phlex-hero-btn-outline">
+        <a href="/contact-us" className="phlex-hero-btn phlex-hero-btn-outline">
           <span>{data.hero_button_2}</span>
         </a>
       </div>
@@ -82,7 +82,19 @@ const PhlexCarbonfcm = ({
       <p className="phlex-options-subtitle-sub">
         {data.options_description_2}
       </p>
+      <br />
+
+          <div className="phlex-flex-btn-wrapper">
+            <a href="#" className="phlex-flex-btn">
+              View Phlex Carbon CFM Technical Data Sheet
+              <img
+                src="/images/right-arrow.svg"
+                alt="arrow"
+              />
+            </a>
+          </div>
     </div>
+    
 
     {/* <!-- Cards Grid --> */}
     <div className="phlex-options-grid">

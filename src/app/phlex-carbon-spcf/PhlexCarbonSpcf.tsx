@@ -49,7 +49,7 @@ const PhlexCarbonSpcf = (
           <span>{data.hero_button_1}</span>
           <img src="/images/top-right-up.svg"/>
         </a>
-        <a href="#" className="phlex-hero-btn phlex-hero-btn-outline">
+        <a href="/contact-us" className="phlex-hero-btn phlex-hero-btn-outline">
           <span>{data.hero_button_2}</span>
         </a>
       </div>
@@ -80,7 +80,19 @@ const PhlexCarbonSpcf = (
       <p className="phlex-options-subtitle">
         {data.about_description}
       </p>
+
+          <div className="phlex-flex-btn-wrapper">
+            <a href="#" className="phlex-flex-btn">
+              View Phelx Carbon SPCF 12K Tow Technical Data Sheet
+              <img
+                src="/images/right-arrow.svg"
+                alt="arrow"
+              />
+            </a>
+          </div>
     </div>
+
+    
 
     {/* <!-- Cards Grid --> */}
     <div className="phlex-options-grid">
@@ -242,7 +254,7 @@ const PhlexCarbonSpcf = (
 
 {/* <!-- Frequently asked questions Strat --> */}
 
-      <Faq data={data?.faq} />
+      <Faq data={data?.faqs} />
 
 {/* <!-- Frequently asked questions END --> */}
     

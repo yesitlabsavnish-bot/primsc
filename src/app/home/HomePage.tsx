@@ -1,4 +1,8 @@
-import React from "react";
+"use client";
+
+import Link from "next/link";
+import React, { useState } from "react";
+
 
 const HomePage = (
     {
@@ -7,6 +11,7 @@ const HomePage = (
     data: any
   }
 ) => {
+  const [activeDemand, setActiveDemand] = useState(0);
   return (
     <>
       {/* Hero Banner Section Start */}
@@ -121,8 +126,7 @@ const HomePage = (
             Explore Our <span>Carbon Fiber Products</span>
           </h2>
 
-          <div className="phlex-products-grid">
-            {/* Card 01 */}
+          {/* <div className="phlex-products-grid">
             <div className="phlex-product-card card-gray">
               <div className="phlex-card-content">
                 <span className="phlex-card-num">{data.product1_title}</span>
@@ -133,7 +137,11 @@ const HomePage = (
 
                 <p className="phlex-card-desc">
                   {data.product1_desc}
+                   <br />
+                  <br />
+                  {data.product1_desc1}
                 </p>
+                
               </div>
 
               <div className="home-cards-wrp">
@@ -154,7 +162,6 @@ const HomePage = (
               </div>
             </div>
 
-            {/* Card 02 */}
             <div className="phlex-product-card card-blue">
               <div className="phlex-card-content">
                 <span className="phlex-card-num">{data.product2_title}</span>
@@ -189,7 +196,6 @@ const HomePage = (
               </div>
             </div>
 
-            {/* Card 03 */}
             <div className="phlex-product-card card-gray">
               <div className="phlex-card-content">
                 <span className="phlex-card-num">{data.product3_title}</span>
@@ -224,7 +230,6 @@ const HomePage = (
               </div>
             </div>
 
-            {/* Card 04 */}
             <div className="phlex-product-card card-gray">
               <div className="phlex-card-content">
                 <span className="phlex-card-num">{data.product4_title}</span>
@@ -233,6 +238,9 @@ const HomePage = (
 
                 <p className="phlex-card-desc">
                   {data.product4_desc}
+                   <br />
+                  <br />
+                  {data.product4_des4}
                 </p>
               </div>
 
@@ -254,7 +262,6 @@ const HomePage = (
               </div>
             </div>
 
-            {/* Card 05 */}
             <div className="phlex-product-card card-blue">
               <div className="phlex-card-content">
                 <span className="phlex-card-num">{data.product5_title}</span>
@@ -263,6 +270,9 @@ const HomePage = (
 
                 <p className="phlex-card-desc">
                   {data.product5_desc}
+                   <br />
+                  <br />
+                  {data.product5_desc5}
                 </p>
               </div>
 
@@ -284,7 +294,6 @@ const HomePage = (
               </div>
             </div>
 
-            {/* Card 06 */}
             <div className="phlex-product-card card-gray">
               <div className="phlex-card-content">
                 <span className="phlex-card-num">{data.product6_title}</span>
@@ -315,7 +324,63 @@ const HomePage = (
                 </div>
               </div>
             </div>
+          </div> */}
+
+          <div className="phlex-products-grid">
+            {data.product_card?.map((item: any, index: number) => (
+              <div
+                key={index}
+                className="phlex-product-card card-gray"
+              >
+                <div className="phlex-card-content">
+                  <span className="phlex-card-num">
+                    {item.product_title}
+                  </span>
+
+                  <h3 className="phlex-card-title">
+                    {item.product_heading}
+                  </h3>
+
+                  <p className="phlex-card-desc">
+                    {item.product_desc_1}
+
+                    {item.product_desc_2 && (
+                      <>
+                        <br />
+                        <br />
+                        {item.product_desc_2}
+                      </>
+                    )}
+                  </p>
+                </div>
+
+                <div className="home-cards-wrp">
+                  <a href="#" className="arrow-icons">
+                    <img
+                      src="/images/top-right-arrow.png"
+                      alt="View product"
+                    />
+                  </a>
+
+                  <div className="phlex-card-img-wrapper">
+                    {item.product_image?.url && (
+                      <img
+                        src={item.product_image.url}
+                        alt={
+                          item.product_image.alt ||
+                          item.product_heading ||
+                          "Phlex Carbon Fiber"
+                        }
+                      />
+                    )}
+
+                    <div className="phlex-card-overlay"></div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
+          
         </div>
       </section>
       {/* Carbon Fiber Products Section End */}
@@ -340,7 +405,7 @@ const HomePage = (
                 {data.demand_desc2}
               </p>
 
-              <div className="phlex-apps-tabs">
+              {/* <div className="phlex-apps-tabs">
                 <div
                   className="phlex-tab-item active"
                   data-img="/images/item-1.svg"
@@ -405,6 +470,25 @@ const HomePage = (
                     {data.ddesc5}
                   </p>
                 </div>
+              </div> */}
+              <div className="phlex-apps-tabs">
+                {data.demand_group?.map((item: any, index: number) => (
+                  <div
+                    key={index}
+                    className={`phlex-tab-item ${
+                      activeDemand === index ? "active" : ""
+                    }`}
+                    onClick={() => setActiveDemand(index)}
+                  >
+                    <h3 className="phlex-tab-title">
+                      {item.dhead}
+                    </h3>
+
+                    <p className="phlex-tab-desc">
+                      {item.ddesc}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -440,12 +524,25 @@ const HomePage = (
                 </div>
               </div>
 
-              <div className="phlex-img-frame">
+              {/* <div className="phlex-img-frame">
                 <img
                   id="phlexFeatureImg"
                   src="/images/item-1.svg"
                   alt="Aerospace & Defense"
                 />
+              </div> */}
+              <div className="phlex-img-frame">
+                {data.demand_group?.[activeDemand]?.dimage?.url && (
+                  <img
+                    id="phlexFeatureImg"
+                    src={data.demand_group[activeDemand].dimage.url}
+                    alt={
+                      data.demand_group[activeDemand].dimage.alt ||
+                      data.demand_group[activeDemand].dhead ||
+                      "Phlex Carbon Fiber"
+                    }
+                  />
+                )}
               </div>
             </div>
           </div>
@@ -482,7 +579,7 @@ const HomePage = (
           </div>
 
           <div className="phlex-flex-btn-wrapper">
-            <a href="#products" className="phlex-flex-btn">
+            <a href="/contact-us" className="phlex-flex-btn">
               Find the Right Product
               <img
                 src="/images/right-arrow.svg"
@@ -581,7 +678,7 @@ const HomePage = (
             </a>
 
             <a
-              href="#contact"
+              href="/contact-us"
               className="pcf-cta-btn pcf-cta-btn-secondary"
             >
               Contact Us
@@ -606,8 +703,8 @@ const HomePage = (
             </div>
 
             <div className="pcf-res-header-right">
-              <a
-                href="#resources"
+              <Link
+                href="/blog"
                 className="pcf-res-view-btn"
               >
                 View all Resources
@@ -615,7 +712,7 @@ const HomePage = (
                   src="/images/right-arrow.svg"
                   alt="arrow"
                 />
-              </a>
+              </Link>
             </div>
           </div>
 

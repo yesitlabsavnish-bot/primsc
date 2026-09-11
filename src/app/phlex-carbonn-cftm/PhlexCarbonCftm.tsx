@@ -50,7 +50,7 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
                 <span>Request a Sample/Quote</span>
                 <img src="/images/top-right-up.svg" />
               </a>
-              <a href="#" className="phlex-hero-btn phlex-hero-btn-outline">
+              <a href="/contact-us" className="phlex-hero-btn phlex-hero-btn-outline">
                 <span>Contact Our Team</span>
               </a>
             </div>
@@ -86,6 +86,17 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
               {data?.phlex_options_subtitle_sub}
             </p>
           </div>
+
+          <div className="phlex-flex-btn-wrapper">
+            <a href="#" className="phlex-flex-btn">
+              View Phlex Carbon CFTM Technical Data Sheet
+              <img
+                src="/images/right-arrow.svg"
+                alt="arrow"
+              />
+            </a>
+          </div>
+          <br />
 
           {/* <!-- Cards Grid --> */}
 

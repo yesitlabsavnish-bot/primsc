@@ -68,6 +68,50 @@
           "placeholder": ""
         },
         "type": "StructuredText"
+      },
+      "sidebar_links_list": {
+        "config": {
+          "fields": {
+            "title": {
+              "config": {
+                "label": "Title",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "redirection": {
+              "config": {
+                "label": "redirection",
+                "placeholder": ""
+              },
+              "type": "Text"
+            }
+          },
+          "label": "sidebar-links-list",
+          "repeat": true
+        },
+        "type": "Group"
+      },
+      "contact_title": {
+        "config": {
+          "label": "contact_title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "email": {
+        "config": {
+          "label": "email",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "number": {
+        "config": {
+          "label": "number",
+          "placeholder": ""
+        },
+        "type": "Text"
       }
     }
   },

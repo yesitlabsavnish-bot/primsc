@@ -53,7 +53,7 @@ const FiberSizingCompound = (
           <span>{data.hero_button_1} </span>
           <img src="/images/top-right-up.svg"/>
         </a>
-        <a href="#" className="phlex-hero-btn phlex-hero-btn-outline">
+        <a href="/contact-us" className="phlex-hero-btn phlex-hero-btn-outline">
           <span>{data.hero_button_2}</span>
         </a>
       </div>
@@ -91,6 +91,16 @@ const FiberSizingCompound = (
         {data.about_description_2}
       </p>
     </div>
+
+          <div className="phlex-flex-btn-wrapper">
+            <a href="#" className="phlex-flex-btn">
+              View Fiber Sizing Compounds Technical Data Sheet
+              <img
+                src="/images/right-arrow.svg"
+                alt="arrow"
+              />
+            </a>
+          </div>
     
   </div>
 </section>
@@ -200,7 +210,7 @@ const FiberSizingCompound = (
 {/* <!-- Have a Specific Material Requirement?  END --> */}
 
 {/* <!-- Frequently asked questions Strat --> */}
-<section className="phlex-faq-section">
+{/* <section className="phlex-faq-section">
   <div className="phlex-faq-container">
     
     <h2 className="phlex-faq-main-title">Frequently asked questions</h2>
@@ -267,8 +277,9 @@ const FiberSizingCompound = (
     </div>
 
   </div>
-</section>
+</section> */}
 {/* <!-- Frequently asked questions END --> */}
+<Faq data={data?.faqs} />
     
     </></>
   )

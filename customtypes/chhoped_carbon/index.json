@@ -302,6 +302,13 @@
           "placeholder": ""
         },
         "type": "Text"
+      },
+      "titlem": {
+        "config": {
+          "label": "Titlem",
+          "placeholder": ""
+        },
+        "type": "Text"
       }
     }
   },

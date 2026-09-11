@@ -572,6 +572,31 @@ interface AboutUsDocumentData {
 export type AboutUsDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<Simplify<AboutUsDocumentData>, "about_us", Lang>;
 
 /**
+ * Item in *Blog → sidebar-links-list*
+ */
+export interface BlogDocumentDataSidebarLinksListItem {
+	/**
+	 * Title field in *Blog → sidebar-links-list*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blog.sidebar_links_list[].title
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	title: prismic.KeyTextField;
+	
+	/**
+	 * redirection field in *Blog → sidebar-links-list*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blog.sidebar_links_list[].redirection
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	redirection: prismic.KeyTextField;
+}
+
+/**
  * Content for Blog documents
  */
 interface BlogDocumentData {
@@ -662,6 +687,50 @@ interface BlogDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
 	 */
 	content: prismic.RichTextField;
+	
+	/**
+	 * sidebar-links-list field in *Blog*
+	 *
+	 * - **Field Type**: Group
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blog.sidebar_links_list[]
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
+	 */
+	sidebar_links_list: prismic.GroupField<Simplify<BlogDocumentDataSidebarLinksListItem>>;
+	
+	/**
+	 * contact_title field in *Blog*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blog.contact_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	contact_title: prismic.KeyTextField;
+	
+	/**
+	 * email field in *Blog*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blog.email
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	email: prismic.KeyTextField;
+	
+	/**
+	 * number field in *Blog*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blog.number
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	number: prismic.KeyTextField;
 }
 
 /**
@@ -1121,6 +1190,17 @@ interface ChhopedCarbonDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	phlex_flexibility_title: prismic.KeyTextField;
+	
+	/**
+	 * Titlem field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.titlem
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	titlem: prismic.KeyTextField;
 }
 
 /**
@@ -3521,6 +3601,71 @@ interface PhlexCarbonFctmDocumentData {
 export type PhlexCarbonFctmDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<Simplify<PhlexCarbonFctmDocumentData>, "phlex_carbon_fctm", Lang>;
 
 /**
+ * Item in *Phlexhomepage → Product card*
+ */
+export interface PhlexhomepageDocumentDataProductCardItem {
+	/**
+	 * product title field in *Phlexhomepage → Product card*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product_card[].product_title
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product_title: prismic.KeyTextField;
+	
+	/**
+	 * product heading field in *Phlexhomepage → Product card*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product_card[].product_heading
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product_heading: prismic.KeyTextField;
+	
+	/**
+	 * product desc 1 field in *Phlexhomepage → Product card*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product_card[].product_desc_1
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product_desc_1: prismic.KeyTextField;
+	
+	/**
+	 * product desc 2 field in *Phlexhomepage → Product card*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product_card[].product_desc_2
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	product_desc_2: prismic.KeyTextField;
+	
+	/**
+	 * product image field in *Phlexhomepage → Product card*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product_card[].product_image
+	 * - **Documentation**: https://prismic.io/docs/fields/image
+	 */
+	product_image: prismic.ImageField<never>;
+	
+	/**
+	 * product link field in *Phlexhomepage → Product card*
+	 *
+	 * - **Field Type**: Link
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlexhomepage.product_card[].product_link
+	 * - **Documentation**: https://prismic.io/docs/fields/link
+	 */
+	product_link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
+}
+
+/**
  * Item in *Phlexhomepage → Demand group*
  */
 export interface PhlexhomepageDocumentDataDemandGroupItem {
@@ -3737,224 +3882,15 @@ interface PhlexhomepageDocumentData {
 	lake_image: prismic.ImageField<never>;
 	
 	/**
-	 * product1_title field in *Phlexhomepage*
+	 * Product card field in *Phlexhomepage*
 	 *
-	 * - **Field Type**: Text
+	 * - **Field Type**: Group
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product1_title
+	 * - **API ID Path**: phlexhomepage.product_card[]
 	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
-	product1_title: prismic.KeyTextField;
-	
-	/**
-	 * product1_heading field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product1_heading
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product1_heading: prismic.KeyTextField;
-	
-	/**
-	 * product1_desc field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product1_desc
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product1_desc: prismic.KeyTextField;
-	
-	/**
-	 * product2_title field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product2_title
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product2_title: prismic.KeyTextField;
-	
-	/**
-	 * product2_heading field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product2_heading
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product2_heading: prismic.KeyTextField;
-	
-	/**
-	 * product2_desc1 field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product2_desc1
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product2_desc1: prismic.KeyTextField;
-	
-	/**
-	 * prproduct2_desc2 field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product2_desc2
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product2_desc2: prismic.KeyTextField;
-	
-	/**
-	 * product3_title field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product3_title
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product3_title: prismic.KeyTextField;
-	
-	/**
-	 * product3_heading field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product3_heading
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product3_heading: prismic.KeyTextField;
-	
-	/**
-	 * product3_desc field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product3_desc
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product3_desc: prismic.KeyTextField;
-	
-	/**
-	 * product3_desc2 field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product3_desc2
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product3_desc2: prismic.KeyTextField;
-	
-	/**
-	 * product4_title field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product4_title
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product4_title: prismic.KeyTextField;
-	
-	/**
-	 * product4_heading field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product4_heading
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product4_heading: prismic.KeyTextField;
-	
-	/**
-	 * product4_desc field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product4_desc
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product4_desc: prismic.KeyTextField;
-	
-	/**
-	 * product5_title field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product5_title
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product5_title: prismic.KeyTextField;
-	
-	/**
-	 * product5_heading field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product5_heading
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product5_heading: prismic.KeyTextField;
-	
-	/**
-	 * product5_desc field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product5_desc
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product5_desc: prismic.KeyTextField;
-	
-	/**
-	 * product6_title field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product6_title
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product6_title: prismic.KeyTextField;
-	
-	/**
-	 * product6_heading field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product6_heading
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product6_heading: prismic.KeyTextField;
-	
-	/**
-	 * product6_desc field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.product6_desc
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	product6_desc: prismic.KeyTextField;
+	product_card: prismic.GroupField<Simplify<PhlexhomepageDocumentDataProductCardItem>>;
 	
 	/**
 	 * Demand head black field in *Phlexhomepage*
@@ -4010,116 +3946,6 @@ interface PhlexhomepageDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	demand_desc2: prismic.KeyTextField;
-	
-	/**
-	 * dhead1 field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.dhead1
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	dhead1: prismic.KeyTextField;
-	
-	/**
-	 * ddesc1 field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.ddesc1
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	ddesc1: prismic.KeyTextField;
-	
-	/**
-	 * dhead2 field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.dhead2
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	dhead2: prismic.KeyTextField;
-	
-	/**
-	 * ddesc2 field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.ddesc2
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	ddesc2: prismic.KeyTextField;
-	
-	/**
-	 * dhead3 field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.dhead3
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	dhead3: prismic.KeyTextField;
-	
-	/**
-	 * ddesc3 field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.ddesc3
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	ddesc3: prismic.KeyTextField;
-	
-	/**
-	 * dhead4 field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.dhead4
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	dhead4: prismic.KeyTextField;
-	
-	/**
-	 * ddesc4 field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.ddesc4
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	ddesc4: prismic.KeyTextField;
-	
-	/**
-	 * dhead5 field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.dhead5
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	dhead5: prismic.KeyTextField;
-	
-	/**
-	 * ddesc5 field in *Phlexhomepage*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlexhomepage.ddesc5
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	ddesc5: prismic.KeyTextField;
 	
 	/**
 	 * Demand group field in *Phlexhomepage*
@@ -5054,6 +4880,7 @@ declare module "@prismicio/client" {
 			AboutUsDocumentDataPathFlowItem,
 			BlogDocument,
 			BlogDocumentData,
+			BlogDocumentDataSidebarLinksListItem,
 			ChhopedCarbonDocument,
 			ChhopedCarbonDocumentData,
 			ChhopedCarbonDocumentDataPhlexOptionsCardItem,
@@ -5100,6 +4927,7 @@ declare module "@prismicio/client" {
 			PhlexCarbonFctmDocumentDataPhlexOptionsCardItem,
 			PhlexhomepageDocument,
 			PhlexhomepageDocumentData,
+			PhlexhomepageDocumentDataProductCardItem,
 			PhlexhomepageDocumentDataDemandGroupItem,
 			PhlexhomepageDocumentDataWhyCardItem,
 			Spcf12KTowDocument,

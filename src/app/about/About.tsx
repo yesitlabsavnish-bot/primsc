@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 
 const About = (
@@ -415,7 +416,7 @@ React.useEffect(() => {
 
           <div className="pcf-cta-action-group">
             <a
-              href="#request-sample"
+              href="/contact-us"
               className="pcf-cta-btn pcf-cta-btn-primary"
             >
               Talk to Our Team

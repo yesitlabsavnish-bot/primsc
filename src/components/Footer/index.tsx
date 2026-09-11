@@ -41,7 +41,7 @@ const index = () => {
                 <ul className="footer-links-list">
                     <li><a href="/about">About</a></li>
                     <li><a href="/blog">Resources</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/contact-us">Contact</a></li>
                 </ul>
             </div>
             </div>

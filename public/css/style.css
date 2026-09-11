@@ -2932,6 +2932,23 @@ table.phlex-props-table td:hover {
     z-index: 2;
 }
 
+    .phlex-product-card {
+        transition: background-color 0.3s ease;
+    }
+
+    .phlex-product-card:hover {
+        background-color: #001b54;
+        color: #ffffff;
+    }
+
+    .phlex-product-card:hover .phlex-card-overlay {
+        background: linear-gradient(
+            180deg,
+            #001b54 0%,
+            rgba(0, 27, 84, 0) 100%
+        );
+    }
+
 /*==================================
   Responsive Styles
 ==================================*/

@@ -94,145 +94,61 @@
         },
         "type": "Image"
       },
-      "product1_title": {
+      "product_card": {
         "config": {
-          "label": "product1_title",
-          "placeholder": ""
+          "fields": {
+            "product_title": {
+              "config": {
+                "label": "product title",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "product_heading": {
+              "config": {
+                "label": "product heading",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "product_desc_1": {
+              "config": {
+                "label": "product desc 1",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "product_desc_2": {
+              "config": {
+                "label": "product desc 2",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "product_image": {
+              "config": {
+                "constraint": {},
+                "label": "product image",
+                "thumbnails": []
+              },
+              "type": "Image"
+            },
+            "product_link": {
+              "config": {
+                "allowTargetBlank": true,
+                "allowText": true,
+                "label": "product link",
+                "placeholder": "",
+                "repeat": false,
+                "select": null
+              },
+              "type": "Link"
+            }
+          },
+          "label": "Product card",
+          "repeat": true
         },
-        "type": "Text"
-      },
-      "product1_heading": {
-        "config": {
-          "label": "product1_heading",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product1_desc": {
-        "config": {
-          "label": "product1_desc",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product2_title": {
-        "config": {
-          "label": "product2_title",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product2_heading": {
-        "config": {
-          "label": "product2_heading",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product2_desc1": {
-        "config": {
-          "label": "product2_desc1",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product2_desc2": {
-        "config": {
-          "label": "prproduct2_desc2",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product3_title": {
-        "config": {
-          "label": "product3_title",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product3_heading": {
-        "config": {
-          "label": "product3_heading",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product3_desc": {
-        "config": {
-          "label": "product3_desc",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product3_desc2": {
-        "config": {
-          "label": "product3_desc2",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product4_title": {
-        "config": {
-          "label": "product4_title",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product4_heading": {
-        "config": {
-          "label": "product4_heading",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product4_desc": {
-        "config": {
-          "label": "product4_desc",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product5_title": {
-        "config": {
-          "label": "product5_title",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product5_heading": {
-        "config": {
-          "label": "product5_heading",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product5_desc": {
-        "config": {
-          "label": "product5_desc",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product6_title": {
-        "config": {
-          "label": "product6_title",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product6_heading": {
-        "config": {
-          "label": "product6_heading",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "product6_desc": {
-        "config": {
-          "label": "product6_desc",
-          "placeholder": ""
-        },
-        "type": "Text"
+        "type": "Group"
       },
       "demand_head_black": {
         "config": {
@@ -265,76 +181,6 @@
       "demand_desc2": {
         "config": {
           "label": "demand desc2",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "dhead1": {
-        "config": {
-          "label": "dhead1",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "ddesc1": {
-        "config": {
-          "label": "ddesc1",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "dhead2": {
-        "config": {
-          "label": "dhead2",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "ddesc2": {
-        "config": {
-          "label": "ddesc2",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "dhead3": {
-        "config": {
-          "label": "dhead3",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "ddesc3": {
-        "config": {
-          "label": "ddesc3",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "dhead4": {
-        "config": {
-          "label": "dhead4",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "ddesc4": {
-        "config": {
-          "label": "ddesc4",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "dhead5": {
-        "config": {
-          "label": "dhead5",
-          "placeholder": ""
-        },
-        "type": "Text"
-      },
-      "ddesc5": {
-        "config": {
-          "label": "ddesc5",
           "placeholder": ""
         },
         "type": "Text"
