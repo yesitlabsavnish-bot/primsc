@@ -1,4 +1,6 @@
+"use client";
 import Faq from '@/components/Faq'
+import Link from 'next/link'
 import React from 'react'
 
 const PhlexCarbonSpcf = (
@@ -45,19 +47,26 @@ const PhlexCarbonSpcf = (
 
       {/* Action Buttons Container */}
       <div className="phlex-hero-btn-group">
-        <a href="#" className="phlex-hero-btn phlex-hero-btn-white">
+        <Link href="#" className="phlex-hero-btn phlex-hero-btn-white">
           <span>{data.hero_button_1}</span>
           <img src="/images/top-right-up.svg"/>
-        </a>
-        <a href="/contact-us" className="phlex-hero-btn phlex-hero-btn-outline">
+        </Link>
+        <Link href="/contact-us" className="phlex-hero-btn phlex-hero-btn-outline">
           <span>{data.hero_button_2}</span>
-        </a>
+        </Link>
       </div>
 
     </div>
 
     {/* Scroll Indicator Bottom */}
-    <div className="phlex-hero-scroll">
+    <div 
+      className="phlex-hero-scroll"
+      onClick={() => {
+        document.querySelector(".phlex-adv-section")?.scrollIntoView({ behavior: "smooth" });
+        window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+      }}
+      style={{ cursor: "pointer" }}
+    >
       <span>SCROLL TO EXPLORE</span>
       <i className="ri-arrow-down-s-line phlex-hero-scroll-icon"></i>
     </div>
@@ -82,7 +91,7 @@ const PhlexCarbonSpcf = (
       </p>
 
           <div className="phlex-flex-btn-wrapper">
-            <a href="#" className="phlex-flex-btn">
+            <a href="#" download className="phlex-flex-btn">
               View Phelx Carbon SPCF 12K Tow Technical Data Sheet
               <img
                 src="/images/right-arrow.svg"
@@ -239,12 +248,12 @@ const PhlexCarbonSpcf = (
       </p>
 
       <div className="phlex-cta-btn-group">
-        <a href="#request-sample" className="phlex-cta-btn phlex-cta-btn-white">
+        <Link href="#request-sample" className="phlex-cta-btn phlex-cta-btn-white">
           {data.tell_us_button1} <img src="/images/top-right-up.svg"/>
-        </a>
-        <a href="#contact" className="phlex-cta-btn phlex-cta-btn-outline">
+        </Link>
+        <Link href="contact-us" className="phlex-cta-btn phlex-cta-btn-outline">
           {data.tell_us_button2}
-        </a>
+        </Link>
       </div>
 
     </div>

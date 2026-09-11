@@ -120,7 +120,14 @@ const mapUrl = `https://www.google.com/maps?q=${latitude},${longitude}&output=em
           </div>
 
           {/* <!-- Scroll Indicator Bottom --> */}
-          <div className="phlex-hero-scroll">
+          <div 
+            className="phlex-hero-scroll"
+            onClick={() => {
+              document.querySelector(".phlex-adv-section")?.scrollIntoView({ behavior: "smooth" });
+              window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <span>SCROLL TO EXPLORE</span>
             <i className="ri-arrow-down-s-line phlex-hero-scroll-icon"></i>
           </div>

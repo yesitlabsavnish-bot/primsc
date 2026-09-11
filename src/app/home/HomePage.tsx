@@ -43,16 +43,23 @@ const HomePage = (
             </p>
 
             <div className="phlex-hero-btn-group">
-              <a
+              <Link
                 href="#"
                 className="phlex-hero-btn phlex-hero-btn-outline"
               >
                 <span>Request a Sample or Quote</span>
-              </a>
+              </Link>
             </div>
           </div>
 
-          <div className="phlex-hero-scroll">
+          <div 
+            className="phlex-hero-scroll"
+            onClick={() => {
+              document.querySelector(".phlex-adv-section")?.scrollIntoView({ behavior: "smooth" });
+              window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+            }}
+            style={{ cursor: "pointer" }}
+          >
             <span>SCROLL TO EXPLORE</span>
             <i className="ri-arrow-down-s-line phlex-hero-scroll-icon"></i>
           </div>
@@ -114,7 +121,7 @@ const HomePage = (
             </p>
 
             <p className="phlex-cta-desc">
-             {data.lake_desc_2} 
+              {data.lake_desc_2}
             </p>
           </div>
         </div>
@@ -382,7 +389,7 @@ const HomePage = (
               </div>
             ))}
           </div>
-          
+
         </div>
       </section>
       {/* Carbon Fiber Products Section End */}
@@ -477,9 +484,8 @@ const HomePage = (
                 {data.demand_group?.map((item: any, index: number) => (
                   <div
                     key={index}
-                    className={`phlex-tab-item ${
-                      activeDemand === index ? "active" : ""
-                    }`}
+                    className={`phlex-tab-item ${activeDemand === index ? "active" : ""
+                      }`}
                     onClick={() => setActiveDemand(index)}
                   >
                     <h3 className="phlex-tab-title">
@@ -610,43 +616,42 @@ const HomePage = (
             <div className="phlex-why-right">
 
 
-                {data.why_card?.map((card: any, index: number) => (
-                  <div
-                    className={`phlex-card ${
-                      index % 2 === 0 ? "bg-grey" : "bg-blue"
+              {data.why_card?.map((card: any, index: number) => (
+                <div
+                  className={`phlex-card ${index % 2 === 0 ? "bg-grey" : "bg-blue"
                     }`}
-                    key={index}
-                  >
-                    <div className="phlex-card-num">
-                      {card.why_title}
-                    </div>
-
-                    <div className="phlex-card-content">
-                      <h3 className="phlex-card-title">
-                        {card.why_heading}
-                      </h3>
-
-                      <p className="phlex-card-desc">
-                        {card.why_description}
-                      </p>
-                    </div>
-
-                    <div className="phlex-card-img">
-                      <img
-                        src={card.why_image?.url || ""}
-                        alt={
-                          card.why_image?.alt ||
-                          card.why_title ||
-                          ""
-                        }
-                      />
-                    </div>
+                  key={index}
+                >
+                  <div className="phlex-card-num">
+                    {card.why_title}
                   </div>
-                ))}
+
+                  <div className="phlex-card-content">
+                    <h3 className="phlex-card-title">
+                      {card.why_heading}
+                    </h3>
+
+                    <p className="phlex-card-desc">
+                      {card.why_description}
+                    </p>
+                  </div>
+
+                  <div className="phlex-card-img">
+                    <img
+                      src={card.why_image?.url || ""}
+                      alt={
+                        card.why_image?.alt ||
+                        card.why_title ||
+                        ""
+                      }
+                    />
+                  </div>
+                </div>
+              ))}
 
 
             </div>
-            
+
           </div>
         </div>
       </section>
@@ -668,7 +673,7 @@ const HomePage = (
           </p>
 
           <div className="pcf-cta-action-group">
-            <a
+            <Link
               href="#request-sample"
               className="pcf-cta-btn pcf-cta-btn-primary"
             >
@@ -677,14 +682,14 @@ const HomePage = (
                 src="/images/top-right-up.svg"
                 alt=""
               />
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/contact-us"
               className="pcf-cta-btn pcf-cta-btn-secondary"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -718,7 +723,7 @@ const HomePage = (
             </div>
           </div>
 
-     <div className="pcf-res-grid">
+          <div className="pcf-res-grid">
             {blogs?.map((blog: any, index: number) => (
               <article className="pcf-res-card" key={blog.id || index}>
                 <div className={`pcf-res-img-wrapper ${index % 2 === 0 ? 'pcf-res-img-tall' : 'pcf-res-img-short'}`}>
@@ -734,12 +739,12 @@ const HomePage = (
                     />
                   )}
                 </div>
- 
+
                 <div className="pcf-res-card-content">
                   <span className="pcf-res-date">
                     {blog.data.publication_date || "Jan 15, 2025"}
                   </span>
- 
+
                   <h3 className="pcf-res-card-title">
                     <Link href={`/blog-detail/${blog.uid}`}>
                       {blog.data.title}

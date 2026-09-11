@@ -12,9 +12,9 @@ const Blog = ({ blogs, page, totalPages, blogData }: { blogs: any[]; page: numbe
     <>
       <main>
         {/* Hero Banner */}
-        <section className="phlex-hero-banner"  style={{
-    background: `#0a0a0a url('${blogData?.background_image?.url}') no-repeat center center / cover`,
-  }}>
+                  <section className="phlex-hero-banner"  style={{
+              background: `#0a0a0a url('${blogData?.background_image?.url}') no-repeat center center / cover`,
+            }}>
           <div className="phlex-hero-overlay"></div>
 
           <div className="phlex-hero-container">
@@ -37,7 +37,14 @@ const Blog = ({ blogs, page, totalPages, blogData }: { blogs: any[]; page: numbe
               </p>
             </div>
 
-            <div className="phlex-hero-scroll">
+            <div 
+              className="phlex-hero-scroll"
+              onClick={() => {
+                document.querySelector(".phlex-adv-section")?.scrollIntoView({ behavior: "smooth" });
+                window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+              }}
+              style={{ cursor: "pointer" }}
+            >
               <span>SCROLL TO EXPLORE</span>
               <i className="ri-arrow-down-s-line phlex-hero-scroll-icon"></i>
             </div>
@@ -49,7 +56,7 @@ const Blog = ({ blogs, page, totalPages, blogData }: { blogs: any[]; page: numbe
           <div className="bl-container">
 
             <h2 className="bl-main-title">
-              Blogs List
+             Resources
             </h2>
 
             <div className="bl-grid">

@@ -1,6 +1,8 @@
+"use client";
 import Faq from '@/components/Faq'
 import React from 'react'
 import { PrismicText } from '@prismicio/react'
+import Link from 'next/link';
 
 const renderText = (field: any) => {
     if (!field) return null;
@@ -53,19 +55,26 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
 
                         {/* Action Buttons Container */}
                         <div className="phlex-hero-btn-group">
-                            <a href="#" className="phlex-hero-btn phlex-hero-btn-white">
+                            <Link href="#" className="phlex-hero-btn phlex-hero-btn-white">
                                 <span>Request a Sample/Quote</span>
                                 <img src="/images/top-right-up.svg" />
-                            </a>
-                            <a href="/contact-us" className="phlex-hero-btn phlex-hero-btn-outline">
+                            </Link>
+                            <Link href="/contact-us" className="phlex-hero-btn phlex-hero-btn-outline">
                                 <span>Contact Our Team</span>
-                            </a>
+                            </Link>
                         </div>
 
                     </div>
 
                     {/* Scroll Indicator Bottom */}
-                    <div className="phlex-hero-scroll">
+                    <div 
+                      className="phlex-hero-scroll"
+                      onClick={() => {
+                        document.querySelector(".phlex-adv-section")?.scrollIntoView({ behavior: "smooth" });
+                        window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+                      }}
+                      style={{ cursor: "pointer" }}
+                    >
                         <span>SCROLL TO EXPLORE</span>
                         <i className="ri-arrow-down-s-line phlex-hero-scroll-icon"></i>
                     </div>
@@ -117,10 +126,14 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
                     {renderText(item?.phlex_options_card_text3)}
                   </p>
                   <br />
-                    <a href="#" className="phlex-hero-btn phlex-hero-btn-white">
+                  <a
+                        href={item?.phlex_options_card_datasheet?.url||'#'}
+                        download
+                        className="phlex-hero-btn phlex-hero-btn-white"
+                        >
                         <span>{renderText(item?.phlex_options_card_datasheet)}</span>
-                        <img src="/images/top-right-up.svg" />
-                    </a>
+                        <img src="/images/top-right-up.svg" alt="" />
+                        </a>
                 </div>
               </div>
             ))}
