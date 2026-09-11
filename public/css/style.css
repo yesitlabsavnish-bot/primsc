@@ -480,7 +480,7 @@ a {
     font-size: 40px;
     font-weight: 500;
     letter-spacing: -0.5px;
-    margin: 0;
+    margin: -75px 20px;
 }
 
 
@@ -587,7 +587,9 @@ a {
 
 .content-container h3 {
     font-size: 20px;
+    margin-left: 0;
 }
+
 
 .content-container p {
     color: #808080;

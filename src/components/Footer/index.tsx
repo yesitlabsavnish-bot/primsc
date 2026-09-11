@@ -11,7 +11,7 @@ const index = () => {
 
             <div className="footer-brand">
                 <a href="/home" className="footer-logo">
-                    <img src="images/footer-logo.png" alt="PHLEX Carbon Fiber Logo" />
+                    <img src="/images/footer-logo.png" alt="PHLEX Carbon Fiber Logo" />
                 </a>
                 <h2 className="footer-heading">
                     We growing up your business<br />with personal AI manager.

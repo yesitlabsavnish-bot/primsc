@@ -1,17 +1,29 @@
 
+import Pagination from "@/components/Pagination";
 import { createClient } from "@/lib/prismic";
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function BlogPage() {
-  const client = createClient()
+export default async function BlogPage(props: {
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const searchParams = await props.searchParams;
+  const pageParam = searchParams?.page;
+  const page = typeof pageParam === "string" ? parseInt(pageParam, 10) : 1;
 
-  const blogs = await client.getAllByType("blog", {
+  const client = createClient();
+
+  const blogsResponse = await client.getByType("blog", {
     orderings: {
       field: "my.blog.publication_date",
       direction: "desc",
     },
+    page,
+    pageSize: 6,
   });
+
+  const blogs = blogsResponse.results;
+  const totalPages = blogsResponse.total_pages;
 
   return (
     <main>
@@ -125,7 +137,10 @@ export default async function BlogPage() {
               </div>
             ))}
 
+
+
           </div>
+          <Pagination currentPage={page} totalPages={totalPages} />
 
         </div>
       </section>
