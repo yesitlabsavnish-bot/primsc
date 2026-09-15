@@ -11,7 +11,7 @@ const FiberSizingCompound = (
   }
 ) => {
 
-
+console.log(data)
   return (
     <>
 
@@ -102,7 +102,7 @@ const FiberSizingCompound = (
             </div>
 
             <div className="phlex-flex-btn-wrapper">
-              <a href="#" download className="phlex-flex-btn">
+              <a href={(data?.fibersizing_datasheet as any)?.url} download target="_blank" className="phlex-flex-btn">
                 View Fiber Sizing Compounds Technical Data Sheet
                 <img
                   src="/images/right-arrow.svg"

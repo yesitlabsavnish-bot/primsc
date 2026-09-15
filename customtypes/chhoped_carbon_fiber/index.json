@@ -364,6 +364,17 @@
                 "placeholder": ""
               },
               "type": "Text"
+            },
+            "phlex_options_subtitle_datasheet": {
+              "config": {
+                "allowTargetBlank": true,
+                "allowText": true,
+                "label": "phlex-options-subtitle-datasheet",
+                "placeholder": "",
+                "repeat": false,
+                "select": null
+              },
+              "type": "Link"
             }
           },
           "label": "phlex-options-card",

@@ -886,6 +886,16 @@ export interface ChhopedCarbonDocumentDataPhlexOptionsCardItem {
 	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	phlex_options_card_text3: prismic.KeyTextField;
+	
+	/**
+	 * datasheet-pdf field in *chhopedCarbon → phlex-options-card*
+	 *
+	 * - **Field Type**: Link
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.phlex_options_card[].datasheet_pdf
+	 * - **Documentation**: https://prismic.io/docs/fields/link
+	 */
+	datasheet_pdf: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 }
 
 /**
@@ -1529,6 +1539,16 @@ export interface ChhopedCarbonFiberDocumentDataPhlexOptionsCardItem {
 	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	phlex_options_card_overlay: prismic.KeyTextField;
+	
+	/**
+	 * phlex-options-subtitle-datasheet field in *PhlexCarbon fctm → phlex-options-card*
+	 *
+	 * - **Field Type**: Link
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon_fiber.phlex_options_card[].phlex_options_subtitle_datasheet
+	 * - **Documentation**: https://prismic.io/docs/fields/link
+	 */
+	phlex_options_subtitle_datasheet: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 }
 
 /**
@@ -2390,6 +2410,17 @@ interface FiberSizingDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	contact_button: prismic.KeyTextField;
+	
+	/**
+	 * fibersizing datasheet field in *Fiber Sizing*
+	 *
+	 * - **Field Type**: Link
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: fiber_sizing.fibersizing_datasheet
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/link
+	 */
+	fibersizing_datasheet: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 }
 
 /**
@@ -3121,6 +3152,17 @@ interface PhlexCarbonCfmDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/image
 	 */
 	background_image: prismic.ImageField<never>;
+	
+	/**
+	 * cfm datasheet field in *PhlexCarbon CFM*
+	 *
+	 * - **Field Type**: Link
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlex_carbon_cfm.cfm_datasheet
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/link
+	 */
+	cfm_datasheet: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 }
 
 /**
@@ -3680,6 +3722,17 @@ interface PhlexCarbonFctmDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	phlex_options_card: prismic.GroupField<Simplify<PhlexCarbonFctmDocumentDataPhlexOptionsCardItem>>;
+	
+	/**
+	 * datasheet-pdf field in *PhlexCarbon fctm*
+	 *
+	 * - **Field Type**: Link
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlex_carbon_fctm.datasheet_pdf
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/link
+	 */
+	datasheet_pdf: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 }
 
 /**
@@ -4625,6 +4678,17 @@ interface Spcf12KTowDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	faqs: prismic.GroupField<Simplify<Spcf12KTowDocumentDataFaqsItem>>;
+	
+	/**
+	 * spcf_datasheet field in *SPCF 12K Tow*
+	 *
+	 * - **Field Type**: Link
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: spcf_12_k_tow.spcf_datasheet
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/link
+	 */
+	spcf_datasheet: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
 }
 
 /**

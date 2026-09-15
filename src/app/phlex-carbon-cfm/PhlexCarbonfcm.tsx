@@ -9,6 +9,9 @@ const PhlexCarbonfcm = ({
 }: {
   data: Content.PhlexCarbonCfmDocumentData
 }) => {
+
+
+  console.log("PhlexCarbonfcm data:", data);
   return (
     <>
       {/* <!-- Hero Banner Section Start --> */}
@@ -110,13 +113,19 @@ const PhlexCarbonfcm = ({
             <br />
 
             <div className="phlex-flex-btn-wrapper">
-              <a href="#" download className="phlex-flex-btn">
-                View Phlex Carbon CFM Technical Data Sheet
-                <img
-                  src="/images/right-arrow.svg"
-                  alt="arrow"
-                />
-              </a>
+            <a
+ href={(data?.cfm_datasheet as any)?.url || "#"}
+  download
+  target="_blank"
+  rel="noopener noreferrer"
+  className="phlex-flex-btn"
+>
+  View Phlex Carbon CFM Technical Data Sheet
+  <img
+    src="/images/right-arrow.svg"
+    alt="arrow"
+  />
+</a>
             </div>
           </div>
 

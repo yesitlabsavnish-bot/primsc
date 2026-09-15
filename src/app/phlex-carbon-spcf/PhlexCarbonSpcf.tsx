@@ -10,7 +10,11 @@ const PhlexCarbonSpcf = (
     data: any
   }
 ) => {
+
+  console.log(data)
   return (
+
+    
           <>
       {/* <!-- Hero Banner Section Start --> */}
 <section className="phlex-hero-banner-spcf">
@@ -91,7 +95,7 @@ const PhlexCarbonSpcf = (
       </p>
 
           <div className="phlex-flex-btn-wrapper">
-            <a href="#" download className="phlex-flex-btn">
+            <a href={(data?.spcf_datasheet as any)?.url || "#"} download target="_blank" className="phlex-flex-btn">
               View Phelx Carbon SPCF 12K Tow Technical Data Sheet
               <img
                 src="/images/right-arrow.svg"

@@ -229,6 +229,17 @@
           "placeholder": ""
         },
         "type": "Text"
+      },
+      "fibersizing_datasheet": {
+        "config": {
+          "allowTargetBlank": true,
+          "allowText": true,
+          "label": "fibersizing datasheet",
+          "placeholder": "",
+          "repeat": false,
+          "select": null
+        },
+        "type": "Link"
       }
     }
   },

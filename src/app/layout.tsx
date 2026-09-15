@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 	title: "Phlex Carbon | Chopped Carbon Fiber",
 	description: "Phlex Carbon Fiber offers precision-cut, short-length chopped carbon fiber in two fiber grades: PhlexCarbon Chopped HSC and PhlexCarbon Chopped IMC.",
 	icons: {
-		icon: "/images/logo.png",
+		icon: "/images/FAVICON.svg",
 	}
 };
 

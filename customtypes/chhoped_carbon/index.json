@@ -132,6 +132,17 @@
                 "placeholder": ""
               },
               "type": "Text"
+            },
+            "datasheet_pdf": {
+              "config": {
+                "allowTargetBlank": true,
+                "allowText": true,
+                "label": "datasheet-pdf",
+                "placeholder": "",
+                "repeat": false,
+                "select": null
+              },
+              "type": "Link"
             }
           },
           "label": "phlex-options-card",

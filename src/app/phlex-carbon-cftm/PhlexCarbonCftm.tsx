@@ -99,7 +99,7 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
           </div>
 
           <div className="phlex-flex-btn-wrapper">
-            <a href="#" download className="phlex-flex-btn">
+            <a href={(data?.datasheet_pdf as any )?.url} download target="_blank" className="phlex-flex-btn">
               View Phlex Carbon CFTM Technical Data Sheet
               <img
                 src="/images/right-arrow.svg"

@@ -280,6 +280,17 @@
           "repeat": true
         },
         "type": "Group"
+      },
+      "spcf_datasheet": {
+        "config": {
+          "allowTargetBlank": true,
+          "allowText": true,
+          "label": "spcf_datasheet",
+          "placeholder": "",
+          "repeat": false,
+          "select": null
+        },
+        "type": "Link"
       }
     }
   },

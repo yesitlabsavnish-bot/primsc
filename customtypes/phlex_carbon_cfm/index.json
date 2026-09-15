@@ -385,6 +385,17 @@
           "thumbnails": []
         },
         "type": "Image"
+      },
+      "cfm_datasheet": {
+        "config": {
+          "allowTargetBlank": true,
+          "allowText": true,
+          "label": "cfm datasheet",
+          "placeholder": "",
+          "repeat": false,
+          "select": null
+        },
+        "type": "Link"
       }
     }
   },
