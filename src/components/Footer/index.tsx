@@ -27,8 +27,8 @@ const index = () => {
                 <div className="footer-products-grid">
                    <ul className="footer-links-list">
                         <li><Link href="/chhoped-carbon-fiber">Chopped Carbon Fiber</Link></li>
-                        <li><Link href="/phlex-carbonn-cftm">Phlex Carbon CFTM</Link></li>
-                        <li><Link href="/phlex-carbon-fcm">Phlex Carbon CFM</Link></li>
+                        <li><Link href="/phlex-carbon-cftm">Phlex Carbon CFTM</Link></li>
+                        <li><Link href="/phlex-carbon-cfm">Phlex Carbon CFM</Link></li>
                         <li><Link href="/phlex-carbon-spcf">Phelx Carbon SPCF 12K Tow</Link></li>
                         <li><Link href="/fiber-sizing-compound">Fiber Sizing Compounds</Link></li>
                     </ul> 

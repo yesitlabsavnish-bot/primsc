@@ -59,8 +59,8 @@ const Header = () => {
 
   const isProductActive =
   pathname === "/chhoped-carbon-fiber" ||
-  pathname === "/phlex-carbonn-cftm" ||
-  pathname === "/phlex-carbon-fcm" ||
+  pathname === "/phlex-carbon-cftm" ||
+  pathname === "/phlex-carbon-cfm" ||
   pathname === "/phlex-carbon-spcf" ||
   pathname === "/fiber-sizing-compound";
 
@@ -120,13 +120,13 @@ console.log("pathname:", pathname, "isProductActive:", isProductActive);
               </li>
 
               <li>
-                <Link href="/phlex-carbonn-cftm">
+                <Link href="/phlex-carbon-cftm">
                   Phlex Carbon CFTM
                 </Link>
               </li>
 
               <li>
-                <Link href="/phlex-carbon-fcm">
+                <Link href="/phlex-carbon-cfm">
                   Phlex Carbon CFM
                 </Link>
               </li>

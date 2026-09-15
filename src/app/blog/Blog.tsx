@@ -20,7 +20,7 @@ const Blog = ({ blogs, page, totalPages, blogData }: { blogs: any[]; page: numbe
           <div className="phlex-hero-container">
             <div className="phlex-hero-content">
               <h1 className="phlex-hero-title">
-                {blogData?.blog_title}.
+                {blogData?.blog_title}
               </h1>
 
               {/* <h2 className="phlex-hero-subtitle">

@@ -157,9 +157,9 @@ const PhlexCarbonSpcf = (
           {data.winding_subtitle}
         </p>
 
-         <p className="phlex-process-desc">{data.winding_des1}</p>
+         <p className="phlex-process-desc" style={{marginBottom:'0px'}}>{data.winding_des1}</p>
          <p className="phlex-process-desc">{data.winding_des2}</p>
-         <p className="phlex-process-desc">{data.winding_des3}</p>
+         <p className="phlex-process-desc" style={{marginBottom:'0px'}}>{data.winding_des3}</p>
          <p className="phlex-process-desc">{data.winding_des4}</p>
 
         <p className="phlex-process-desc">

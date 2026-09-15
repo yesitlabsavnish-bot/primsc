@@ -19,7 +19,7 @@ export default async function BlogPage(props: {
           direction: "desc",
         },
         page,
-        pageSize: 6,
+        pageSize: 12,
       });
 
 

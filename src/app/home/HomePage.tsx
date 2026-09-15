@@ -482,6 +482,61 @@ const HomePage = (
                   </p>
                 </div>
               </div> */}
+
+               <div className="phlex-apps-right mobile">
+              <div className="phlex-circle-badge">
+                <svg
+                  className="phlex-rotating-text"
+                  viewBox="0 0 100 100"
+                >
+                  <path
+                    id="circlePath"
+                    d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                    fill="none"
+                  />
+
+                  <text
+                    fontSize="10.5"
+                    fontWeight="600"
+                    fill="#031F55"
+                    letterSpacing="1.2"
+                  >
+                    <textPath href="#circlePath">
+                      PHLEX CARBON FIBER PHLEX CARBON FIBER PHLEX CARBON FIBER
+                    </textPath>
+                  </text>
+                </svg>
+
+                <div className="phlex-center-logo">
+                  <img
+                    src="/images/move-logo.png"
+                    alt="Phlex Logo"
+                  />
+                </div>
+              </div>
+
+              {/* <div className="phlex-img-frame">
+                <img
+                  id="phlexFeatureImg"
+                  src="/images/item-1.svg"
+                  alt="Aerospace & Defense"
+                />
+              </div> */}
+              <div className="phlex-img-frame">
+                {data.demand_group?.[activeDemand]?.dimage?.url && (
+                  <img
+                    id="phlexFeatureImg"
+                    src={data.demand_group[activeDemand].dimage.url}
+                    alt={
+                      data.demand_group[activeDemand].dimage.alt ||
+                      data.demand_group[activeDemand].dhead ||
+                      "Phlex Carbon Fiber"
+                    }
+                  />
+                )}
+              </div>
+            </div>
+
               <div className="phlex-apps-tabs">
                 {data.demand_group?.map((item: any, index: number) => (
                   <div
@@ -502,7 +557,7 @@ const HomePage = (
               </div>
             </div>
 
-            <div className="phlex-apps-right">
+            <div className="phlex-apps-right web">
               <div className="phlex-circle-badge">
                 <svg
                   className="phlex-rotating-text"

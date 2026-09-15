@@ -102,35 +102,74 @@ if (document.readyState === 'loading') {
 
 
 /*Home page Img changing According to data Strat*/
+// document.addEventListener('DOMContentLoaded', () => {
+//     const tabItems = document.querySelectorAll('.phlex-tab-item');
+//     const featureImg = document.getElementById('phlexFeatureImg');
+
+//     tabItems.forEach(tab => {
+//         tab.addEventListener('click', function() {
+//             // 1. Remove active class from all tabs
+//             tabItems.forEach(item => item.classList.remove('active'));
+
+//             // 2. Add active class to clicked tab
+//             this.classList.add('active');
+
+//             // 3. Smooth Image Transition
+//             const newImgSrc = this.getAttribute('data-img');
+//             const tabTitle = this.querySelector('.phlex-tab-title').innerText;
+
+//             if (featureImg && newImgSrc) {
+//                 featureImg.style.opacity = '0.3';
+
+//                 setTimeout(() => {
+//                     featureImg.src = newImgSrc;
+//                     featureImg.alt = tabTitle;
+//                     featureImg.style.opacity = '1';
+//                 }, 200);
+//             }
+//         });
+//     });
+// });
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
-    const tabItems = document.querySelectorAll('.phlex-tab-item');
-    const featureImg = document.getElementById('phlexFeatureImg');
-
-    tabItems.forEach(tab => {
-        tab.addEventListener('click', function() {
-            // 1. Remove active class from all tabs
-            tabItems.forEach(item => item.classList.remove('active'));
-
-            // 2. Add active class to clicked tab
-            this.classList.add('active');
-
-            // 3. Smooth Image Transition
-            const newImgSrc = this.getAttribute('data-img');
-            const tabTitle = this.querySelector('.phlex-tab-title').innerText;
-
-            if (featureImg && newImgSrc) {
-                featureImg.style.opacity = '0.3';
-
-                setTimeout(() => {
-                    featureImg.src = newImgSrc;
-                    featureImg.alt = tabTitle;
-                    featureImg.style.opacity = '1';
-                }, 200);
-            }
+    const appSections = document.querySelectorAll('.phlex-apps-section');
+ 
+    appSections.forEach(section => {
+        const tabItems = section.querySelectorAll('.phlex-tab-item');
+        // Section ke andar ke SABHI feature-img elements ko select karein (Mobile + Web)
+        const featureImages = section.querySelectorAll('.phlex-feature-img');
+ 
+        tabItems.forEach(tab => {
+            tab.addEventListener('click', function() {
+                // 1. All tabs se active class remove karein
+                tabItems.forEach(item => item.classList.remove('active'));
+ 
+                // 2. Clicked tab par active class lagayein
+                this.classList.add('active');
+ 
+                // 3. Image Src aur Alt text get karein
+                const newImgSrc = this.getAttribute('data-img');
+                const tabTitle = this.querySelector('.phlex-tab-title')?.innerText || '';
+ 
+                if (newImgSrc && featureImages.length > 0) {
+                    // Sabhi images par opacity fade out karein
+                    featureImages.forEach(img => img.style.opacity = '0.3');
+ 
+                    setTimeout(() => {
+                        // Mobile aur Web DONO ki image source aur alt ek sath update karein
+                        featureImages.forEach(img => {
+                            img.src = newImgSrc;
+                            img.alt = tabTitle;
+                            img.style.opacity = '1';
+                        });
+                    }, 200);
+                }
+            });
         });
     });
 });
-
 /*Home page Img changing According to data END*/
 
 

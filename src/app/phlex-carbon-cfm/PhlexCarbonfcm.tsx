@@ -15,13 +15,8 @@ const PhlexCarbonfcm = ({
 <section
   className="phlex-hero-banner"
     style={{
-    backgroundImage: `
-      linear-gradient(
-        90deg,
-        rgba(0, 0, 0, 0.92) 0%,
-        rgba(0, 0, 0, 0.75) 45%,
-        rgba(0, 0, 0, 0.2) 100%
-      ),
+    background: `
+     #0a0a0a
       url(${data?.background_image?.url})
     `,
     backgroundRepeat: "no-repeat",
@@ -34,7 +29,7 @@ const PhlexCarbonfcm = ({
         {/* <img src="/images/banner-bg.jpg" alt="Phlex Carbon Fiber Background" className="phlex-hero-bg-img" /> */}
 
         {/* Gradient Overlay */}
-        {/* <div className="phlex-hero-overlay" ></div> */}
+        <div className="phlex-hero-overlay" ></div>
 
         <div className="phlex-hero-container">
           <div className="phlex-hero-content">
@@ -235,7 +230,7 @@ const PhlexCarbonfcm = ({
             {/* <!-- Right Image Column --> */}
             <div className="phlex-flexibility-media">
               <div className="phlex-flexibility-img-box">
-                <img src={data.flexibility_image?.url} alt="PhlexCarbon CFM Mat Sample" className="phlex-flexibility-img" />
+                <img src={data.flexibility_image?.url||""} alt="PhlexCarbon CFM Mat Sample" className="phlex-flexibility-img" />
               </div>
             </div>
 

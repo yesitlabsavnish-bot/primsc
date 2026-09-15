@@ -1981,7 +1981,7 @@ a.bl-page-nav:hover {
     margin: 0 auto;
 }
 table.phlex-props-table td:hover {
-    background: #031F551A;
+    /* background: #031F551A; */
 }
 
 .phlex-props-table th {
@@ -3037,7 +3037,7 @@ table.phlex-props-table td:hover {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     gap: 50px;
-    align-items: start;
+    align-items: center;
 }
 
 
@@ -5119,5 +5119,26 @@ a.pcf-git-val:hover {
     .right-partxs-ftr {
     
     flex-direction: column;
+}
+}
+.phlex-apps-right.mobile {
+    display: none; 
+}
+ 
+.phlex-img-frame {
+    margin-bottom: 10px;
+    display: block; 
+}
+ 
+/* Responsive  */
+@media (max-width: 768px) {
+    .phlex-apps-right.mobile {
+        display: block; 
+    }
+    .phlex-apps-right.web {
+        display: none;
+    }
+    .phlex-img-frame {
+    margin-bottom: 10px;
 }
 }
