@@ -11,7 +11,7 @@ const FiberSizingCompound = (
   }
 ) => {
 
-console.log(data)
+
   return (
     <>
 

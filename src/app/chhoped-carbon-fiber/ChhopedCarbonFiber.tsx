@@ -14,10 +14,6 @@ const renderText = (field: any) => {
 
 const ChhopedCarbonFiber = ({ data }: { data: any }) => {
 
-
-    console.log(data, "chhoped carbon fiber")
-
-
     return (
         <>
             {/* <!-- Hero Banner Section Start --> */}

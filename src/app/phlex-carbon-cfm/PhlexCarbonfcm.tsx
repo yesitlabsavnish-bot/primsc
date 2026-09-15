@@ -11,7 +11,7 @@ const PhlexCarbonfcm = ({
 }) => {
 
 
-  console.log("PhlexCarbonfcm data:", data);
+ 
   return (
     <>
       {/* <!-- Hero Banner Section Start --> */}

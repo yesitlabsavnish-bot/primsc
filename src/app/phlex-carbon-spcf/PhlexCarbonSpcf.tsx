@@ -11,7 +11,7 @@ const PhlexCarbonSpcf = (
   }
 ) => {
 
-  console.log(data)
+
   return (
 
     

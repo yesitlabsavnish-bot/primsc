@@ -7,10 +7,6 @@ import Link from 'next/link'
 
 const PhlexCarbonCftm = ({ data }: { data: any }) => {
 
-  console.log(data, "kjdsfdjf")
-  console.log(data?.fiber_section_rows)
-  console.log(data?.phlex_options_card, "phlex_option_card")
-
   return (
     <>
       {/* <!-- Hero Banner Section Start --> */}
