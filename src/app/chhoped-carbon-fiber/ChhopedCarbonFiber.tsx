@@ -12,10 +12,10 @@ const renderText = (field: any) => {
     return null;
 }
 
-const ChhopedCarbonFiber = ({data}: {data: any}) => {
+const ChhopedCarbonFiber = ({ data }: { data: any }) => {
 
 
-    console.log(data,"chhoped carbon fiber")
+    console.log(data, "chhoped carbon fiber")
 
 
     return (
@@ -37,7 +37,7 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
 
                         {/* Sub Heading */}
                         <h2 className="phlex-hero-subtitle">
-                           {renderText(data?.sub_title)}
+                            {renderText(data?.sub_title)}
                         </h2>
 
                         {/* Descriptions */}
@@ -50,12 +50,12 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
                         </p>
 
                         <p className="phlex-hero-desc">
-                          {renderText(data?.descriprtion3)}
+                            {renderText(data?.descriprtion3)}
                         </p>
 
                         {/* Action Buttons Container */}
                         <div className="phlex-hero-btn-group">
-                            <Link href="#" className="phlex-hero-btn phlex-hero-btn-white">
+                            <Link href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL" target="_blank" className="phlex-hero-btn phlex-hero-btn-white">
                                 <span>Request a Sample/Quote</span>
                                 <img src="/images/top-right-up.svg" />
                             </Link>
@@ -67,13 +67,13 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
                     </div>
 
                     {/* Scroll Indicator Bottom */}
-                    <div 
-                      className="phlex-hero-scroll"
-                      onClick={() => {
-                        document.querySelector(".phlex-adv-section")?.scrollIntoView({ behavior: "smooth" });
-                        window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
-                      }}
-                      style={{ cursor: "pointer" }}
+                    <div
+                        className="phlex-hero-scroll"
+                        onClick={() => {
+                            document.querySelector(".phlex-adv-section")?.scrollIntoView({ behavior: "smooth" });
+                            window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+                        }}
+                        style={{ cursor: "pointer" }}
                     >
                         <span>SCROLL TO EXPLORE</span>
                         <i className="ri-arrow-down-s-line phlex-hero-scroll-icon"></i>
@@ -95,7 +95,7 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
                     <div className="phlex-options-header">
                         <h2 className="phlex-options-main-title">{renderText(data?.main_title)}</h2>
                         <p className="phlex-options-subtitle">
-                          {renderText(data?.phlex_options_subtitle)}
+                            {renderText(data?.phlex_options_subtitle)}
                         </p>
                         {/* <p className="phlex-options-subtitle-sub">
                             Both options are available in multiple areal weights, making it easier to explore the configuration that fits your process and requirements.
@@ -106,37 +106,38 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
                     <div className="phlex-options-grid">
 
                         {/* Card 01: High-Strength */}
-                         {data?.phlex_options_card?.map((item: any, index: number) => (
-              <div className="phlex-options-card" key={index}>
-                <img src={item?.phlex_options_card_img?.url} alt={item?.phlex_options_card_img?.alt || item?.phlex_options_card_title} className="phlex-options-card-img" />
-                <div className={`phlex-options-card-overlay phlex-overlay-${item?.phlex_options_card_overlay}`}></div>
-                <div className="phlex-options-card-content">
-                  <span className="phlex-options-number">{renderText(item?.phlex_options_number)}.</span>
-                  <h3 className="phlex-options-card-title">
-                    {renderText(item?.phlex_options_card_title)}
-                    {item?.phlex_options_card_title_str && <>{renderText(item?.phlex_options_card_title_str)}</>}
-                  </h3>
-                  <p className="phlex-options-card-text">
-                    {renderText(item?.phlex_options_card_text1)}
-                  </p>
-                  <p className="phlex-options-card-text">
-                    {renderText(item?.phlex_options_card_text2)}
-                  </p>
-                  <p className="phlex-options-card-text">
-                    {renderText(item?.phlex_options_card_text3)}
-                  </p>
-                  <br />
-                  <a
-                        href={item?.phlex_options_card_datasheet?.url||'#'}
-                        download
-                        className="phlex-hero-btn phlex-hero-btn-white"
-                        >
-                        <span>{renderText(item?.phlex_options_card_datasheet)}</span>
-                        <img src="/images/top-right-up.svg" alt="" />
-                        </a>
-                </div>
-              </div>
-            ))}
+                        {data?.phlex_options_card?.map((item: any, index: number) => (
+                            <div className="phlex-options-card" key={index}>
+                                <img src={item?.phlex_options_card_img?.url} alt={item?.phlex_options_card_img?.alt || item?.phlex_options_card_title} className="phlex-options-card-img" />
+                                <div className={`phlex-options-card-overlay phlex-overlay`}></div>
+                                <div className="phlex-options-card-content">
+                                    <span className="phlex-options-number">{renderText(item?.phlex_options_number)}.</span>
+                                    <h3 className="phlex-options-card-title">
+                                        {renderText(item?.phlex_options_card_title)}
+                                        {item?.phlex_options_card_title_str && <>{renderText(item?.phlex_options_card_title_str)}</>}
+                                    </h3>
+                                    <p className="phlex-options-card-text">
+                                        {renderText(item?.phlex_options_card_text1)}
+                                    </p>
+                                    <p className="phlex-options-card-text">
+                                        {renderText(item?.phlex_options_card_text2)}
+                                    </p>
+                                    <p className="phlex-options-card-text">
+                                        {renderText(item?.phlex_options_card_text3)}
+                                    </p>
+                                    <br />
+                                    <a
+                                        href={item?.datasheet_pdf?.url || '#'}
+                                        download
+                                        target="_blank"
+                                        className="phlex-hero-btn phlex-hero-btn-white"
+                                    >
+                                        <span>{renderText(item?.phlex_options_card_datasheet)}</span>
+                                        <img src="/images/top-right-up.svg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        ))}
 
                         {/* <!-- Card 02: Intermediate-Modulus --> */}
                         {/* <div className="phlex-options-card">
@@ -244,47 +245,47 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
                             </thead> */}
 
                             <tbody>
-                            
-                              {/* {data?.typical_properties.map((item: any, index: any) => ( */}
-                                 <tr className="phlex-props-subhead-row">
-                                      <td className="phlex-props-th-sub">{renderText(data?.typical_properties?.[0]?.title)}</td>
-                                         <td className="phlex-props-th-sub">{renderText(data?.typical_properties?.[0]?.proeprties)}</td>
-                                         <td className="phlex-props-th-sub">{renderText(data?.typical_properties?.[0]?.property_header2)}</td>
-                                 </tr>
-                                 {/* ))} */}
 
-                               {/* {item <tr>
+                                {/* {data?.typical_properties.map((item: any, index: any) => ( */}
+                                <tr className="phlex-props-subhead-row">
+                                    <td className="phlex-props-th-sub">{renderText(data?.typical_properties?.[0]?.title)}</td>
+                                    <td className="phlex-props-th-sub">{renderText(data?.typical_properties?.[0]?.proeprties)}</td>
+                                    <td className="phlex-props-th-sub">{renderText(data?.typical_properties?.[0]?.property_header2)}</td>
+                                </tr>
+                                {/* ))} */}
+
+                                {/* {item <tr>
                                     <td className="phlex-props-label">Tensile Strength</td>
                                     <td className="phlex-props-val">4,413 MPa</td>
                                     <td className="phlex-props-val">5,480 MPa</td>
                                 </tr>} */}
 
-                                   {data?.standard_properties?.map((item: any, index: number) => <tr key={index}>
-                  <td className="phlex-props-label">{renderText(item?.proeprties)}</td>
-                  <td className="phlex-props-val">{renderText(item?.value)}</td>
-                  <td className="phlex-props-val">{renderText(item?.value2)}</td>
-                </tr>)}
-                               
-                              
+                                {data?.standard_properties?.map((item: any, index: number) => <tr key={index}>
+                                    <td className="phlex-props-label">{renderText(item?.proeprties)}</td>
+                                    <td className="phlex-props-val">{renderText(item?.value)}</td>
+                                    <td className="phlex-props-val">{renderText(item?.value2)}</td>
+                                </tr>)}
+
+
                             </tbody>
                         </table>
                     </div>
 
                 </div>
-                
-                 <span
+
+                <span
                     className="phlex-props-note text-center d-block mt-3 fw-medium"
-                    style={{ color: "#000",fontWeight: "500",lineHeight: "24px" }}
-                    >
+                    style={{ color: "#000", fontWeight: "500", lineHeight: "24px" }}
+                >
                     Custom fiber lengths are available upon request.
-                    </span>
+                </span>
             </section>
 
-              
+
             {/* <!-- Typical Properties END --> */}
 
             {/* <!-- Available Areal Weights Strat --> */}
-          
+
             {/* <!-- Have a Specific Material Requirement?  END --> */}
 
             {/* <!-- Frequently asked questions Strat --> */}
@@ -292,40 +293,41 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
             {/* <!-- Frequently asked questions END --> */}
 
 
-              <section className="pcf-cta-banner-section">
-        <div className="pcf-cta-bg-overlay"></div>
+            <section className="pcf-cta-banner-section">
+                <div className="pcf-cta-bg-overlay"></div>
 
-        <div className="pcf-cta-wrapper">
-          <h2 className="pcf-cta-main-title">
-           {renderText(data?.pcf_cta_main_title)}
-          </h2>
+                <div className="pcf-cta-wrapper">
+                    <h2 className="pcf-cta-main-title">
+                        {renderText(data?.pcf_cta_main_title)}
+                    </h2>
 
-          <p className="pcf-cta-description">
-            {renderText(data?.pcf_cta_description1)}
-            <br />
-            {data.talk_desc2}
-          </p>
+                    <p className="pcf-cta-description">
+                        {renderText(data?.pcf_cta_description1)}
+                        <br />
+                        {data.talk_desc2}
+                    </p>
 
-          <div className="pcf-cta-action-group">
-            <Link
-              href="#"
-              className="pcf-cta-btn pcf-cta-btn-primary"
-            >
-              Request a Sample
-              <img src="/images/top-right-up.svg" alt="" />
-            </Link>
+                    <div className="pcf-cta-action-group">
+                        <Link
+                            href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL"
+                            target="_blank"
+                            className="pcf-cta-btn pcf-cta-btn-primary"
+                        >
+                            Request a Sample
+                            <img src="/images/top-right-up.svg" alt="" />
+                        </Link>
 
-            
-            <Link
-              href="/contact-us"
-              className="pcf-cta-btn pcf-cta-btn-secondary"
-            >
-             Contact Our Team
-            </Link>
-           
-          </div>
-        </div>
-      </section>
+
+                        <Link
+                            href="/contact-us"
+                            className="pcf-cta-btn pcf-cta-btn-secondary"
+                        >
+                            Contact Our Team
+                        </Link>
+
+                    </div>
+                </div>
+            </section>
 
         </>
     )

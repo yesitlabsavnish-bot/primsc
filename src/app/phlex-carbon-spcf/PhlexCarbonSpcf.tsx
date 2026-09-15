@@ -109,7 +109,7 @@ const PhlexCarbonSpcf = (
       {/* Card 01: High-Strength */}
       <div className="phlex-options-card">
         <img src="/images/high-stren.svg" alt="High-Strength Carbon Fiber" className="phlex-options-card-img" />
-        <div className="phlex-options-card-overlay phlex-overlay-grey"></div>
+        <div className="phlex-options-card-overlay"></div>
         <div className="phlex-options-card-content">
           <span className="phlex-options-number">{data.option_1_title}</span>
           <h3 className="phlex-options-card-title">{data.option_1_text_1}</h3>
@@ -125,7 +125,7 @@ const PhlexCarbonSpcf = (
       {/* <!-- Card 02: Intermediate-Modulus --> */}
       <div className="phlex-options-card">
         <img src="/images/high-stren-2.svg" alt="Intermediate-Modulus Carbon Fiber" className="phlex-options-card-img" />
-        <div className="phlex-options-card-overlay phlex-overlay-blue"></div>
+        <div className="phlex-options-card-overlay"></div>
         <div className="phlex-options-card-content">
           <span className="phlex-options-number">{data.option_2_title}</span>
           <h3 className="phlex-options-card-title">{data.option_2_text_1}</h3>
@@ -248,7 +248,7 @@ const PhlexCarbonSpcf = (
       </p>
 
       <div className="phlex-cta-btn-group">
-        <Link href="#request-sample" className="phlex-cta-btn phlex-cta-btn-white">
+        <Link href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL" target="_blank" className="phlex-cta-btn phlex-cta-btn-white">
           {data.tell_us_button1} <img src="/images/top-right-up.svg"/>
         </Link>
         <Link href="contact-us" className="phlex-cta-btn phlex-cta-btn-outline">

@@ -94,7 +94,8 @@ React.useEffect(() => {
             {/*
             <div className="phlex-hero-btn-group">
               <a
-                href="#"
+                href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL"
+                target="_blank"
                 className="phlex-hero-btn phlex-hero-btn-outline"
               >
                 <span>Request a Sample or Quote</span>

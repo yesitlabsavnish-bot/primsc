@@ -51,11 +51,20 @@ export default Header  */}
 
 
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
 const Header = () => {
   const pathname = usePathname();
+
+  useEffect(() => {
+    const navLinks = document.getElementById("navLinks");
+    if (navLinks) {
+      navLinks.classList.remove("open");
+    }
+    const dropdowns = document.querySelectorAll(".custom-dropdown");
+    dropdowns.forEach((d) => d.classList.remove("is-open"));
+  }, [pathname]);
 
   const isProductActive =
   pathname === "/chhoped-carbon-fiber" ||

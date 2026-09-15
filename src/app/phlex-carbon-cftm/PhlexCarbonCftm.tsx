@@ -50,7 +50,7 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
 
             {/* Action Buttons Container */}
             <div className="phlex-hero-btn-group">
-              <Link href="/request-sample" className="phlex-hero-btn phlex-hero-btn-white">
+              <Link href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL" target="_blank" className="phlex-hero-btn phlex-hero-btn-white">
                 <span>Request a Sample/Quote</span>
                 <img src="/images/top-right-up.svg" />
               </Link>
@@ -119,7 +119,7 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
             {data?.phlex_options_card?.map((item: any, index: number) => (
               <div className="phlex-options-card" key={index}>
                 <img src={item?.phlex_options_card_img?.url} alt={item?.phlex_options_card_img?.alt || item?.phlex_options_card_title} className="phlex-options-card-img" />
-                <div className={`phlex-options-card-overlay phlex-overlay-${item?.phlex_options_card_overlay}`}></div>
+                <div className={`phlex-options-card-overlay `}></div>
                 <div className="phlex-options-card-content">
                   <span className="phlex-options-number">{item?.phlex_options_number}.</span>
                   <h3 className="phlex-options-card-title">
@@ -321,7 +321,7 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
             </p>
 
             <div className="phlex-cta-btn-group">
-              <Link href="#request-sample" className="phlex-cta-btn phlex-cta-btn-white">
+              <Link href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL" target="_blank" className="phlex-cta-btn phlex-cta-btn-white">
                 Request a Sample <img src="/images/top-right-up.svg" />
               </Link>
               <Link href="contact-us" className="phlex-cta-btn phlex-cta-btn-outline">

@@ -59,6 +59,16 @@ function initNavbar() {
     });
   }
 
+  // Close menu when clicking a normal link inside it
+  if (navLinks) {
+    const links = navLinks.querySelectorAll('a:not(.dropdown-trigger)');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+  }
+
   // Custom Dropdown Handling
   const dropdowns = document.querySelectorAll('.custom-dropdown');
 

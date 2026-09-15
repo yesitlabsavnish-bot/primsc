@@ -17,7 +17,7 @@ const index = () => {
                 <h2 className="footer-heading">
                     We growing up your business<br />with personal AI manager.
                 </h2>
-                <p className="footer-author">Maxwell, 2023.</p>
+                {/* <p className="footer-author">Maxwell, 2023.</p> */}
             </div>
 
             <div className="right-partxs-ftr">
@@ -55,11 +55,11 @@ const index = () => {
     <div className="footer-bottom">
         <div className="footer-container bottom-container">
             <p className="copyright-text">&copy; 2026 Phlex Cabon Fiber. All rights reserved.</p>
-            <ul className="legal-links">
+            {/* <ul className="legal-links">
                 <li><a href="#">Terms of Service</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Cookies</a></li>
-            </ul>
+            </ul> */}
         </div>
     </div>
 </footer>

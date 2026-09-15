@@ -16,7 +16,12 @@ const PhlexCarbonfcm = ({
   className="phlex-hero-banner"
     style={{
     background: `
-     #0a0a0a
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.92) 0%,
+        rgba(0, 0, 0, 0.75) 45%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
       url(${data?.background_image?.url})
     `,
     backgroundRepeat: "no-repeat",
@@ -29,7 +34,7 @@ const PhlexCarbonfcm = ({
         {/* <img src="/images/banner-bg.jpg" alt="Phlex Carbon Fiber Background" className="phlex-hero-bg-img" /> */}
 
         {/* Gradient Overlay */}
-        <div className="phlex-hero-overlay" ></div>
+        {/* <div className="phlex-hero-overlay" ></div> */}
 
         <div className="phlex-hero-container">
           <div className="phlex-hero-content">
@@ -122,7 +127,7 @@ const PhlexCarbonfcm = ({
             {/* Card 01: High-Strength */}
             <div className="phlex-options-card">
               <img src="/images/high-stren.svg" alt="High-Strength Carbon Fiber" className="phlex-options-card-img" />
-              <div className="phlex-options-card-overlay phlex-overlay-grey"></div>
+              <div className="phlex-options-card-overlay "></div>
               <div className="phlex-options-card-content">
                 <span className="phlex-options-number">{data.option_1_title}</span>
                 <h3 className="phlex-options-card-title">{data.option_1_text_1}</h3>
@@ -138,7 +143,7 @@ const PhlexCarbonfcm = ({
             {/* <!-- Card 02: Intermediate-Modulus --> */}
             <div className="phlex-options-card">
               <img src="/images/high-stren-2.svg" alt="Intermediate-Modulus Carbon Fiber" className="phlex-options-card-img" />
-              <div className="phlex-options-card-overlay phlex-overlay-blue"></div>
+              <div className="phlex-options-card-overlay"></div>
               <div className="phlex-options-card-content">
                 <span className="phlex-options-number">{data.option_2_title}</span>
                 <h3 className="phlex-options-card-title">{data.option_2_text_1}</h3>
@@ -353,7 +358,7 @@ const PhlexCarbonfcm = ({
             </p>
 
             <div className="phlex-cta-btn-group">
-              <Link href="#request-sample" className="phlex-cta-btn phlex-cta-btn-white">
+              <Link href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL" target="_blank" className="phlex-cta-btn phlex-cta-btn-white">
                 {data.cta_button_1} <img src="/images/top-right-up.svg" />
               </Link>
               <Link href="contact-us" className="phlex-cta-btn phlex-cta-btn-outline">

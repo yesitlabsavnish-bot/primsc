@@ -23,7 +23,7 @@ const Tellus = () => {
       </p>
 
       <div className="phlex-cta-btn-group">
-        <a href="#request-sample" className="phlex-cta-btn phlex-cta-btn-white">
+        <a href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL" target="_blank" className="phlex-cta-btn phlex-cta-btn-white">
           Request a Sample <img src="/images/top-right-up.svg"/>
         </a>
         <a href="#contact" className="phlex-cta-btn phlex-cta-btn-outline">

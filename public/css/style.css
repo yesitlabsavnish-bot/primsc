@@ -1558,21 +1558,25 @@ a.bl-page-nav:hover {
     position: absolute;
     inset: 0;
     z-index: 2;
+    background: radial-gradient(59.62% 62.49% at 96.62% 20.47%, rgba(125, 125, 125, 0) 0%, rgba(125, 125, 125, 0.54) 29.01%, rgba(125, 125, 125, 0.76) 60.58%, #7d7d7d 100%);
 }
 
-.phlex-overlay-grey {
-    background: radial-gradient(59.62% 62.49% at 96.62% 20.47%,
-        rgba(125, 125, 125, 0) 0%,
-        rgba(125, 125, 125, 0.54) 29.01%,
-        rgba(125, 125, 125, 0.76) 60.58%,
-        #7d7d7d 100%);
+.phlex-options-card-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(86.21% 98.02% at 92.46% 9.05%, rgba(3, 31, 85, 0) 0%, rgba(3, 31, 85, 0.55) 33.81%, rgba(3, 31, 85, 0.81) 57.66%, #031F55 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
+.phlex-options-card:hover .phlex-options-card-overlay::after {
+    opacity: 1;
+}
+
+.phlex-overlay-grey,
 .phlex-overlay-blue {
-    background: radial-gradient(86.21% 98.02% at 92.46% 9.05%, rgba(3, 31, 85, 0) 0%, rgba(3, 31, 85, 0.55) 33.81%, rgba(3, 31, 85, 0.81) 57.66%, #031F55 100%)
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    ;
-
+    background: none !important;
 }
 
 
@@ -2952,17 +2956,15 @@ table.phlex-props-table td:hover {
 }
 
 .phlex-product-card:hover .phlex-card-overlay {
-    background: rgba(0, 27, 84, 0.35);
-    /* .phlex-product-card:hover .pcf-phlex-card-overlay { */
-  background: linear-gradient(
-    180deg,
-    rgba(0, 27, 84, 0.95) 0%,
-    rgba(0, 27, 84, 0.85) 35%,
-    rgba(0, 27, 84, 0.60) 60%,
-    rgba(0, 27, 84, 0.40) 80%,
-    rgba(0, 27, 84, 0.25) 100%
-  );
-/* } */
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 27, 84, 1) 0%,
+        rgba(0, 27, 84, 0.85) 35%,
+        rgba(0, 27, 84, 0.60) 60%,
+        rgba(0, 27, 84, 0.40) 80%,
+        rgba(0, 27, 84, 0.25) 100%
+    );
 }
 
 /*==================================
@@ -3447,6 +3449,14 @@ table.phlex-props-table td:hover {
     color: #ffffff;
 }
 
+.phlex-card.bg-grey.phlex-hover-blue {
+    transition: background-color 0.3s ease;
+}
+
+.phlex-card.bg-grey.phlex-hover-blue:hover {
+    background-color: #031f55;
+}
+
 
 .phlex-card-num {
     font-size: 64px;
@@ -3506,6 +3516,11 @@ table.phlex-props-table td:hover {
 }
 
 .phlex-card.bg-blue .phlex-card-img img {
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.phlex-card.bg-grey.phlex-hover-blue:hover .phlex-card-img img {
     mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
     -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
 }
@@ -5044,7 +5059,7 @@ a.pcf-git-val:hover {
 
 .bottom-container {
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .copyright-text {
@@ -5140,5 +5155,14 @@ a.pcf-git-val:hover {
     }
     .phlex-img-frame {
     margin-bottom: 10px;
+}
+}
+
+@media (max-width: 768px) {
+.phlex-hero-overlay {
+    background: none;
+}
+.bottom-container{
+    align-items: center!important;
 }
 }

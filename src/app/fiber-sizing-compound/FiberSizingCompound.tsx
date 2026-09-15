@@ -205,7 +205,7 @@ const FiberSizingCompound = (
               </p>
 
               <div className="phlex-cta-btn-group">
-                <Link href="#request-sample" className="phlex-cta-btn phlex-cta-btn-white">
+                <Link href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL" target="_blank" className="phlex-cta-btn phlex-cta-btn-white">
                   {data.cta_button} <img src="/images/top-right-up.svg" />
                 </Link>
                 <Link href="contact-us" className="phlex-cta-btn phlex-cta-btn-outline">

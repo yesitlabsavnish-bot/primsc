@@ -112,7 +112,7 @@ const mapUrl = `https://www.google.com/maps?q=${latitude},${longitude}&output=em
             {/* <!-- Action Buttons Container --> */}
             {/* 
             <div className="phlex-hero-btn-group">
-              <a href="#" className="phlex-hero-btn phlex-hero-btn-outline">
+              <a href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL" target="_blank" className="phlex-hero-btn phlex-hero-btn-outline">
                 <span>Request a Sample or Quote</span>
               </a>
             </div>

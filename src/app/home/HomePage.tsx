@@ -46,7 +46,8 @@ const HomePage = (
 
             <div className="phlex-hero-btn-group">
               <Link
-                href="#"
+                href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL"
+                target="_blank"
                 className="phlex-hero-btn phlex-hero-btn-outline"
               >
                 <span>Request a Sample or Quote</span>
@@ -675,8 +676,7 @@ const HomePage = (
 
               {data.why_card?.map((card: any, index: number) => (
                 <div
-                  className={`phlex-card ${index % 2 === 0 ? "bg-grey" : "bg-blue"
-                    }`}
+                  className="phlex-card bg-grey phlex-hover-blue"
                   key={index}
                 >
                   <div className="phlex-card-num">
@@ -731,7 +731,8 @@ const HomePage = (
 
           <div className="pcf-cta-action-group">
             <Link
-              href="#request-sample"
+              href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL"
+              target="_blank"
               className="pcf-cta-btn pcf-cta-btn-primary"
             >
               Request a Sample
