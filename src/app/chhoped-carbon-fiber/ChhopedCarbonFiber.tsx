@@ -27,7 +27,7 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
                 {/* <img src="/images/banner-bg.jpg" alt="Phlex Carbon Fiber Background" className="phlex-hero-bg-img" /> */}
 
                 {/* Gradient Overlay */}
-                <div className="phlex-hero-overlay"></div>
+                <div className="phlex-hero-overlay" ></div>
 
                 <div className="phlex-hero-container">
                     <div className="phlex-hero-content">
@@ -271,7 +271,16 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
                     </div>
 
                 </div>
+                
+                 <span
+                    className="phlex-props-note text-center d-block mt-3 fw-medium"
+                    style={{ color: "#000",fontWeight: "500",lineHeight: "24px" }}
+                    >
+                    Custom fiber lengths are available upon request.
+                    </span>
             </section>
+
+              
             {/* <!-- Typical Properties END --> */}
 
             {/* <!-- Available Areal Weights Strat --> */}
@@ -281,6 +290,42 @@ const ChhopedCarbonFiber = ({data}: {data: any}) => {
             {/* <!-- Frequently asked questions Strat --> */}
             <Faq data={data?.faq} />
             {/* <!-- Frequently asked questions END --> */}
+
+
+              <section className="pcf-cta-banner-section">
+        <div className="pcf-cta-bg-overlay"></div>
+
+        <div className="pcf-cta-wrapper">
+          <h2 className="pcf-cta-main-title">
+           {renderText(data?.pcf_cta_main_title)}
+          </h2>
+
+          <p className="pcf-cta-description">
+            {renderText(data?.pcf_cta_description1)}
+            <br />
+            {data.talk_desc2}
+          </p>
+
+          <div className="pcf-cta-action-group">
+            <Link
+              href="#"
+              className="pcf-cta-btn pcf-cta-btn-primary"
+            >
+              Request a Sample
+              <img src="/images/top-right-up.svg" alt="" />
+            </Link>
+
+            
+            <Link
+              href="/contact-us"
+              className="pcf-cta-btn pcf-cta-btn-secondary"
+            >
+             Contact Our Team
+            </Link>
+           
+          </div>
+        </div>
+      </section>
 
         </>
     )

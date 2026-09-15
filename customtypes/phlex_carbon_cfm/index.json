@@ -377,6 +377,14 @@
           "placeholder": ""
         },
         "type": "Text"
+      },
+      "background_image": {
+        "config": {
+          "constraint": {},
+          "label": "background image",
+          "thumbnails": []
+        },
+        "type": "Image"
       }
     }
   },

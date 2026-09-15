@@ -14,7 +14,9 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
   return (
     <>
       {/* <!-- Hero Banner Section Start --> */}
-      <section className="phlex-hero-banner">
+      <section className="phlex-hero-banner"   style={{
+    background: `#0a0a0a url(${data?.background_image?.url}) no-repeat center center / cover`,
+  }}>
 
         {/* Main Background Image (HTML Tag) */}
         {/* <img src="/images/banner-bg.jpg" alt="Phlex Carbon Fiber Background" className="phlex-hero-bg-img" /> */}
@@ -216,12 +218,19 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
                 <tr className="phlex-props-divider-row">
                   <td colSpan={3}>Carbon Fiber Properties</td>
                 </tr>
+<tr className="phlex-props-subhead-row">
+  <td className="phlex-props-th-sub">
+    {data?.carbon_fiber_properties?.[0]?.property_header?.[0]?.text}
+  </td>
 
-                <tr className="phlex-props-subhead-row">
-                  <td className="phlex-props-th-sub">{data?.standard_properties?.[0]?.proeprties}</td>
-                  <td className="phlex-props-th-sub">{data?.standard_properties?.[0]?.high_strength_header}</td>
-                  <td className="phlex-props-th-sub">{data?.standard_properties?.[0]?.intermediate_header}</td>
-                </tr>
+  <td className="phlex-props-th-sub">
+    {data?.carbon_fiber_properties?.[0]?.high_strength_header}
+  </td>
+
+  <td className="phlex-props-th-sub">
+    {data?.carbon_fiber_properties?.[0]?.intermediate_header}
+  </td>
+</tr>
 
 
                 {data?.fiber_section_rows?.map((item: any, index: number) => <tr key={index}>
@@ -326,8 +335,6 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
     
 
       <Faq data={data?.faq} />
-
-
 
       {/* <!-- Frequently asked questions END --> */}
 

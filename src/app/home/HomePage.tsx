@@ -14,13 +14,15 @@ const HomePage = (
   }
 ) => {
   const [activeDemand, setActiveDemand] = useState(0);
+  console.log("HomePage data:", data);
+ 
   return (
     <>
       {/* Hero Banner Section Start */}
       <section className="phlex-hero-banner home-page">
         {/* Main Background Image */}
         {/* <img
-          src="/images/banner-bg.jpg"
+          src={data.hero_image?.url}
           alt="Phlex Carbon Fiber Background"
           className="phlex-hero-bg-img"
         /> */}

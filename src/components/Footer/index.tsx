@@ -28,12 +28,15 @@ const index = () => {
                    <ul className="footer-links-list">
                         <li><Link href="/chhoped-carbon-fiber">Chopped Carbon Fiber</Link></li>
                         <li><Link href="/phlex-carbonn-cftm">Phlex Carbon CFTM</Link></li>
-                    </ul> 
-                    <ul className="footer-links-list">
                         <li><Link href="/phlex-carbon-fcm">Phlex Carbon CFM</Link></li>
                         <li><Link href="/phlex-carbon-spcf">Phelx Carbon SPCF 12K Tow</Link></li>
                         <li><Link href="/fiber-sizing-compound">Fiber Sizing Compounds</Link></li>
-                    </ul>
+                    </ul> 
+                    {/* <ul className="footer-links-list">
+                       <li><Link href="/phlex-carbon-fcm">Phlex Carbon CFM</Link></li>
+                        <li><Link href="/phlex-carbon-spcf">Phelx Carbon SPCF 12K Tow</Link></li>
+                        <li><Link href="/fiber-sizing-compound">Fiber Sizing Compounds</Link></li>
+                    </ul> */}
                 </div>
             </div>
 

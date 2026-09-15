@@ -1250,6 +1250,39 @@ interface ChhopedCarbonDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	titlem: prismic.KeyTextField;
+	
+	/**
+	 * pcf-cta-main-title field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.pcf_cta_main_title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	pcf_cta_main_title: prismic.KeyTextField;
+	
+	/**
+	 * pcf-cta-description1 field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.pcf_cta_description1
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	pcf_cta_description1: prismic.KeyTextField;
+	
+	/**
+	 * pcf-cta-description2 field in *chhopedCarbon*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon.pcf_cta_description2
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/text
+	 */
+	pcf_cta_description2: prismic.KeyTextField;
 }
 
 /**
@@ -3077,6 +3110,17 @@ interface PhlexCarbonCfmDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	contact_button: prismic.KeyTextField;
+	
+	/**
+	 * background image field in *PhlexCarbon CFM*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlex_carbon_cfm.background_image
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/image
+	 */
+	background_image: prismic.ImageField<never>;
 }
 
 /**

@@ -422,13 +422,13 @@ React.useEffect(() => {
           </p>
 
           <div className="pcf-cta-action-group">
-            <a
+            <Link
               href="/contact-us"
               className="pcf-cta-btn pcf-cta-btn-primary"
             >
               Talk to Our Team
               <img src="/images/top-right-up.svg" alt="" />
-            </a>
+            </Link>
 
             {/*
             <a

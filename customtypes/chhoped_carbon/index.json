@@ -309,6 +309,27 @@
           "placeholder": ""
         },
         "type": "Text"
+      },
+      "pcf_cta_main_title": {
+        "config": {
+          "label": "pcf-cta-main-title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "pcf_cta_description1": {
+        "config": {
+          "label": "pcf-cta-description1",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "pcf_cta_description2": {
+        "config": {
+          "label": "pcf-cta-description2",
+          "placeholder": ""
+        },
+        "type": "Text"
       }
     }
   },
