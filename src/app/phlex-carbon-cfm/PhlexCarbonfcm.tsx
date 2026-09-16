@@ -65,7 +65,7 @@ const PhlexCarbonfcm = ({
 
             {/* Action Buttons Container */}
             <div className="phlex-hero-btn-group">
-              <a href="#" className="phlex-hero-btn phlex-hero-btn-white">
+              <a href="https://app.smartsuite.com/form/sca8tl4o/MC09mTWsI2" target="_blank" className="phlex-hero-btn phlex-hero-btn-white">
                 <span>{data.hero_button_1}</span>
                 <img src="/images/top-right-up.svg" />
               </a>
@@ -367,7 +367,7 @@ const PhlexCarbonfcm = ({
             </p>
 
             <div className="phlex-cta-btn-group">
-              <Link href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL" target="_blank" className="phlex-cta-btn phlex-cta-btn-white">
+              <Link href="https://app.smartsuite.com/form/sca8tl4o/MC09mTWsI2" target="_blank" className="phlex-cta-btn phlex-cta-btn-white">
                 {data.cta_button_1} <img src="/images/top-right-up.svg" />
               </Link>
               <Link href="contact-us" className="phlex-cta-btn phlex-cta-btn-outline">
