@@ -164,6 +164,16 @@ console.log("pathname:", pathname, "isProductActive:", isProductActive);
             </Link>
           </li>
 
+          {/* Contact Us (Mobile Only) */}
+          <li className="d-lg-none">
+            <Link
+              href="/contact-us"
+              className={pathname === "/contact-us" ? "active" : ""}
+            >
+              Contact Us
+            </Link>
+          </li>
+
         </ul>
 
         <div className="nav-action">

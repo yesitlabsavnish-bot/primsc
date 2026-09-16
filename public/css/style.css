@@ -691,6 +691,7 @@ a {
 
 .help-banner-card {
     /*border-radius: 8px;*/
+    position: relative;
     overflow: hidden;
     height: 290px;
     background: linear-gradient(rgba(3, 31, 85, 0.85), rgba(3, 31, 85, 0.85)), url('../images/resource-contact-img.svg') center/cover no-repeat;
@@ -1152,7 +1153,7 @@ a.bl-page-nav:hover {
     }
 
     .bl-pagination {
-        flex-direction: column;
+        flex-direction: row;
         gap: 16px;
     }
 }

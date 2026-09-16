@@ -105,7 +105,6 @@
 //   }
 // }
 
-
 import { NextResponse } from "next/server";
 import {
   createWriteClient,
@@ -200,11 +199,14 @@ export async function POST(request: Request) {
     });
 
     // =========================
-    // CHECK RESEND CONFIG
+    // SEND EMAIL
     // =========================
 
-    const resendApiKey = process.env.RESEND_API_KEY;
     const contactEmail = process.env.CONTACT_EMAIL;
+    const resendApiKey = process.env.RESEND_API_KEY;
+
+    // Show configured contact email in server/Vercel logs
+    console.log("CONTACT EMAIL:", contactEmail);
 
     if (!resendApiKey) {
       console.error("RESEND_API_KEY is missing");
@@ -278,10 +280,7 @@ export async function POST(request: Request) {
       `,
     });
 
-    // =========================
-    // EMAIL FAILED
-    // =========================
-
+    // Email failed but Prismic submission was successful
     if (emailError) {
       console.error("❌ Email sending failed:", emailError);
 
@@ -289,8 +288,7 @@ export async function POST(request: Request) {
         {
           success: true,
           message: "Form submitted successfully.",
-          warning:
-            "Submission saved to Prismic, but email could not be sent.",
+          warning: "Submission saved to Prismic, but email could not be sent.",
         },
         { status: 200 }
       );
@@ -307,6 +305,7 @@ export async function POST(request: Request) {
       },
       { status: 200 }
     );
+
   } catch (error) {
     console.error("❌ CONTACT API ERROR:", error);
 

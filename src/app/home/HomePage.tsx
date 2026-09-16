@@ -14,7 +14,14 @@ const HomePage = (
   }
 ) => {
   const [activeDemand, setActiveDemand] = useState(0);
-  console.log("HomePage data:", data);
+
+ const formatDate = (date: string | Date) => {
+  const d = new Date(date);
+
+  return `${d.getDate()} ${d.toLocaleString("en-US", {
+    month: "short",
+  })}, ${d.getFullYear()}`;
+};
  
   return (
     <>
@@ -800,7 +807,7 @@ const HomePage = (
 
                 <div className="pcf-res-card-content">
                   <span className="pcf-res-date">
-                    {blog.data.publication_date || "Jan 15, 2025"}
+                    {formatDate(blog.data.publication_date )|| "Jan 15, 2025"}
                   </span>
 
                   <h3 className="pcf-res-card-title">

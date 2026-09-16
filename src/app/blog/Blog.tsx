@@ -7,7 +7,15 @@ import Link from "next/link";
 
 const Blog = ({ blogs, page, totalPages, blogData }: { blogs: any[]; page: number; totalPages: number; blogData: any }) => {
 
-  console.log("blogdata:", blogData);
+ const formatDate = (date: string | Date) => {
+  const d = new Date(date);
+
+  return `${d.getDate()} ${d.toLocaleString("en-US", {
+    month: "short",
+  })}, ${d.getFullYear()}`;
+};
+
+
   return (
     <>
       <main>
@@ -106,7 +114,7 @@ const Blog = ({ blogs, page, totalPages, blogData }: { blogs: any[]; page: numbe
                       </span>
 
                       <span className="bl-date">
-                        {blog.data.publication_date}
+                        {formatDate(blog.data.publication_date)}
                       </span>
 
                     </div>
