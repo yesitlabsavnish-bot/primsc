@@ -114,8 +114,6 @@ import {
 import { Resend } from "resend";
 import prismicConfig from "../../../../prismic.config.json";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -202,12 +200,13 @@ export async function POST(request: Request) {
     });
 
     // =========================
-    // SEND EMAIL
+    // CHECK RESEND CONFIG
     // =========================
 
+    const resendApiKey = process.env.RESEND_API_KEY;
     const contactEmail = process.env.CONTACT_EMAIL;
 
-    if (!process.env.RESEND_API_KEY) {
+    if (!resendApiKey) {
       console.error("RESEND_API_KEY is missing");
 
       return NextResponse.json(
@@ -232,6 +231,16 @@ export async function POST(request: Request) {
         { status: 200 }
       );
     }
+
+    // =========================
+    // INITIALIZE RESEND
+    // =========================
+
+    const resend = new Resend(resendApiKey);
+
+    // =========================
+    // SEND EMAIL
+    // =========================
 
     const { error: emailError } = await resend.emails.send({
       from: "Phlex Carbon <onboarding@resend.dev>",
@@ -269,7 +278,10 @@ export async function POST(request: Request) {
       `,
     });
 
-    // Email failed but Prismic submission was successful
+    // =========================
+    // EMAIL FAILED
+    // =========================
+
     if (emailError) {
       console.error("❌ Email sending failed:", emailError);
 
@@ -277,7 +289,8 @@ export async function POST(request: Request) {
         {
           success: true,
           message: "Form submitted successfully.",
-          warning: "Submission saved to Prismic, but email could not be sent.",
+          warning:
+            "Submission saved to Prismic, but email could not be sent.",
         },
         { status: 200 }
       );
@@ -294,7 +307,6 @@ export async function POST(request: Request) {
       },
       { status: 200 }
     );
-
   } catch (error) {
     console.error("❌ CONTACT API ERROR:", error);
 
