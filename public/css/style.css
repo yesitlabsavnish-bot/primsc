@@ -2918,6 +2918,8 @@ table.phlex-props-table td:hover {
     height: 220px;
     margin-top: 20px;
     overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 50%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 50%);
 }
 
 .phlex-card-img-wrapper img {
@@ -2928,30 +2930,8 @@ table.phlex-props-table td:hover {
     display: block;
 }
 
-
 .phlex-card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    pointer-events: none;
-    z-index: 2;
-    transition: opacity 0.3s ease;
-}
-
-.phlex-card-img-wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background: linear-gradient(180deg, #001b54 0%, rgba(0, 27, 84, 0) 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-    z-index: 3;
+    display: none;
 }
 
    .phlex-product-card {
@@ -2968,10 +2948,6 @@ table.phlex-props-table td:hover {
 .phlex-product-card:hover .phlex-card-img-wrapper img {
     filter: sepia(1) saturate(3) hue-rotate(175deg) brightness(0.7);
     transition: filter 0.3s ease;
-}
-
-.phlex-product-card:hover .phlex-card-img-wrapper::after {
-    opacity: 1;
 }
 
 /*==================================
