@@ -17,13 +17,29 @@ const ChhopedCarbonFiber = ({ data }: { data: any }) => {
     return (
         <>
             {/* <!-- Hero Banner Section Start --> */}
-            <section className="phlex-hero-banner">
+  <section
+  className="phlex-hero-banner"
+  style={{
+    background: `
+      linear-gradient(
+        90deg,
+  #000000 0%,
+  #000000 40%,
+  rgba(0, 0, 0, 0.9) 52%,
+  rgba(0, 0, 0, 0.5) 68%,
+  transparent 85%
+      ),
+      url(${data?.background_image?.url})
+      no-repeat center center / cover
+    `,
+  }}
+>
 
                 {/* Main Background Image (HTML Tag) */}
-                {/* <img src="/images/banner-bg.jpg" alt="Phlex Carbon Fiber Background" className="phlex-hero-bg-img" /> */}
+                {/* <img src={data?.background_image?.url} alt="Phlex Carbon Fiber Background" className="phlex-hero-bg-img" /> */}
 
                 {/* Gradient Overlay */}
-                <div className="phlex-hero-overlay" ></div>
+                {/* <div className="phlex-hero-overlay" ></div> */}
 
                 <div className="phlex-hero-container">
                     <div className="phlex-hero-content">

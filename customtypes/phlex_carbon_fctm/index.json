@@ -230,29 +230,6 @@
         },
         "type": "Text"
       },
-      "faq": {
-        "config": {
-          "fields": {
-            "question": {
-              "config": {
-                "label": "question",
-                "placeholder": ""
-              },
-              "type": "Text"
-            },
-            "answer": {
-              "config": {
-                "label": "answer",
-                "placeholder": ""
-              },
-              "type": "Text"
-            }
-          },
-          "label": "Faq",
-          "repeat": true
-        },
-        "type": "Group"
-      },
       "phlex_options_subtitle": {
         "config": {
           "label": "phlex-options-subtitle",
@@ -381,6 +358,33 @@
           "select": null
         },
         "type": "Link"
+      },
+      "faqs": {
+        "config": {
+          "fields": {
+            "question": {
+              "config": {
+                "allowTargetBlank": true,
+                "label": "question",
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                "placeholder": ""
+              },
+              "type": "StructuredText"
+            },
+            "answer": {
+              "config": {
+                "allowTargetBlank": true,
+                "label": "answer",
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                "placeholder": ""
+              },
+              "type": "StructuredText"
+            }
+          },
+          "label": "faqs",
+          "repeat": true
+        },
+        "type": "Group"
       }
     }
   },

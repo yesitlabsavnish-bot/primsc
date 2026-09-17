@@ -334,29 +334,6 @@
         },
         "type": "Text"
       },
-      "faqs": {
-        "config": {
-          "fields": {
-            "question": {
-              "config": {
-                "label": "question",
-                "placeholder": ""
-              },
-              "type": "Text"
-            },
-            "answer": {
-              "config": {
-                "label": "answer",
-                "placeholder": ""
-              },
-              "type": "Text"
-            }
-          },
-          "label": "faqs",
-          "repeat": true
-        },
-        "type": "Group"
-      },
       "contact_title": {
         "config": {
           "label": "contact_title",

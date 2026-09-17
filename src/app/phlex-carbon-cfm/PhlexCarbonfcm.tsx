@@ -10,8 +10,7 @@ const PhlexCarbonfcm = ({
   data: Content.PhlexCarbonCfmDocumentData
 }) => {
 
-
- 
+  
   return (
     <>
       {/* <!-- Hero Banner Section Start --> */}
@@ -20,10 +19,12 @@ const PhlexCarbonfcm = ({
     style={{
     background: `
       linear-gradient(
-        90deg,
-        rgba(0, 0, 0, 0.92) 0%,
-        rgba(0, 0, 0, 0.75) 45%,
-        rgba(0, 0, 0, 0.2) 100%
+             90deg,
+  #000000 0%,
+  #000000 40%,
+  rgba(0, 0, 0, 0.9) 52%,
+  rgba(0, 0, 0, 0.5) 68%,
+  transparent 85%
       ),
       url(${data?.background_image?.url})
     `,
@@ -306,7 +307,7 @@ const PhlexCarbonfcm = ({
       {/* <!-- Available Areal Weights Strat --> */}
       <section className="phlex-weights-section">
 
-        <img src="/images/available-areal.svg" alt="Carbon Fiber Areal Weights" className="phlex-weights-bg-img" />
+        <img src={data?.weight_background?.url} alt="Carbon Fiber Areal Weights" className="phlex-weights-bg-img" />
 
         <div className="phlex-weights-overlay"></div>
 

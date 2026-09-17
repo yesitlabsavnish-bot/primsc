@@ -10,9 +10,24 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
   return (
     <>
       {/* <!-- Hero Banner Section Start --> */}
-      <section className="phlex-hero-banner"   style={{
-    background: `#0a0a0a url(${data?.background_image?.url}) no-repeat center center / cover`,
-  }}>
+     <section
+  className="phlex-hero-banner"
+  style={{
+    background: `
+      linear-gradient(
+        90deg,
+        #031F55 0%,
+        #031F55 42%,
+        rgba(3, 31, 85, 0.90) 52%,
+        rgba(3, 31, 85, 0.55) 62%,
+        rgba(3, 31, 85, 0.20) 72%,
+        transparent 82%
+      ),
+      url(${data?.background_image?.url})
+      center center / cover no-repeat
+    `,
+  }}
+>
 
         {/* Main Background Image (HTML Tag) */}
         {/* <img src="/images/banner-bg.jpg" alt="Phlex Carbon Fiber Background" className="phlex-hero-bg-img" /> */}
@@ -246,7 +261,7 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
       {/* <!-- Available Areal Weights Strat --> */}
       <section className="phlex-weights-section">
 
-        <img src="/images/available-areal.svg" alt="Carbon Fiber Areal Weights" className="phlex-weights-bg-img" />
+        <img src={data?.weight_background.url||"/images/available-areal.svg"} alt="Carbon Fiber Areal Weights" className="phlex-weights-bg-img" />
 
         <div className="phlex-weights-overlay"></div>
 

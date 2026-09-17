@@ -969,31 +969,6 @@ export interface ChhopedCarbonDocumentDataStandardPropertiesItem {
 }
 
 /**
- * Item in *chhopedCarbon → Faq*
- */
-export interface ChhopedCarbonDocumentDataFaqItem {
-	/**
-	 * question field in *chhopedCarbon → Faq*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: chhoped_carbon.faq[].question
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	question: prismic.KeyTextField;
-	
-	/**
-	 * answer field in *chhopedCarbon → Faq*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: chhoped_carbon.faq[].answer
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	answer: prismic.KeyTextField;
-}
-
-/**
  * Item in *chhopedCarbon → faqs*
  */
 export interface ChhopedCarbonDocumentDataFaqsItem {
@@ -1241,17 +1216,6 @@ interface ChhopedCarbonDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	standard_properties: prismic.GroupField<Simplify<ChhopedCarbonDocumentDataStandardPropertiesItem>>;
-	
-	/**
-	 * Faq field in *chhopedCarbon*
-	 *
-	 * - **Field Type**: Group
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: chhoped_carbon.faq[]
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
-	 */
-	faq: prismic.GroupField<Simplify<ChhopedCarbonDocumentDataFaqItem>>;
 	
 	/**
 	 * Title field in *chhopedCarbon*
@@ -2169,31 +2133,6 @@ export interface FiberSizingDocumentDataProductsItem {
 }
 
 /**
- * Item in *Fiber Sizing → faqs*
- */
-export interface FiberSizingDocumentDataFaqsItem {
-	/**
-	 * question field in *Fiber Sizing → faqs*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: fiber_sizing.faqs[].question
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	question: prismic.KeyTextField;
-	
-	/**
-	 * answer field in *Fiber Sizing → faqs*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: fiber_sizing.faqs[].answer
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	answer: prismic.KeyTextField;
-}
-
-/**
  * Item in *Fiber Sizing → faq*
  */
 export interface FiberSizingDocumentDataFaqItem {
@@ -2463,17 +2402,6 @@ interface FiberSizingDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	cta_button_1: prismic.KeyTextField;
-	
-	/**
-	 * faqs field in *Fiber Sizing*
-	 *
-	 * - **Field Type**: Group
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: fiber_sizing.faqs[]
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
-	 */
-	faqs: prismic.GroupField<Simplify<FiberSizingDocumentDataFaqsItem>>;
 	
 	/**
 	 * contact_title field in *Fiber Sizing*
@@ -2746,31 +2674,6 @@ export interface PhlexCarbonCfmDocumentDataArealWeightsItem {
 	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	weight: prismic.KeyTextField;
-}
-
-/**
- * Item in *PhlexCarbon CFM → faqs*
- */
-export interface PhlexCarbonCfmDocumentDataFaqsItem {
-	/**
-	 * question field in *PhlexCarbon CFM → faqs*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlex_carbon_cfm.faqs[].question
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	question: prismic.KeyTextField;
-	
-	/**
-	 * answer field in *PhlexCarbon CFM → faqs*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlex_carbon_cfm.faqs[].answer
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	answer: prismic.KeyTextField;
 }
 
 /**
@@ -3232,17 +3135,6 @@ interface PhlexCarbonCfmDocumentData {
 	cta_button_2: prismic.KeyTextField;
 	
 	/**
-	 * faqs field in *PhlexCarbon CFM*
-	 *
-	 * - **Field Type**: Group
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlex_carbon_cfm.faqs[]
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
-	 */
-	faqs: prismic.GroupField<Simplify<PhlexCarbonCfmDocumentDataFaqsItem>>;
-	
-	/**
 	 * contact_title field in *PhlexCarbon CFM*
 	 *
 	 * - **Field Type**: Text
@@ -3456,31 +3348,6 @@ export interface PhlexCarbonFctmDocumentDataPhlexWeightsSectionItem {
 }
 
 /**
- * Item in *PhlexCarbon fctm → Faq*
- */
-export interface PhlexCarbonFctmDocumentDataFaqItem {
-	/**
-	 * question field in *PhlexCarbon fctm → Faq*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlex_carbon_fctm.faq[].question
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	question: prismic.KeyTextField;
-	
-	/**
-	 * answer field in *PhlexCarbon fctm → Faq*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlex_carbon_fctm.faq[].answer
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	answer: prismic.KeyTextField;
-}
-
-/**
  * Item in *PhlexCarbon fctm → phlex-options-card*
  */
 export interface PhlexCarbonFctmDocumentDataPhlexOptionsCardItem {
@@ -3553,6 +3420,31 @@ export interface PhlexCarbonFctmDocumentDataPhlexOptionsCardItem {
 	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	phlex_options_card_overlay: prismic.KeyTextField;
+}
+
+/**
+ * Item in *PhlexCarbon fctm → faqs*
+ */
+export interface PhlexCarbonFctmDocumentDataFaqsItem {
+	/**
+	 * question field in *PhlexCarbon fctm → faqs*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlex_carbon_fctm.faqs[].question
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
+	 */
+	question: prismic.RichTextField;
+	
+	/**
+	 * answer field in *PhlexCarbon fctm → faqs*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlex_carbon_fctm.faqs[].answer
+	 * - **Documentation**: https://prismic.io/docs/fields/rich-text
+	 */
+	answer: prismic.RichTextField;
 }
 
 /**
@@ -3758,17 +3650,6 @@ interface PhlexCarbonFctmDocumentData {
 	phlex_cta_desc2: prismic.KeyTextField;
 	
 	/**
-	 * Faq field in *PhlexCarbon fctm*
-	 *
-	 * - **Field Type**: Group
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: phlex_carbon_fctm.faq[]
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
-	 */
-	faq: prismic.GroupField<Simplify<PhlexCarbonFctmDocumentDataFaqItem>>;
-	
-	/**
 	 * phlex-options-subtitle field in *PhlexCarbon fctm*
 	 *
 	 * - **Field Type**: Text
@@ -3877,6 +3758,17 @@ interface PhlexCarbonFctmDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/link
 	 */
 	datasheet_pdf: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
+	
+	/**
+	 * faqs field in *PhlexCarbon fctm*
+	 *
+	 * - **Field Type**: Group
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlex_carbon_fctm.faqs[]
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
+	 */
+	faqs: prismic.GroupField<Simplify<PhlexCarbonFctmDocumentDataFaqsItem>>;
 }
 
 /**
@@ -4443,31 +4335,6 @@ export interface Spcf12KTowDocumentDataAvailableOptionsItem {
 }
 
 /**
- * Item in *SPCF 12K Tow → faqs*
- */
-export interface Spcf12KTowDocumentDataFaqsItem {
-	/**
-	 * question field in *SPCF 12K Tow → faqs*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: spcf_12_k_tow.faqs[].question
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	question: prismic.KeyTextField;
-	
-	/**
-	 * answer field in *SPCF 12K Tow → faqs*
-	 *
-	 * - **Field Type**: Text
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: spcf_12_k_tow.faqs[].answer
-	 * - **Documentation**: https://prismic.io/docs/fields/text
-	 */
-	answer: prismic.KeyTextField;
-}
-
-/**
  * Item in *SPCF 12K Tow → faq*
  */
 export interface Spcf12KTowDocumentDataFaqItem {
@@ -4836,17 +4703,6 @@ interface Spcf12KTowDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/text
 	 */
 	tell_us_button2: prismic.KeyTextField;
-	
-	/**
-	 * faqs field in *SPCF 12K Tow*
-	 *
-	 * - **Field Type**: Group
-	 * - **Placeholder**: *None*
-	 * - **API ID Path**: spcf_12_k_tow.faqs[]
-	 * - **Tab**: Main
-	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
-	 */
-	faqs: prismic.GroupField<Simplify<Spcf12KTowDocumentDataFaqsItem>>;
 	
 	/**
 	 * spcf_datasheet field in *SPCF 12K Tow*
@@ -5225,7 +5081,6 @@ declare module "@prismicio/client" {
 			ChhopedCarbonDocumentDataPhlexOptionsCardItem,
 			ChhopedCarbonDocumentDataTypicalPropertiesItem,
 			ChhopedCarbonDocumentDataStandardPropertiesItem,
-			ChhopedCarbonDocumentDataFaqItem,
 			ChhopedCarbonDocumentDataFaqsItem,
 			ChhopedCarbonFiberDocument,
 			ChhopedCarbonFiberDocumentData,
@@ -5244,7 +5099,6 @@ declare module "@prismicio/client" {
 			FiberSizingDocument,
 			FiberSizingDocumentData,
 			FiberSizingDocumentDataProductsItem,
-			FiberSizingDocumentDataFaqsItem,
 			FiberSizingDocumentDataFaqItem,
 			HomepageDocument,
 			HomepageDocumentData,
@@ -5257,7 +5111,6 @@ declare module "@prismicio/client" {
 			PhlexCarbonCfmDocumentDataTypicalPropertiesItem,
 			PhlexCarbonCfmDocumentDataCarbonFiberPropertiesItem,
 			PhlexCarbonCfmDocumentDataArealWeightsItem,
-			PhlexCarbonCfmDocumentDataFaqsItem,
 			PhlexCarbonCfmDocumentDataFaqItem,
 			PhlexCarbonFctmDocument,
 			PhlexCarbonFctmDocumentData,
@@ -5266,8 +5119,8 @@ declare module "@prismicio/client" {
 			PhlexCarbonFctmDocumentDataCarbonFiberPropertiesItem,
 			PhlexCarbonFctmDocumentDataFiberSectionRowsItem,
 			PhlexCarbonFctmDocumentDataPhlexWeightsSectionItem,
-			PhlexCarbonFctmDocumentDataFaqItem,
 			PhlexCarbonFctmDocumentDataPhlexOptionsCardItem,
+			PhlexCarbonFctmDocumentDataFaqsItem,
 			PhlexhomepageDocument,
 			PhlexhomepageDocumentData,
 			PhlexhomepageDocumentDataProductCardItem,
@@ -5277,7 +5130,6 @@ declare module "@prismicio/client" {
 			Spcf12KTowDocumentData,
 			Spcf12KTowDocumentDataTypicalPropertiesItem,
 			Spcf12KTowDocumentDataAvailableOptionsItem,
-			Spcf12KTowDocumentDataFaqsItem,
 			Spcf12KTowDocumentDataFaqItem,
 			AllDocumentTypes,
 			CardGridSlice,

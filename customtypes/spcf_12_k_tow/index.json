@@ -258,29 +258,6 @@
         },
         "type": "Text"
       },
-      "faqs": {
-        "config": {
-          "fields": {
-            "question": {
-              "config": {
-                "label": "question",
-                "placeholder": ""
-              },
-              "type": "Text"
-            },
-            "answer": {
-              "config": {
-                "label": "answer",
-                "placeholder": ""
-              },
-              "type": "Text"
-            }
-          },
-          "label": "faqs",
-          "repeat": true
-        },
-        "type": "Group"
-      },
       "spcf_datasheet": {
         "config": {
           "allowTargetBlank": true,
