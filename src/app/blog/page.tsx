@@ -3,7 +3,7 @@ import Blog from "./Blog";
 
 
 export default async function BlogPage(props: {
-  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
+  searchParams?: Promise<{ [key: string]: any | string[] | undefined }>;
 }) {
 
   
