@@ -240,6 +240,33 @@
           "select": null
         },
         "type": "Link"
+      },
+      "faq": {
+        "config": {
+          "fields": {
+            "question": {
+              "config": {
+                "allowTargetBlank": true,
+                "label": "question",
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                "placeholder": ""
+              },
+              "type": "StructuredText"
+            },
+            "answer": {
+              "config": {
+                "allowTargetBlank": true,
+                "label": "answer",
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                "placeholder": ""
+              },
+              "type": "StructuredText"
+            }
+          },
+          "label": "faq",
+          "repeat": true
+        },
+        "type": "Group"
       }
     }
   },

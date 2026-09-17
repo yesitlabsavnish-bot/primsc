@@ -285,7 +285,7 @@ const ChhopedCarbonFiber = ({ data }: { data: any }) => {
             {/* <!-- Have a Specific Material Requirement?  END --> */}
 
             {/* <!-- Frequently asked questions Strat --> */}
-            <Faq data={data?.faq} />
+            <Faq data={data?.faqs} />
             {/* <!-- Frequently asked questions END --> */}
 
 

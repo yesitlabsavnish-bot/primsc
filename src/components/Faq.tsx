@@ -2,13 +2,21 @@
 import React, { useState } from 'react'
 import { PrismicRichText, PrismicText } from '@prismicio/react'
 
+// import { PrismicRichText, PrismicText } from '@prismicio/react';
+
 const renderText = (field: any) => {
     if (!field) return null;
+
     if (typeof field === 'string') return field;
-    if (Array.isArray(field)) return <PrismicText field={field as any} />;
+
+    if (Array.isArray(field)) {
+        return <PrismicRichText field={field as any} />;
+    }
+
     if (typeof field === 'object' && field.text) return field.text;
+
     return null;
-}
+};
 
 const Faq = ({ data }: { data: any }) => {
   const [activeAccordion, setActiveAccordion] = useState<string | null>('faqCollapse0');

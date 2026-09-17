@@ -219,7 +219,7 @@ const FiberSizingCompound = (
         {/* <!-- Have a Specific Material Requirement?  END --> */}
 
 
-        <Faq data={data?.faqs} />
+        <Faq data={data?.faq} />
 
       </></>
   )

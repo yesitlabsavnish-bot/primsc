@@ -450,7 +450,7 @@ const PhlexCarbonfcm = ({
   </div>
 </section> */}
 
-      <Faq data={data.faqs} />
+      <Faq data={data.faq} />
 
       {/* <!-- Frequently asked questions END --> */}
 

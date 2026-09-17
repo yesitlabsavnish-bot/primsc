@@ -330,7 +330,7 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
       </section>
     
 
-      <Faq data={data?.faq} />
+      <Faq data={data?.faqs} />
 
       {/* <!-- Frequently asked questions END --> */}
 
