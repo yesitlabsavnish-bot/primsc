@@ -255,7 +255,7 @@ const PhlexCarbonSpcf = (
         <Link href="https://app.smartsuite.com/form/sca8tl4o/MC09mTWsI2" target="_blank" className="phlex-cta-btn phlex-cta-btn-white">
           {data.tell_us_button1} <img src="/images/top-right-up.svg"/>
         </Link>
-        <Link href="contact-us" className="phlex-cta-btn phlex-cta-btn-outline">
+        <Link href="/contact-us" className="phlex-cta-btn phlex-cta-btn-outline">
           {data.tell_us_button2}
         </Link>
       </div>

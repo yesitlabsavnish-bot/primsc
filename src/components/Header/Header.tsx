@@ -177,7 +177,7 @@ console.log("pathname:", pathname, "isProductActive:", isProductActive);
         </ul>
 
         <div className="nav-action">
-          <Link href="contact-us" className="btn-contact">
+          <Link href="/contact-us" className="btn-contact">
             Contact Us
             <img src="/images/right-arrow.svg" alt="arrow" />
           </Link>

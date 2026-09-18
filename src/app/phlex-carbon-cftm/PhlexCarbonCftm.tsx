@@ -335,7 +335,7 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
               <Link href="https://app.smartsuite.com/form/sca8tl4o/MC09mTWsI2" target="_blank" className="phlex-cta-btn phlex-cta-btn-white">
                 Request a Sample <img src="/images/top-right-up.svg" />
               </Link>
-              <Link href="contact-us" className="phlex-cta-btn phlex-cta-btn-outline">
+              <Link href="/contact-us" className="phlex-cta-btn phlex-cta-btn-outline">
                 Talk to Our Team
               </Link>
             </div>
