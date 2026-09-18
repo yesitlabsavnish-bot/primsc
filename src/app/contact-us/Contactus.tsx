@@ -94,7 +94,23 @@ const mapUrl = `https://www.google.com/maps?q=${latitude},${longitude}&output=em
   return (
     <>
       {/* <!-- Hero Banner Section Start --> */}
-      <section className="phlex-hero-banner contact-us">
+      <section className="phlex-hero-banner contact-us"   
+      style={{
+    background: `
+      linear-gradient(
+        90deg,
+        #031F55 0%,
+        #031F55 42%,
+        rgba(3, 31, 85, 0.90) 52%,
+        rgba(3, 31, 85, 0.55) 62%,
+        rgba(3, 31, 85, 0.20) 72%,
+        transparent 82%
+      ),
+      url(${data?.background_image?.url})
+      center center / cover no-repeat
+    `,
+  }}
+  >
         {/* <img src={data?.background_image?.url} alt="Phlex Carbon Fiber Background" className="phlex-hero-bg-img" /> */}
 
         <div className="phlex-hero-overlay"></div>

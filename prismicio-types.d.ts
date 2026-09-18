@@ -4758,6 +4758,39 @@ interface Spcf12KTowDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	faq: prismic.GroupField<Simplify<Spcf12KTowDocumentDataFaqItem>>;
+	
+	/**
+	 * background image field in *SPCF 12K Tow*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: spcf_12_k_tow.background_image
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/image
+	 */
+	background_image: prismic.ImageField<never>;
+	
+	/**
+	 * card background1 field in *SPCF 12K Tow*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: spcf_12_k_tow.card_background1
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/image
+	 */
+	card_background1: prismic.ImageField<never>;
+	
+	/**
+	 * card background2 field in *SPCF 12K Tow*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: spcf_12_k_tow.card_background2
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/image
+	 */
+	card_background2: prismic.ImageField<never>;
 }
 
 /**

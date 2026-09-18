@@ -295,6 +295,30 @@
           "repeat": true
         },
         "type": "Group"
+      },
+      "background_image": {
+        "config": {
+          "constraint": {},
+          "label": "background image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "card_background1": {
+        "config": {
+          "constraint": {},
+          "label": "card background1",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "card_background2": {
+        "config": {
+          "constraint": {},
+          "label": "card background2",
+          "thumbnails": []
+        },
+        "type": "Image"
       }
     }
   },

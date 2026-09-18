@@ -17,7 +17,13 @@ const PhlexCarbonSpcf = (
     
           <>
       {/* <!-- Hero Banner Section Start --> */}
-<section className="phlex-hero-banner-spcf">
+<section className="phlex-hero-banner-spcf"  style={{
+    background: `
+    
+      url(${data?.background_image?.url})
+      center center / cover no-repeat
+    `,
+  }}>
   
   {/* Main Background Image (HTML Tag) */}
   {/* <img src="/images/banner-bg.jpg" alt="Phlex Carbon Fiber Background" className="phlex-hero-bg-img" /> */}
@@ -112,7 +118,7 @@ const PhlexCarbonSpcf = (
       
       {/* Card 01: High-Strength */}
       <div className="phlex-options-card">
-        <img src="/images/high-stren.svg" alt="High-Strength Carbon Fiber" className="phlex-options-card-img" />
+        <img src={data?.card_background1?.url ||  "/images/high-stren.svg"} alt="High-Strength Carbon Fiber" className="phlex-options-card-img" />
         <div className="phlex-options-card-overlay"></div>
         <div className="phlex-options-card-content">
           <span className="phlex-options-number">{data.option_1_title}</span>
@@ -128,7 +134,7 @@ const PhlexCarbonSpcf = (
 
       {/* <!-- Card 02: Intermediate-Modulus --> */}
       <div className="phlex-options-card">
-        <img src="/images/high-stren-2.svg" alt="Intermediate-Modulus Carbon Fiber" className="phlex-options-card-img" />
+        <img src={ data?.card_background2?.url ||"/images/high-stren-2.svg"} alt="Intermediate-Modulus Carbon Fiber" className="phlex-options-card-img" />
         <div className="phlex-options-card-overlay"></div>
         <div className="phlex-options-card-content">
           <span className="phlex-options-number">{data.option_2_title}</span>
