@@ -408,6 +408,14 @@
           "repeat": true
         },
         "type": "Group"
+      },
+      "weight_background": {
+        "config": {
+          "constraint": {},
+          "label": "weight background",
+          "thumbnails": []
+        },
+        "type": "Image"
       }
     }
   },

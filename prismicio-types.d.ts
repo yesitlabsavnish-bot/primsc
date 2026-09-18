@@ -1898,6 +1898,17 @@ interface ChhopedCarbonFiberDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	faqs: prismic.GroupField<Simplify<ChhopedCarbonFiberDocumentDataFaqsItem>>;
+	
+	/**
+	 * weight background field in *PhlexCarbon fctm*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: chhoped_carbon_fiber.weight_background
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/image
+	 */
+	weight_background: prismic.ImageField<never>;
 }
 
 /**
@@ -3199,6 +3210,17 @@ interface PhlexCarbonCfmDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	faq: prismic.GroupField<Simplify<PhlexCarbonCfmDocumentDataFaqItem>>;
+	
+	/**
+	 * weight background field in *PhlexCarbon CFM*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlex_carbon_cfm.weight_background
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/image
+	 */
+	weight_background: prismic.ImageField<never>;
 }
 
 /**
@@ -3769,6 +3791,17 @@ interface PhlexCarbonFctmDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	faqs: prismic.GroupField<Simplify<PhlexCarbonFctmDocumentDataFaqsItem>>;
+	
+	/**
+	 * weight background field in *PhlexCarbon fctm*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: phlex_carbon_fctm.weight_background
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/image
+	 */
+	weight_background: prismic.ImageField<never>;
 }
 
 /**

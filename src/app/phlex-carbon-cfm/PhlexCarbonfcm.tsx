@@ -307,7 +307,7 @@ const PhlexCarbonfcm = ({
       {/* <!-- Available Areal Weights Strat --> */}
       <section className="phlex-weights-section">
 
-        <img src={data?.weight_background?.url} alt="Carbon Fiber Areal Weights" className="phlex-weights-bg-img" />
+        <img src={(data?.weight_background?.url as any)} alt="Carbon Fiber Areal Weights" className="phlex-weights-bg-img" />
 
         <div className="phlex-weights-overlay"></div>
 
