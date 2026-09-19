@@ -244,6 +244,14 @@
           "repeat": true
         },
         "type": "Group"
+      },
+      "phlex_cta_image": {
+        "config": {
+          "constraint": {},
+          "label": "phlex-cta-image",
+          "thumbnails": []
+        },
+        "type": "Image"
       }
     }
   },

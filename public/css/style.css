@@ -1183,7 +1183,10 @@ a.bl-page-nav:hover {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: #0a0a0a url('../images/fibersizing.png') no-repeat center center / cover;
+  /* background: #0a0a0a url('../images/fibersizing.png') no-repeat center center / cover; */
+  background:
+  linear-gradient(90deg, rgba(1,1,1,0.95) 0%, rgba(1,1,1,0.7) 50%, rgba(1,1,1,0) 100%),
+  url('../images/fibersizing.png') no-repeat center center / cover;
   color: #ffffff;
   padding: 80px 0 40px;
   overflow: hidden;
@@ -2300,9 +2303,9 @@ table.phlex-props-table td:hover {
     right: 0;
     width: 50%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover;
     object-position: center right;
-    z-index: 1;
+    z-index: 1; */
 }
 
 
@@ -3272,7 +3275,7 @@ table.phlex-props-table td:hover {
 
 .phlex-flex-img-wrapper {
     width: 100%;
-    max-height: 400px;
+    max-height: 422px;
     overflow: hidden;
     border-radius: 2px;
     margin-bottom: 36px;

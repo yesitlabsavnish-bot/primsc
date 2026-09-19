@@ -117,9 +117,9 @@ const FiberSizingCompound = (
 
         <section className="phlex-cta-section">
 
-          <img src="/images/fiber_sizing_1.png" alt="PhlexCarbon Material Requirement" className="phlex-cta-bg-img" />
+          <img src={data?.phlex_cta_image?.url} alt="PhlexCarbon Material Requirement" className="phlex-cta-bg-img" />
 
-          <div className="phlex-cta-overlay"></div>
+          {/* <div className="phlex-cta-overlay"></div> */}
 
           <div className="phlex-cta-container">
             <div className="phlex-cta-content">

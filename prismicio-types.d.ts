@@ -2468,6 +2468,17 @@ interface FiberSizingDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
 	 */
 	faq: prismic.GroupField<Simplify<FiberSizingDocumentDataFaqItem>>;
+	
+	/**
+	 * phlex-cta-image field in *Fiber Sizing*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: fiber_sizing.phlex_cta_image
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/fields/image
+	 */
+	phlex_cta_image: prismic.ImageField<never>;
 }
 
 /**
