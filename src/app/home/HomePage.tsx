@@ -646,8 +646,8 @@ const HomePage = (
 
           <div className="phlex-flex-img-wrapper">
             <img
-              src={data.flexible_image?.url}
-              alt={data.flexible_image?.alt || "Flexible Carbon Fiber Materials"}
+              src={data?.flexible_image?.url}
+              alt={data?.flexible_image?.alt || "Flexible Carbon Fiber Materials"}
             />
           </div>
 
