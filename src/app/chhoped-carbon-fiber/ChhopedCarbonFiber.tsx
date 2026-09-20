@@ -321,7 +321,7 @@ const ChhopedCarbonFiber = ({ data }: { data: any }) => {
 
                     <div className="pcf-cta-action-group">
                         <Link
-                            href="https://app.smartsuite.com/form/sca8tl4o/MC09mTWsI2"
+                            href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL"
                             target="_blank"
                             className="pcf-cta-btn pcf-cta-btn-primary"
                         >
