@@ -61,7 +61,7 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
 
             {/* Action Buttons Container */}
             <div className="phlex-hero-btn-group">
-              <Link href="https://app.smartsuite.com/form/sca8tl4o/MC09mTWsI2" target="_blank" className="phlex-hero-btn phlex-hero-btn-white">
+              <Link href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL" target="_blank" className="phlex-hero-btn phlex-hero-btn-white">
                 <span>Request a Sample/Quote</span>
                 <img src="/images/top-right-up.svg" />
               </Link>
@@ -229,19 +229,19 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
                 <tr className="phlex-props-divider-row">
                   <td colSpan={3}>Carbon Fiber Properties</td>
                 </tr>
-<tr className="phlex-props-subhead-row">
-  <td className="phlex-props-th-sub">
-    {data?.carbon_fiber_properties?.[0]?.property_header?.[0]?.text}
-  </td>
+                <tr className="phlex-props-subhead-row">
+                  <td className="phlex-props-th-sub">
+                    {data?.carbon_fiber_properties?.[0]?.property_header?.[0]?.text}
+                  </td>
 
-  <td className="phlex-props-th-sub">
-    {data?.carbon_fiber_properties?.[0]?.high_strength_header}
-  </td>
+                  <td className="phlex-props-th-sub">
+                    {data?.carbon_fiber_properties?.[0]?.high_strength_header}
+                  </td>
 
-  <td className="phlex-props-th-sub">
-    {data?.carbon_fiber_properties?.[0]?.intermediate_header}
-  </td>
-</tr>
+                  <td className="phlex-props-th-sub">
+                    {data?.carbon_fiber_properties?.[0]?.intermediate_header}
+                  </td>
+                </tr>
 
 
                 {data?.fiber_section_rows?.map((item: any, index: number) => <tr key={index}>
@@ -332,7 +332,7 @@ const PhlexCarbonCftm = ({ data }: { data: any }) => {
             </p>
 
             <div className="phlex-cta-btn-group">
-              <Link href="https://app.smartsuite.com/form/sca8tl4o/MC09mTWsI2" target="_blank" className="phlex-cta-btn phlex-cta-btn-white">
+              <Link href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL" target="_blank" className="phlex-cta-btn phlex-cta-btn-white">
                 Request a Sample <img src="/images/top-right-up.svg" />
               </Link>
               <Link href="/contact-us" className="phlex-cta-btn phlex-cta-btn-outline">

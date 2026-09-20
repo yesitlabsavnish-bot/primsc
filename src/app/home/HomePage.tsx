@@ -53,7 +53,7 @@ const HomePage = (
 
             <div className="phlex-hero-btn-group">
               <Link
-                href="https://app.smartsuite.com/form/sca8tl4o/MC09mTWsI2"
+                href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL"
                 target="_blank"
                 className="phlex-hero-btn phlex-hero-btn-outline"
               >
@@ -652,13 +652,13 @@ const HomePage = (
           </div>
 
           <div className="phlex-flex-btn-wrapper">
-            <a href="/contact-us" className="phlex-flex-btn">
+            <Link href="/contact-us" className="phlex-flex-btn">
               Find the Right Product
               <img
                 src="/images/right-arrow.svg"
                 alt="arrow"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -738,7 +738,7 @@ const HomePage = (
 
           <div className="pcf-cta-action-group">
             <Link
-              href="https://app.smartsuite.com/form/sca8tl4o/MC09mTWsI2"
+              href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL"
               target="_blank"
               className="pcf-cta-btn pcf-cta-btn-primary"
             >

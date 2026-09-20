@@ -67,7 +67,7 @@ const ChhopedCarbonFiber = ({ data }: { data: any }) => {
 
                         {/* Action Buttons Container */}
                         <div className="phlex-hero-btn-group">
-                            <Link href="https://app.smartsuite.com/form/sca8tl4o/MC09mTWsI2" target="_blank" className="phlex-hero-btn phlex-hero-btn-white">
+                            <Link href="https://form.smartsuite.com/sca8tl4o/LzQIXwEWlL" target="_blank" className="phlex-hero-btn phlex-hero-btn-white">
                                 <span>Request a Sample/Quote</span>
                                 <img src="/images/top-right-up.svg" />
                             </Link>

@@ -282,7 +282,7 @@ const mapUrl = `https://www.google.com/maps?q=${latitude},${longitude}&output=em
                 Get In Touch
               </h2>
 
-              <form
+              {/* <form
                 className="pcf-git-form"
                 onSubmit={handleSubmit}
               >
@@ -389,7 +389,8 @@ const mapUrl = `https://www.google.com/maps?q=${latitude},${longitude}&output=em
                     />
                   </button>
                 </div>
-              </form>
+              </form> */}
+              <iframe src="https://app.smartsuite.com/form/sca8tl4o/MC09mTWsI2?embed=true&header=false" width="100%" height="600px" frameBorder={0}></iframe>
             </div>
           </div>
         </div>
